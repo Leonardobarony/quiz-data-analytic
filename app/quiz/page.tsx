@@ -1,11 +1,14 @@
 'use client'
 
+import { lazy, Suspense } from 'react'
 import { QuizProvider, useQuiz } from '@/components/QuizProvider'
-import ProfileForm from '@/components/stages/ProfileForm'
-import LevelSelection from '@/components/stages/LevelSelection'
-import TechnicalTest from '@/components/stages/TechnicalTest'
-import SelfAssessment from '@/components/stages/SelfAssessment'
-import Results from '@/components/stages/Results'
+import { QuizErrorBoundary } from '@/components/QuizErrorBoundary'
+
+const ProfileForm = lazy(() => import('@/components/stages/ProfileForm'))
+const LevelSelection = lazy(() => import('@/components/stages/LevelSelection'))
+const TechnicalTest = lazy(() => import('@/components/stages/TechnicalTest'))
+const SelfAssessment = lazy(() => import('@/components/stages/SelfAssessment'))
+const Results = lazy(() => import('@/components/stages/Results'))
 
 const STAGE_LABELS = {
   profile: 'Perfil',
@@ -17,13 +20,20 @@ const STAGE_LABELS = {
 
 const STAGE_ORDER = ['profile', 'level', 'test', 'assessment', 'results'] as const
 
+function StageFallback() {
+  return (
+    <div className="flex items-center justify-center min-h-64">
+      <div className="w-6 h-6 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+    </div>
+  )
+}
+
 function QuizContent() {
   const { state } = useQuiz()
   const currentIndex = STAGE_ORDER.indexOf(state.stage)
 
   return (
     <div>
-      {/* Stepper */}
       {state.stage !== 'results' && (
         <div className="bg-white border-b border-gray-200">
           <div className="max-w-3xl mx-auto px-4 py-3">
@@ -53,11 +63,15 @@ function QuizContent() {
         </div>
       )}
 
-      {state.stage === 'profile' && <ProfileForm />}
-      {state.stage === 'level' && <LevelSelection />}
-      {state.stage === 'test' && <TechnicalTest />}
-      {state.stage === 'assessment' && <SelfAssessment />}
-      {state.stage === 'results' && <Results />}
+      <QuizErrorBoundary>
+        <Suspense fallback={<StageFallback />}>
+          {state.stage === 'profile' && <ProfileForm />}
+          {state.stage === 'level' && <LevelSelection />}
+          {state.stage === 'test' && <TechnicalTest />}
+          {state.stage === 'assessment' && <SelfAssessment />}
+          {state.stage === 'results' && <Results />}
+        </Suspense>
+      </QuizErrorBoundary>
     </div>
   )
 }

@@ -19,15 +19,14 @@ const DOMAIN_SHORT: Record<string, string> = {
   D2: 'SQL/Python',
   D3: 'Modelagem',
   D4: 'Governança',
-  D5: 'Cloud',
-  D6: 'Low-Code',
+  D5: 'Negócios',
 }
 
 export default function RadarChart({ domainScores }: Props) {
   const data = Object.entries(domainScores).map(([key, value]) => ({
     domain: DOMAIN_SHORT[key] ?? key,
     score: value,
-    fullMark: 15,
+    fullMark: 20,
   }))
 
   return (
@@ -43,7 +42,7 @@ export default function RadarChart({ domainScores }: Props) {
           fillOpacity={0.3}
         />
         <Tooltip
-          formatter={(value: number) => [`${value.toFixed(1)} / 15`, 'Score']}
+          formatter={(value: number) => [`${value.toFixed(1)} / 20`, 'Score']}
         />
       </RechartsRadarChart>
     </ResponsiveContainer>

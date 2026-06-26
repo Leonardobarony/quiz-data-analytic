@@ -1,9 +1,12 @@
 'use client'
 
+import { useMemo } from 'react'
 import { useQuiz } from '@/components/QuizProvider'
 import { calculateQuizResult } from '@/lib/scoring'
 import type { SelfAnswer } from '@/lib/types'
 import competenciesData from '@/data/competencies.json'
+
+const TOTAL_COMPETENCIES = competenciesData.reduce((acc, g) => acc + g.items.length, 0)
 
 const ANSWER_OPTIONS: Array<{ value: SelfAnswer; label: string; color: string }> = [
   { value: 'sim', label: 'Sim', color: 'bg-green-600 text-white border-green-600' },
@@ -22,9 +25,8 @@ export default function SelfAssessment() {
   const { state, dispatch } = useQuiz()
   const { selfAnswers, answers, loadedQuestions } = state
 
-  const totalCompetencies = competenciesData.reduce((acc, g) => acc + g.items.length, 0)
-  const answered = Object.keys(selfAnswers).length
-  const allAnswered = answered === totalCompetencies
+  const answered = useMemo(() => Object.keys(selfAnswers).length, [selfAnswers])
+  const allAnswered = answered === TOTAL_COMPETENCIES
 
   const handleAnswer = (id: string, answer: SelfAnswer) => {
     dispatch({ type: 'SET_SELF_ANSWER', competencyId: id, answer })
@@ -43,7 +45,7 @@ export default function SelfAssessment() {
           Para cada competência abaixo, indique se você a domina. Seja honesto — isso complementa sua avaliação técnica.
         </p>
         <p className="text-sm text-blue-600 font-medium">
-          Respondidas: {answered} / {totalCompetencies}
+          Respondidas: {answered} / {TOTAL_COMPETENCIES}
         </p>
       </div>
 

@@ -12,10 +12,10 @@ interface Props {
 export default function QuestionCard({ question, selectedKey, onSelect, showCorrect = false }: Props) {
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-      <p className="text-gray-800 font-medium text-base leading-relaxed mb-6">
+      <p className="text-gray-800 font-medium text-base leading-relaxed mb-6" id={`question-${question.id}`}>
         {question.text}
       </p>
-      <div className="space-y-3">
+      <div className="space-y-3" role="radiogroup" aria-labelledby={`question-${question.id}`}>
         {question.options.map((opt) => {
           const isSelected = selectedKey === opt.key
           const isCorrect = showCorrect && opt.correct
@@ -30,11 +30,14 @@ export default function QuestionCard({ question, selectedKey, onSelect, showCorr
           return (
             <button
               key={opt.key}
+              role="radio"
+              aria-checked={isSelected}
+              aria-label={`Opção ${opt.key}: ${opt.text}`}
               className={base}
               onClick={() => onSelect(opt.key)}
-              disabled={!!selectedKey && !showCorrect ? false : showCorrect}
+              disabled={showCorrect}
             >
-              <span className="flex-shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold border-current">
+              <span className="flex-shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold border-current" aria-hidden="true">
                 {opt.key}
               </span>
               <span className="text-sm leading-relaxed">{opt.text}</span>

@@ -53,10 +53,9 @@ export default function TechnicalTest() {
     D1: 'Pipelines & Arquitetura',
     D2: 'SQL & Processamento',
     D3: 'Modelagem & BI',
-    D4: 'Governança & Segurança',
-    D5: 'Cloud & Infraestrutura',
-    D6: 'Power Platform',
-    D7: 'Visão Estratégica',
+    D4: 'Governança & CI/CD',
+    D5: 'Análise de Negócios',
+    D7: 'Gestão de Projetos',
   }
 
   return (

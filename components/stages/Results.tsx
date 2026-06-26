@@ -87,7 +87,7 @@ export default function Results() {
   const [loadingFeedback, setLoadingFeedback] = useState(false)
   const [loadingPDF, setLoadingPDF] = useState(false)
 
-  if (!result) return null
+  if (!result || !role) return null
 
   const domains: (keyof DomainScores)[] = ['D1', 'D2', 'D3', 'D4', 'D5']
   const next = nextLevelInfo(result.totalScore)
@@ -95,6 +95,7 @@ export default function Results() {
   const handleFeedback = async () => {
     setLoadingFeedback(true)
     setFeedbackText('')
+    let reader: ReadableStreamDefaultReader<Uint8Array> | undefined
     try {
       const res = await fetch('/api/feedback', {
         method: 'POST',
@@ -102,7 +103,7 @@ export default function Results() {
         body: JSON.stringify({ result, role }),
       })
       if (!res.body) return
-      const reader = res.body.getReader()
+      reader = res.body.getReader()
       const decoder = new TextDecoder()
       let done = false
       while (!done) {
@@ -111,6 +112,7 @@ export default function Results() {
         if (value) setFeedbackText(prev => prev + decoder.decode(value))
       }
     } catch {
+      reader?.cancel()
       setFeedbackText('Erro ao gerar feedback. Verifique a chave da API.')
     } finally {
       setLoadingFeedback(false)
@@ -121,7 +123,7 @@ export default function Results() {
     setLoadingPDF(true)
     try {
       const { exportToPDF } = await import('@/lib/pdfExport')
-      await exportToPDF({ role: role!, result, userName, userSquad, userTechLevel })
+      await exportToPDF({ role, result, userName, userSquad, userTechLevel })
     } finally {
       setLoadingPDF(false)
     }

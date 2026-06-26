@@ -20,9 +20,7 @@ export function scoreDomain(
   answers: Record<string, string>,
   questions: Question[]
 ): number {
-  const domainQuestions = questions.filter(
-    q => q.domain === domainId && q.domain !== 'D7'
-  )
+  const domainQuestions = questions.filter(q => q.domain === domainId)
   if (domainQuestions.length === 0) return 0
 
   let correct = 0
@@ -34,6 +32,13 @@ export function scoreDomain(
   }
 
   return Math.round((correct / domainQuestions.length) * 20 * 10) / 10
+}
+
+function groupQuestionsByDomain(questions: Question[]): Record<string, Question[]> {
+  return questions.reduce<Record<string, Question[]>>((acc, q) => {
+    ;(acc[q.domain] ??= []).push(q)
+    return acc
+  }, {})
 }
 
 export function scoreD7Raw(
@@ -97,12 +102,27 @@ export function calculateQuizResult(
   selfAnswers: Record<string, SelfAnswer>,
   questions: Question[]
 ): QuizResult {
+  const byDomain = groupQuestionsByDomain(questions)
+
+  const scoreFromGroup = (domainId: Domain): number => {
+    const group = byDomain[domainId] ?? []
+    if (group.length === 0) return 0
+    let correct = 0
+    for (const q of group) {
+      const givenKey = answers[q.id]
+      if (!givenKey) continue
+      const correctOption = q.options.find(o => o.correct)
+      if (correctOption && givenKey === correctOption.key) correct++
+    }
+    return Math.round((correct / group.length) * 20 * 10) / 10
+  }
+
   const domainScores: DomainScores = {
-    D1: scoreDomain('D1', answers, questions),
-    D2: scoreDomain('D2', answers, questions),
-    D3: scoreDomain('D3', answers, questions),
-    D4: scoreDomain('D4', answers, questions),
-    D5: scoreDomain('D5', answers, questions),
+    D1: scoreFromGroup('D1'),
+    D2: scoreFromGroup('D2'),
+    D3: scoreFromGroup('D3'),
+    D4: scoreFromGroup('D4'),
+    D5: scoreFromGroup('D5'),
   }
 
   const totalScore = calculateTotal(domainScores)

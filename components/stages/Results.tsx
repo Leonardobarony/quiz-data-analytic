@@ -210,13 +210,15 @@ export default function Results() {
         >
           {loadingPDF ? 'Gerando PDF...' : '⬇ Exportar PDF'}
         </button>
-        <button
-          onClick={handleFeedback}
-          disabled={loadingFeedback}
-          className="px-6 py-2.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 disabled:opacity-50 transition-colors"
-        >
-          {loadingFeedback ? 'Gerando...' : '✨ Feedback com IA'}
-        </button>
+        {process.env.NEXT_PUBLIC_ENABLE_AI_FEEDBACK === 'true' && (
+          <button
+            onClick={handleFeedback}
+            disabled={loadingFeedback}
+            className="px-6 py-2.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 disabled:opacity-50 transition-colors"
+          >
+            {loadingFeedback ? 'Gerando...' : '✨ Feedback com IA'}
+          </button>
+        )}
         <button
           onClick={handleReset}
           className="px-6 py-2.5 border border-gray-300 text-gray-600 rounded-xl hover:bg-gray-50 transition-colors"
@@ -225,8 +227,8 @@ export default function Results() {
         </button>
       </div>
 
-      {/* Feedback da IA */}
-      {feedbackText && (
+      {/* Feedback da IA — visível apenas quando NEXT_PUBLIC_ENABLE_AI_FEEDBACK=true */}
+      {process.env.NEXT_PUBLIC_ENABLE_AI_FEEDBACK === 'true' && feedbackText && (
         <div className="mt-6 bg-indigo-50 border border-indigo-200 rounded-2xl p-6">
           <h3 className="font-semibold text-indigo-800 mb-3">✨ Feedback Personalizado</h3>
           <div className="text-sm text-indigo-900 leading-relaxed whitespace-pre-wrap">{feedbackText}</div>

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D1-JR-Q01", "domain": "D1", "level": "junior",
+    "text": "Em um pipeline batch (ex: Fabric Pipelines, ADF, Airflow), qual é a principal diferença entre ingestão incremental e full load?",
+    "options": [
+      { "key": "A", "text": "Full load é mais rápido porque lê menos dados" },
+      { "key": "B", "text": "Incremental carrega apenas os dados novos ou alterados desde a última execução; full load recarrega tudo", "correct": true },
+      { "key": "C", "text": "Full load usa mais memória, mas gera dados mais precisos" },
+      { "key": "D", "text": "Não há diferença prática entre as duas abordagens" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q02", "domain": "D1", "level": "junior",
+    "text": "Na arquitetura medallion (Bronze/Silver/Gold), qual camada armazena os dados brutos sem transformação?",
+    "options": [
+      { "key": "A", "text": "Gold" },
+      { "key": "B", "text": "Silver" },
+      { "key": "C", "text": "Bronze", "correct": true },
+      { "key": "D", "text": "Raw é uma camada separada da medallion" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q03", "domain": "D1", "level": "junior",
+    "text": "O que é um data lake e como ele difere de um data warehouse tradicional?",
+    "options": [
+      { "key": "A", "text": "Data lake armazena apenas dados estruturados; data warehouse aceita qualquer formato" },
+      { "key": "B", "text": "Data lake armazena dados em seu formato bruto (estruturado, semiestruturado e não estruturado); data warehouse armazena dados estruturados e modelados para análise", "correct": true },
+      { "key": "C", "text": "Data lake é mais caro e mais lento que um data warehouse" },
+      { "key": "D", "text": "São sinônimos modernos para o mesmo conceito" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q04", "domain": "D1", "level": "junior",
+    "text": "O que caracteriza um pipeline idempotente em engenharia de dados?",
+    "options": [
+      { "key": "A", "text": "Um pipeline que processa dados em tempo real" },
+      { "key": "B", "text": "Um pipeline que pode ser executado múltiplas vezes com o mesmo resultado, sem duplicar ou corromper dados", "correct": true },
+      { "key": "C", "text": "Um pipeline que só executa uma vez por dia" },
+      { "key": "D", "text": "Um pipeline que não depende de agendamento externo" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q05", "domain": "D1", "level": "junior",
+    "text": "Qual é o papel da camada Silver em uma arquitetura medallion (ex: Fabric Lakehouse, Databricks)?",
+    "options": [
+      { "key": "A", "text": "Armazenar dados brutos exatamente como recebidos da fonte" },
+      { "key": "B", "text": "Servir dados agregados prontos para consumo analítico final" },
+      { "key": "C", "text": "Limpar, padronizar e aplicar regras de negócio nos dados vindos da Bronze", "correct": true },
+      { "key": "D", "text": "Criar modelos semânticos para ferramentas de BI" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q06", "domain": "D1", "level": "junior",
+    "text": "O que é um trigger em um pipeline de dados (ex: ADF, Airflow, Fabric)?",
+    "options": [
+      { "key": "A", "text": "Um componente que armazena os dados transformados temporariamente" },
+      { "key": "B", "text": "Um mecanismo que inicia a execução de um pipeline com base em um evento, horário ou condição definida", "correct": true },
+      { "key": "C", "text": "Um log automático gerado ao final de cada execução" },
+      { "key": "D", "text": "Uma camada de cache para acelerar pipelines recorrentes" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q07", "domain": "D1", "level": "junior",
+    "text": "O que significa ETL e qual a ordem correta de suas etapas?",
+    "options": [
+      { "key": "A", "text": "Export, Transfer, Load — exportar, transferir e carregar dados" },
+      { "key": "B", "text": "Extract, Transform, Load — extrair da fonte, transformar e carregar no destino", "correct": true },
+      { "key": "C", "text": "Evaluate, Test, Launch — avaliar, testar e lançar o pipeline" },
+      { "key": "D", "text": "Encrypt, Transfer, Lock — criptografar, transferir e bloquear dados sensíveis" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q08", "domain": "D1", "level": "junior",
+    "text": "Qual é a diferença entre ELT e ETL em pipelines modernos de dados?",
+    "options": [
+      { "key": "A", "text": "ELT e ETL são sinônimos; a diferença é apenas de preferência pessoal" },
+      { "key": "B", "text": "No ELT, os dados são carregados primeiro no destino e transformados lá; no ETL, as transformações ocorrem antes do carregamento", "correct": true },
+      { "key": "C", "text": "ETL é mais moderno e substituiu o ELT em todas as arquiteturas atuais" },
+      { "key": "D", "text": "ELT só funciona com bancos de dados NoSQL" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q09", "domain": "D1", "level": "junior",
+    "text": "Em um pipeline de dados, o que é uma dependência entre tarefas (ex: DAG no Airflow, sequência no Fabric)?",
+    "options": [
+      { "key": "A", "text": "Um erro que ocorre quando duas tarefas acessam o mesmo arquivo simultaneamente" },
+      { "key": "B", "text": "Uma relação que define que uma tarefa só pode iniciar após a conclusão de outra, garantindo a ordem correta de execução", "correct": true },
+      { "key": "C", "text": "Um mecanismo de cache compartilhado entre tarefas do mesmo pipeline" },
+      { "key": "D", "text": "Uma configuração de paralelismo entre múltiplos pipelines" }
+    ]
+  },
+  {
+    "id": "D1-JR-Q10", "domain": "D1", "level": "junior",
+    "text": "O que é um dado semiestruturado? Dê um exemplo.",
+    "options": [
+      { "key": "A", "text": "Dados armazenados em tabelas relacionais com alguns campos opcionais" },
+      { "key": "B", "text": "Dados que possuem alguma estrutura (como tags ou chaves), mas não seguem um esquema tabular rígido — exemplo: JSON, XML, Avro", "correct": true },
+      { "key": "C", "text": "Dados estruturados com metadados adicionais em colunas extras" },
+      { "key": "D", "text": "Dados de texto livre sem nenhuma organização interna" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q01", "domain": "D1", "level": "pleno",
+    "text": "Em um pipeline de dados (ex: Fabric, Airflow, ADF), qual estratégia garante que dados atrasados (late-arriving data) sejam processados corretamente?",
+    "options": [
+      { "key": "A", "text": "Ignorar registros fora da janela de processamento" },
+      { "key": "B", "text": "Usar watermarks e janelas de processamento com tolerância a atrasos definida", "correct": true },
+      { "key": "C", "text": "Reprocessar toda a carga histórica a cada execução" },
+      { "key": "D", "text": "Late data não ocorre em pipelines bem configurados" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q02", "domain": "D1", "level": "pleno",
+    "text": "Qual formato de armazenamento colunar (ex: Delta Lake, Parquet, Iceberg) oferece suporte nativo a transações ACID e time travel?",
+    "options": [
+      { "key": "A", "text": "CSV" },
+      { "key": "B", "text": "JSON" },
+      { "key": "C", "text": "Parquet puro" },
+      { "key": "D", "text": "Formatos com transaction log, como Delta Lake e Apache Iceberg", "correct": true }
+    ]
+  },
+  {
+    "id": "D1-PL-Q03", "domain": "D1", "level": "pleno",
+    "text": "Em processamento distribuído (ex: Spark, Databricks, Fabric Notebooks), o que é um shuffle e por que ele impacta a performance?",
+    "options": [
+      { "key": "A", "text": "Uma operação de leitura paralela de arquivos particionados" },
+      { "key": "B", "text": "A redistribuição de dados entre partições/nós da rede, causando alto uso de I/O e sendo uma das operações mais custosas", "correct": true },
+      { "key": "C", "text": "Um mecanismo de cache automático do Spark" },
+      { "key": "D", "text": "O processo de escrita de dados particionados em disco" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q04", "domain": "D1", "level": "pleno",
+    "text": "O que é o padrão Lakehouse e qual problema ele resolve em relação a arquiteturas anteriores?",
+    "options": [
+      { "key": "A", "text": "Substitui o data warehouse eliminando a necessidade de SQL" },
+      { "key": "B", "text": "Combina a flexibilidade de um data lake com capacidades transacionais e de performance de um data warehouse na mesma camada de armazenamento", "correct": true },
+      { "key": "C", "text": "É um data warehouse otimizado para dados não estruturados" },
+      { "key": "D", "text": "É exclusivo de plataformas cloud da Microsoft" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q05", "domain": "D1", "level": "pleno",
+    "text": "Em uma arquitetura de ingestão (ex: ADF, Fabric Pipelines, Glue), o que é Change Data Capture (CDC)?",
+    "options": [
+      { "key": "A", "text": "Uma técnica de compressão de dados para reduzir custo de armazenamento" },
+      { "key": "B", "text": "Um método de capturar apenas as mudanças (inserções, atualizações, deleções) ocorridas na fonte desde a última extração", "correct": true },
+      { "key": "C", "text": "Um processo de validação de schema entre origem e destino" },
+      { "key": "D", "text": "Um mecanismo de replicação full load otimizado" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q06", "domain": "D1", "level": "pleno",
+    "text": "O que é particionamento em um pipeline de dados e qual seu principal benefício?",
+    "options": [
+      { "key": "A", "text": "Dividir o código do pipeline em módulos independentes para facilitar manutenção" },
+      { "key": "B", "text": "Dividir os dados em subconjuntos físicos por uma coluna (ex: data, região), reduzindo a quantidade de dados lida em queries com filtros nessa coluna", "correct": true },
+      { "key": "C", "text": "Separar os dados por tipo (estruturado, semiestruturado, não estruturado)" },
+      { "key": "D", "text": "Criar cópias de segurança automáticas dos dados por partição" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q07", "domain": "D1", "level": "pleno",
+    "text": "Em pipelines com múltiplas fontes, o que é um watermark e para que serve?",
+    "options": [
+      { "key": "A", "text": "Uma marca d'água visual adicionada a relatórios analíticos" },
+      { "key": "B", "text": "Um mecanismo que rastreia o ponto de progresso no processamento de dados ordenados por tempo, permitindo processar dados novos sem reprocessar os antigos", "correct": true },
+      { "key": "C", "text": "Um metadado de auditoria adicionado automaticamente a cada registro" },
+      { "key": "D", "text": "Uma configuração de timeout para pipelines de longa duração" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q08", "domain": "D1", "level": "pleno",
+    "text": "Qual é a diferença entre processamento em batch e em streaming?",
+    "options": [
+      { "key": "A", "text": "Batch processa dados continuamente; streaming processa em lotes agendados" },
+      { "key": "B", "text": "Batch processa conjuntos de dados em intervalos definidos (ex: diário, horário); streaming processa dados continuamente à medida que chegam, com baixa latência", "correct": true },
+      { "key": "C", "text": "Streaming é mais caro e substitui o batch em todas as arquiteturas modernas" },
+      { "key": "D", "text": "Não há diferença de latência relevante entre batch e streaming" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q09", "domain": "D1", "level": "pleno",
+    "text": "O que é orquestração de pipelines (ex: Airflow, Fabric Pipelines) e qual problema ela resolve?",
+    "options": [
+      { "key": "A", "text": "A capacidade de executar pipelines em paralelo em múltiplos servidores" },
+      { "key": "B", "text": "O gerenciamento de dependências, agendamento, monitoramento e reexecução de tarefas em pipelines complexos com múltiplas etapas e dependências", "correct": true },
+      { "key": "C", "text": "A automação do deploy de pipelines entre ambientes" },
+      { "key": "D", "text": "A compressão automática de dados durante o processo de carga" }
+    ]
+  },
+  {
+    "id": "D1-PL-Q10", "domain": "D1", "level": "pleno",
+    "text": "Em uma arquitetura de dados moderna, o que é um pipeline declarativo (ex: dbt) em contraste a um pipeline imperativo (ex: Python scripts)?",
+    "options": [
+      { "key": "A", "text": "Declarativo define como o pipeline executa passo a passo; imperativo define o resultado esperado" },
+      { "key": "B", "text": "Declarativo define o que deve ser o resultado (ex: 'esta tabela deve ter essas transformações'); o motor cuida de como executar — mais fácil de manter e testar", "correct": true },
+      { "key": "C", "text": "São abordagens equivalentes com diferença apenas de sintaxe" },
+      { "key": "D", "text": "Pipelines declarativos só funcionam com SQL; imperativos só funcionam com Python" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q01", "domain": "D1", "level": "senior",
+    "text": "Qual é a diferença entre as arquiteturas Lambda e Kappa para processamento de dados em larga escala?",
+    "options": [
+      { "key": "A", "text": "Lambda processa apenas dados em batch; Kappa processa apenas streaming" },
+      { "key": "B", "text": "Lambda usa duas camadas (batch + speed) para lidar com dados históricos e em tempo real; Kappa unifica tudo em streaming, simplificando a arquitetura", "correct": true },
+      { "key": "C", "text": "Kappa é uma versão descontinuada do Lambda" },
+      { "key": "D", "text": "São equivalentes em complexidade e custo operacional" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q02", "domain": "D1", "level": "senior",
+    "text": "Em um pipeline de dados de alta escala (ex: Spark, Fabric, Databricks), qual estratégia de particionamento é mais eficiente para queries filtradas por data?",
+    "options": [
+      { "key": "A", "text": "Não particionar e deixar o motor de query otimizar automaticamente" },
+      { "key": "B", "text": "Particionar por colunas de alta cardinalidade como ID do usuário" },
+      { "key": "C", "text": "Particionar por data (ano/mês/dia) para ativar partition pruning e reduzir dados lidos", "correct": true },
+      { "key": "D", "text": "Usar um único arquivo grande para evitar overhead de metadados" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q03", "domain": "D1", "level": "senior",
+    "text": "O que é schema evolution em pipelines de dados e qual o risco de não tratá-la adequadamente?",
+    "options": [
+      { "key": "A", "text": "A capacidade de o pipeline escalar horizontalmente com mais workers" },
+      { "key": "B", "text": "A mudança no formato/estrutura dos dados ao longo do tempo; sem tratamento adequado, pode quebrar pipelines downstream e corromper dados", "correct": true },
+      { "key": "C", "text": "Um recurso exclusivo de bancos NoSQL" },
+      { "key": "D", "text": "O processo de migração de schema entre ambientes de dev e produção" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q04", "domain": "D1", "level": "senior",
+    "text": "Em uma arquitetura de dados distribuída, como o CAP Theorem impacta decisões de design?",
+    "options": [
+      { "key": "A", "text": "Define que um sistema pode ter simultaneamente consistência, disponibilidade e tolerância a partições" },
+      { "key": "B", "text": "Estabelece que em caso de partição de rede, um sistema distribuído deve escolher entre consistência ou disponibilidade, não podendo garantir ambas ao mesmo tempo", "correct": true },
+      { "key": "C", "text": "É um teorema aplicável apenas a bancos relacionais" },
+      { "key": "D", "text": "Define os limites de performance de queries em data warehouses" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q05", "domain": "D1", "level": "senior",
+    "text": "O que é time travel em formatos como Delta Lake ou Iceberg, e quando utilizá-lo em produção?",
+    "options": [
+      { "key": "A", "text": "Um recurso de agendamento de pipelines para futura execução" },
+      { "key": "B", "text": "A capacidade de consultar versões anteriores de uma tabela usando timestamps ou versões, útil para auditoria, debugging e recuperação de dados", "correct": true },
+      { "key": "C", "text": "Uma técnica de otimização de queries temporais com Window Functions" },
+      { "key": "D", "text": "Um mecanismo de replicação entre regiões geográficas" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q06", "domain": "D1", "level": "senior",
+    "text": "O que é o problema de 'small files' em sistemas de armazenamento distribuído (ex: data lakes, Delta Lake) e como resolvê-lo?",
+    "options": [
+      { "key": "A", "text": "Arquivos menores que 1 MB causam erros de leitura em alguns formatos" },
+      { "key": "B", "text": "A acumulação de muitos arquivos pequenos gera overhead de metadados e lentidão nas queries; resolve-se com compactação periódica (ex: OPTIMIZE, compaction jobs)", "correct": true },
+      { "key": "C", "text": "Small files são gerados apenas por pipelines de streaming e não afetam batch" },
+      { "key": "D", "text": "O problema é resolvido automaticamente por qualquer motor de query moderno" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q07", "domain": "D1", "level": "senior",
+    "text": "Em uma arquitetura de dados, o que é idempotência de pipeline e como garanti-la na prática?",
+    "options": [
+      { "key": "A", "text": "A capacidade de executar múltiplos pipelines em paralelo sem conflito" },
+      { "key": "B", "text": "A propriedade de que executar o pipeline uma ou múltiplas vezes produz o mesmo resultado; garantida com overwrite em vez de append, deduplicação e controle de estado", "correct": true },
+      { "key": "C", "text": "Um mecanismo de checkpoint automático em caso de falha" },
+      { "key": "D", "text": "A garantia de que o pipeline nunca falha em produção" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q08", "domain": "D1", "level": "senior",
+    "text": "O que é um DAG (Directed Acyclic Graph) no contexto de orquestração de pipelines (ex: Airflow)?",
+    "options": [
+      { "key": "A", "text": "Um tipo de banco de dados orientado a grafos usado para armazenar relacionamentos" },
+      { "key": "B", "text": "Uma representação de tarefas e suas dependências em que o fluxo segue uma direção sem ciclos, garantindo execução ordenada e sem loops infinitos", "correct": true },
+      { "key": "C", "text": "Um formato de arquivo para serialização de pipelines em YAML" },
+      { "key": "D", "text": "Uma arquitetura de processamento paralelo sem dependências entre tarefas" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q09", "domain": "D1", "level": "senior",
+    "text": "Em pipelines de dados com alta criticidade, qual estratégia de retry garante resiliência sem causar efeitos colaterais?",
+    "options": [
+      { "key": "A", "text": "Retentativas imediatas sem limite, até o sucesso" },
+      { "key": "B", "text": "Retentativas com backoff exponencial, limite de tentativas e garantia de idempotência na operação retentada", "correct": true },
+      { "key": "C", "text": "Retentativas apenas para erros de rede, nunca para erros de dados" },
+      { "key": "D", "text": "Desabilitar retentativas e acionar alerta manual para cada falha" }
+    ]
+  },
+  {
+    "id": "D1-SN-Q10", "domain": "D1", "level": "senior",
+    "text": "O que é uma arquitetura de dados orientada a eventos (event-driven) e qual seu principal benefício?",
+    "options": [
+      { "key": "A", "text": "Uma arquitetura onde cada evento é armazenado em um banco relacional para processamento posterior em batch" },
+      { "key": "B", "text": "Uma arquitetura onde componentes se comunicam por meio de eventos assíncronos, permitindo desacoplamento, escalabilidade e reação em tempo real a mudanças no negócio", "correct": true },
+      { "key": "C", "text": "Uma arquitetura exclusiva para sistemas de IoT com sensores físicos" },
+      { "key": "D", "text": "Uma variação do padrão ETL com processamento mais rápido" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q01", "domain": "D1", "level": "especialista",
+    "text": "Em uma estratégia de Data Mesh, como você estruturaria a propriedade e responsabilidade dos dados por domínio de negócio?",
+    "options": [
+      { "key": "A", "text": "Um time central de dados é responsável por todos os pipelines e produtos de dados" },
+      { "key": "B", "text": "Cada domínio de negócio é responsável por seus próprios produtos de dados, com padrões centrais de interoperabilidade, governança federada e infraestrutura self-serve compartilhada", "correct": true },
+      { "key": "C", "text": "Data Mesh elimina a necessidade de governança centralizada" },
+      { "key": "D", "text": "É um padrão aplicável apenas a empresas com mais de 10.000 funcionários" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q02", "domain": "D1", "level": "especialista",
+    "text": "Como projetar uma estratégia de disaster recovery para pipelines críticos de dados em produção?",
+    "options": [
+      { "key": "A", "text": "Documentar o processo e acionar manualmente quando necessário" },
+      { "key": "B", "text": "Definir RPO e RTO por pipeline, implementar backups automatizados, replicação entre regiões, runbooks de recuperação e testes periódicos de DR", "correct": true },
+      { "key": "C", "text": "DR só é necessário para bancos de dados transacionais, não para pipelines analíticos" },
+      { "key": "D", "text": "Usar apenas overwrite mode em todas as tabelas como estratégia de recuperação" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q03", "domain": "D1", "level": "especialista",
+    "text": "Em uma organização com dezenas de domínios e centenas de pipelines, como implementar observabilidade de dados de forma centralizada?",
+    "options": [
+      { "key": "A", "text": "Cada time monitora seus próprios pipelines de forma independente" },
+      { "key": "B", "text": "Centralizar métricas de execução, qualidade, freshness e linhagem em uma camada de observabilidade unificada com alertas proativos por SLA e visibilidade cross-domínio", "correct": true },
+      { "key": "C", "text": "Usar apenas os logs nativos de cada ferramenta sem integração" },
+      { "key": "D", "text": "Observabilidade centralizada é inviável acima de 50 pipelines" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q04", "domain": "D1", "level": "especialista",
+    "text": "O que é um Data Contract e como ele muda a relação entre produtores e consumidores de dados?",
+    "options": [
+      { "key": "A", "text": "Um contrato jurídico entre fornecedor de software e cliente" },
+      { "key": "B", "text": "Um acordo formal e versionado que define schema, qualidade, SLA, semântica e propriedade dos dados, responsabilizando o produtor pela confiabilidade e o consumidor por uso adequado", "correct": true },
+      { "key": "C", "text": "Um documento de requisitos técnicos sem força de governança" },
+      { "key": "D", "text": "Um SLA de disponibilidade de infraestrutura de dados" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q05", "domain": "D1", "level": "especialista",
+    "text": "Como você avaliaria a decisão entre construir uma plataforma de dados customizada versus adotar uma plataforma SaaS (ex: Fabric, Snowflake)?",
+    "options": [
+      { "key": "A", "text": "Plataformas SaaS são sempre a melhor opção pelo menor custo operacional" },
+      { "key": "B", "text": "Avaliar TCO (custo total), controle sobre infraestrutura, time-to-market, maturidade do time, lock-in e alinhamento estratégico da organização — não há resposta universal", "correct": true },
+      { "key": "C", "text": "Plataformas customizadas sempre oferecem melhor performance e flexibilidade" },
+      { "key": "D", "text": "A decisão deve ser feita exclusivamente pelo time de TI sem envolvimento do negócio" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q06", "domain": "D1", "level": "especialista",
+    "text": "O que é backpressure em sistemas de streaming e como tratá-la em pipelines de alta escala?",
+    "options": [
+      { "key": "A", "text": "A pressão exercida pelo volume de dados históricos no armazenamento" },
+      { "key": "B", "text": "A condição em que consumidores de dados não conseguem processar dados na velocidade de produção; tratada com buffers, throttling, escalabilidade dinâmica e controle de fluxo", "correct": true },
+      { "key": "C", "text": "Um erro de configuração em pipelines com múltiplas fontes" },
+      { "key": "D", "text": "A degradação de performance causada por excesso de partições em tabelas Delta" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q07", "domain": "D1", "level": "especialista",
+    "text": "Como implementar uma estratégia de versionamento de pipelines de dados que permita rollback seguro em produção?",
+    "options": [
+      { "key": "A", "text": "Manter uma cópia manual do código antes de cada deploy" },
+      { "key": "B", "text": "Versionar todo o código no Git com tags de release, usar deployment pipelines com promoção entre ambientes e manter a capacidade de reprocessar dados históricos com versões anteriores do pipeline", "correct": true },
+      { "key": "C", "text": "Rollback de pipelines não é necessário se houver testes automatizados" },
+      { "key": "D", "text": "Usar branches longas de produção sem integração contínua" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q08", "domain": "D1", "level": "especialista",
+    "text": "Qual é a diferença entre uma arquitetura de dados centralizada (data warehouse centralizado) e uma arquitetura federada (data mesh)?",
+    "options": [
+      { "key": "A", "text": "Data warehouse centralizado é mais moderno e substitui o data mesh" },
+      { "key": "B", "text": "Centralizada concentra dados e responsabilidade em um único time/plataforma, gerando gargalos; federada distribui propriedade por domínios com padrões comuns, escalando com a organização", "correct": true },
+      { "key": "C", "text": "Federada elimina a necessidade de qualquer padronização técnica" },
+      { "key": "D", "text": "A diferença é apenas tecnológica, não organizacional" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q09", "domain": "D1", "level": "especialista",
+    "text": "O que são Data Products no contexto de Data Mesh e quais são suas características essenciais?",
+    "options": [
+      { "key": "A", "text": "Produtos de software que consomem dados para gerar relatórios" },
+      { "key": "B", "text": "Ativos de dados tratados como produtos, com dono definido, SLA, documentação, interface de acesso padronizada, qualidade garantida e orientação ao consumidor", "correct": true },
+      { "key": "C", "text": "Datasets exportados em formato CSV para consumo por outras áreas" },
+      { "key": "D", "text": "Dashboards publicados em ferramentas de BI com atualização automática" }
+    ]
+  },
+  {
+    "id": "D1-ESP-Q10", "domain": "D1", "level": "especialista",
+    "text": "Como projetar uma estratégia de retenção e arquivamento de dados que equilibre custo, compliance e acessibilidade?",
+    "options": [
+      { "key": "A", "text": "Manter todos os dados indefinidamente na camada hot para garantir acesso rápido" },
+      { "key": "B", "text": "Definir políticas de lifecycle por tipo e criticidade de dado: hot para dados recentes/frequentes, warm para histórico acessível e cold/archive para dados raramente acessados, com automação de movimentação e compliance regulatório", "correct": true },
+      { "key": "C", "text": "Deletar todos os dados com mais de 2 anos para reduzir custo" },
+      { "key": "D", "text": "Armazenar tudo em formato comprimido na camada Bronze sem política de lifecycle" }
+    ]
+  }
+]

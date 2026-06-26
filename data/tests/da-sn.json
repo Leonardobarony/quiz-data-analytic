@@ -1,0 +1,13 @@
+{
+  "role": "DA",
+  "level": "senior",
+  "questionIds": [
+    "D1-SN-Q01", "D1-SN-Q05", "D1-SN-Q07",
+    "D2-SN-Q01", "D2-SN-Q03", "D2-SN-Q05", "D2-SN-Q06", "D2-SN-Q09",
+    "D3-SN-Q01", "D3-SN-Q02", "D3-SN-Q03", "D3-SN-Q05", "D3-SN-Q07", "D3-SN-Q09", "D3-SN-Q10",
+    "D4-SN-Q01", "D4-SN-Q02", "D4-SN-Q05", "D4-SN-Q06",
+    "D5-SN-Q01", "D5-SN-Q05", "D5-SN-Q07", "D5-SN-Q08",
+    "D6-SN-Q01", "D6-SN-Q02", "D6-SN-Q03", "D6-SN-Q04", "D6-SN-Q05", "D6-SN-Q07", "D6-SN-Q09",
+    "D7-SN-Q01", "D7-SN-Q02", "D7-SN-Q03", "D7-SN-Q04", "D7-SN-Q05"
+  ]
+}

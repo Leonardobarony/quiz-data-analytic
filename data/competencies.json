@@ -1,0 +1,42 @@
+[
+  {
+    "level": "junior",
+    "items": [
+      { "id": "JR-C01", "text": "Crio pipelines básicos de ingestão batch com apoio", "type": "Técnica" },
+      { "id": "JR-C02", "text": "Escrevo SQL com SELECT, JOIN, GROUP BY e filtros", "type": "Técnica" },
+      { "id": "JR-C03", "text": "Entendo a arquitetura medallion Bronze/Silver/Gold", "type": "Conceitual" },
+      { "id": "JR-C04", "text": "Uso Git para versionamento básico de código", "type": "Técnica" },
+      { "id": "JR-C05", "text": "Conheço os conceitos de modelo estrela e tabela fato", "type": "Conceitual" }
+    ]
+  },
+  {
+    "level": "pleno",
+    "items": [
+      { "id": "PL-C01", "text": "Desenvolvo transformações com Python/PySpark de forma autônoma", "type": "Técnica" },
+      { "id": "PL-C02", "text": "Trabalho com formatos colunares e tabelas com suporte a ACID", "type": "Técnica" },
+      { "id": "PL-C03", "text": "Construo modelos semânticos com métricas e hierarquias", "type": "Técnica" },
+      { "id": "PL-C04", "text": "Implemento testes de qualidade de dados em pipelines", "type": "Técnica" },
+      { "id": "PL-C05", "text": "Realizo análise de viabilidade técnica end-to-end", "type": "Analítica" }
+    ]
+  },
+  {
+    "level": "senior",
+    "items": [
+      { "id": "SN-C01", "text": "Projeto arquiteturas de dados (Lakehouse, Warehouse, streaming)", "type": "Técnica" },
+      { "id": "SN-C02", "text": "Implemento governança com catálogo, linhagem e controle de acesso", "type": "Técnica" },
+      { "id": "SN-C03", "text": "Defino e aplico práticas de CI/CD para pipelines de dados", "type": "Técnica" },
+      { "id": "SN-C04", "text": "Otimizo custo e performance de processamento em escala", "type": "Técnica" },
+      { "id": "SN-C05", "text": "Lidero frentes técnicas e mentoreio membros do time", "type": "Liderança" }
+    ]
+  },
+  {
+    "level": "especialista",
+    "items": [
+      { "id": "ESP-C01", "text": "Defino arquitetura de dados enterprise para a organização", "type": "Estratégica" },
+      { "id": "ESP-C02", "text": "Estruturo estratégia de governança e qualidade em escala", "type": "Estratégica" },
+      { "id": "ESP-C03", "text": "Integro plataformas low-code ao ecossistema de dados", "type": "Técnica" },
+      { "id": "ESP-C04", "text": "Contribuo com inovação, padrões e boas práticas para o mercado", "type": "Influência" },
+      { "id": "ESP-C05", "text": "Possuo certificações reconhecidas em plataformas de dados", "type": "Certificação" }
+    ]
+  }
+]

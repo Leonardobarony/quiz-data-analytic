@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D2-JR-Q01", "domain": "D2", "level": "junior",
+    "text": "Qual cláusula SQL é usada para filtrar resultados após uma agregação com GROUP BY?",
+    "options": [
+      { "key": "A", "text": "WHERE" },
+      { "key": "B", "text": "FILTER" },
+      { "key": "C", "text": "HAVING", "correct": true },
+      { "key": "D", "text": "CASE WHEN" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q02", "domain": "D2", "level": "junior",
+    "text": "Em Python, qual estrutura de dados é mais eficiente para operações analíticas em tabelas (ex: Pandas, PySpark DataFrame)?",
+    "options": [
+      { "key": "A", "text": "Listas aninhadas (list of lists)" },
+      { "key": "B", "text": "Dicionários Python (dict)" },
+      { "key": "C", "text": "DataFrame — estrutura tabular com operações vetorizadas otimizadas", "correct": true },
+      { "key": "D", "text": "Tuplas imutáveis" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q03", "domain": "D2", "level": "junior",
+    "text": "Qual tipo de JOIN retorna apenas os registros com correspondência nas duas tabelas?",
+    "options": [
+      { "key": "A", "text": "LEFT JOIN" },
+      { "key": "B", "text": "FULL OUTER JOIN" },
+      { "key": "C", "text": "RIGHT JOIN" },
+      { "key": "D", "text": "INNER JOIN", "correct": true }
+    ]
+  },
+  {
+    "id": "D2-JR-Q04", "domain": "D2", "level": "junior",
+    "text": "O que é uma função de janela (Window Function) em SQL?",
+    "options": [
+      { "key": "A", "text": "Uma função que filtra dados em uma janela de tempo específica" },
+      { "key": "B", "text": "Uma função que realiza cálculos sobre um conjunto de linhas relacionadas à linha atual, sem colapsar o resultado em uma única linha", "correct": true },
+      { "key": "C", "text": "Um sinônimo para subconsultas correlacionadas" },
+      { "key": "D", "text": "Uma função disponível apenas em bancos NoSQL" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q05", "domain": "D2", "level": "junior",
+    "text": "Em processamento distribuído (ex: Spark, Fabric Notebooks), por que é importante evitar o uso de `collect()` em grandes volumes de dados?",
+    "options": [
+      { "key": "A", "text": "`collect()` não funciona com arquivos Delta" },
+      { "key": "B", "text": "`collect()` traz todos os dados do cluster para o driver, podendo causar out-of-memory e eliminando os benefícios do processamento distribuído", "correct": true },
+      { "key": "C", "text": "`collect()` é mais lento que `show()` em qualquer cenário" },
+      { "key": "D", "text": "`collect()` é depreciado nas versões recentes do Spark" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q06", "domain": "D2", "level": "junior",
+    "text": "O que faz o comando SQL `DISTINCT` e quando usá-lo?",
+    "options": [
+      { "key": "A", "text": "Remove linhas com valores nulos de uma consulta" },
+      { "key": "B", "text": "Retorna apenas valores únicos, eliminando duplicatas no resultado da query", "correct": true },
+      { "key": "C", "text": "Ordena os resultados em ordem crescente por padrão" },
+      { "key": "D", "text": "É um sinônimo para GROUP BY sem agregação" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q07", "domain": "D2", "level": "junior",
+    "text": "Qual é a diferença entre `WHERE` e `HAVING` em SQL?",
+    "options": [
+      { "key": "A", "text": "`WHERE` filtra após a agregação; `HAVING` filtra antes" },
+      { "key": "B", "text": "`WHERE` filtra linhas antes da agregação; `HAVING` filtra grupos após a agregação com GROUP BY", "correct": true },
+      { "key": "C", "text": "`HAVING` só funciona com a função COUNT(); `WHERE` funciona com qualquer coluna" },
+      { "key": "D", "text": "São intercambiáveis; a diferença é apenas de estilo de escrita" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q08", "domain": "D2", "level": "junior",
+    "text": "Em Python, o que é uma list comprehension e qual sua vantagem?",
+    "options": [
+      { "key": "A", "text": "Uma forma de criar listas a partir de dicionários usando a função `dict()`" },
+      { "key": "B", "text": "Uma sintaxe concisa para criar listas aplicando uma expressão a cada elemento de um iterável, geralmente mais legível e eficiente que um loop explícito", "correct": true },
+      { "key": "C", "text": "Um método de ordenar listas em Python sem usar `sort()`" },
+      { "key": "D", "text": "Uma forma de importar bibliotecas de análise de dados em Python" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q09", "domain": "D2", "level": "junior",
+    "text": "O que é um índice em um banco de dados relacional e qual seu impacto em performance?",
+    "options": [
+      { "key": "A", "text": "Uma cópia completa da tabela ordenada por uma coluna específica" },
+      { "key": "B", "text": "Uma estrutura de dados que acelera buscas em colunas específicas, reduzindo a quantidade de dados varridos em queries com filtros", "correct": true },
+      { "key": "C", "text": "Uma chave estrangeira que garante integridade referencial" },
+      { "key": "D", "text": "Um mecanismo de cache automático para queries frequentes" }
+    ]
+  },
+  {
+    "id": "D2-JR-Q10", "domain": "D2", "level": "junior",
+    "text": "Qual é a diferença entre `COUNT(*)` e `COUNT(coluna)` em SQL?",
+    "options": [
+      { "key": "A", "text": "São idênticos e retornam sempre o mesmo valor" },
+      { "key": "B", "text": "`COUNT(*)` conta todas as linhas incluindo nulos; `COUNT(coluna)` conta apenas linhas onde o valor da coluna não é nulo", "correct": true },
+      { "key": "C", "text": "`COUNT(coluna)` é mais lento porque verifica cada valor individualmente" },
+      { "key": "D", "text": "`COUNT(*)` só funciona sem GROUP BY; `COUNT(coluna)` funciona em qualquer contexto" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q01", "domain": "D2", "level": "pleno",
+    "text": "O que é uma CTE (Common Table Expression) e qual vantagem ela oferece sobre subqueries aninhadas?",
+    "options": [
+      { "key": "A", "text": "Uma tabela temporária física criada automaticamente pelo banco" },
+      { "key": "B", "text": "Uma subquery nomeada definida com WITH, que melhora legibilidade, permite reutilização dentro da query e facilita manutenção", "correct": true },
+      { "key": "C", "text": "Um índice temporário criado para otimizar uma query específica" },
+      { "key": "D", "text": "Um sinônimo para views materializadas" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q02", "domain": "D2", "level": "pleno",
+    "text": "Em processamento distribuído (ex: Spark, Databricks, Fabric Notebooks), qual é a diferença entre `cache()` e `persist()`?",
+    "options": [
+      { "key": "A", "text": "São idênticos; apenas a nomenclatura difere entre versões" },
+      { "key": "B", "text": "`cache()` é um atalho para `persist()` com nível MEMORY_AND_DISK; `persist()` permite configurar o nível de armazenamento explicitamente", "correct": true },
+      { "key": "C", "text": "`cache()` armazena em disco; `persist()` armazena apenas em memória" },
+      { "key": "D", "text": "`persist()` é depreciado e deve ser substituído por `cache()`" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q03", "domain": "D2", "level": "pleno",
+    "text": "Qual Window Function calcula a posição de cada linha dentro de uma partição, pulando posições em caso de empate?",
+    "options": [
+      { "key": "A", "text": "`ROW_NUMBER()`" },
+      { "key": "B", "text": "`DENSE_RANK()`" },
+      { "key": "C", "text": "`RANK()`", "correct": true },
+      { "key": "D", "text": "`NTILE()`" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q04", "domain": "D2", "level": "pleno",
+    "text": "Em Python para engenharia de dados, qual é a vantagem de usar generators (`yield`) em vez de listas ao processar arquivos grandes?",
+    "options": [
+      { "key": "A", "text": "Generators são mais rápidos em processamento de strings" },
+      { "key": "B", "text": "Generators produzem valores sob demanda, consumindo muito menos memória ao não carregar todos os dados de uma vez", "correct": true },
+      { "key": "C", "text": "Generators são a única forma de iterar sobre arquivos CSV" },
+      { "key": "D", "text": "Não há vantagem prática; listas são sempre preferíveis" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q05", "domain": "D2", "level": "pleno",
+    "text": "Como implementar deduplicação de registros em SQL mantendo apenas o mais recente por chave de negócio?",
+    "options": [
+      { "key": "A", "text": "`DELETE FROM tabela WHERE id IN (SELECT MIN(id) FROM tabela GROUP BY chave)`" },
+      { "key": "B", "text": "`SELECT DISTINCT * FROM tabela ORDER BY data_carga DESC`" },
+      { "key": "C", "text": "Usar `ROW_NUMBER() OVER (PARTITION BY chave ORDER BY data_carga DESC)` e filtrar onde `rn = 1`", "correct": true },
+      { "key": "D", "text": "`GROUP BY chave HAVING COUNT(*) > 1`" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q06", "domain": "D2", "level": "pleno",
+    "text": "Em processamento distribuído (ex: Spark, PySpark), o que é lazy evaluation e qual seu benefício?",
+    "options": [
+      { "key": "A", "text": "Uma técnica de processamento que prioriza operações mais simples primeiro" },
+      { "key": "B", "text": "A estratégia de adiar a execução de transformações até que uma ação seja chamada, permitindo otimização do plano de execução completo antes de processar", "correct": true },
+      { "key": "C", "text": "Um modo de execução que processa dados lentamente para economizar recursos" },
+      { "key": "D", "text": "Um cache automático aplicado a DataFrames frequentemente acessados" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q07", "domain": "D2", "level": "pleno",
+    "text": "Qual é a diferença entre `UNION` e `UNION ALL` em SQL?",
+    "options": [
+      { "key": "A", "text": "`UNION` preserva duplicatas; `UNION ALL` remove duplicatas automaticamente" },
+      { "key": "B", "text": "`UNION` remove duplicatas combinando os resultados; `UNION ALL` preserva todas as linhas, sendo mais performático", "correct": true },
+      { "key": "C", "text": "`UNION ALL` só funciona com tabelas que têm o mesmo número de colunas" },
+      { "key": "D", "text": "São idênticos em resultado; `UNION ALL` é apenas um alias mais verbose" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q08", "domain": "D2", "level": "pleno",
+    "text": "Em Python, qual é a diferença entre `map()`, `filter()` e `reduce()` no processamento de coleções?",
+    "options": [
+      { "key": "A", "text": "São funções de ordenação com diferentes critérios de comparação" },
+      { "key": "B", "text": "`map()` aplica uma função a cada elemento; `filter()` seleciona elementos por condição; `reduce()` acumula elementos em um único valor", "correct": true },
+      { "key": "C", "text": "`filter()` é exclusivo de listas; `map()` funciona com qualquer iterável" },
+      { "key": "D", "text": "`reduce()` foi removido do Python 3 e não deve ser usado" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q09", "domain": "D2", "level": "pleno",
+    "text": "O que é uma view materializada e quando preferi-la em relação a uma view comum?",
+    "options": [
+      { "key": "A", "text": "Uma view que só funciona em bancos de dados em memória" },
+      { "key": "B", "text": "Uma view cujo resultado é fisicamente armazenado e atualizado periodicamente; preferida quando a query subjacente é complexa/cara e os dados não precisam ser em tempo real", "correct": true },
+      { "key": "C", "text": "Uma view com permissões de escrita além de leitura" },
+      { "key": "D", "text": "Uma view otimizada automaticamente pelo banco sem intervenção humana" }
+    ]
+  },
+  {
+    "id": "D2-PL-Q10", "domain": "D2", "level": "pleno",
+    "text": "Em PySpark, qual é a diferença entre `groupBy().agg()` e `groupBy().apply()`?",
+    "options": [
+      { "key": "A", "text": "`agg()` é para agregações simples; `apply()` é para transformações linha a linha" },
+      { "key": "B", "text": "`agg()` aplica funções de agregação padrão (sum, count, avg) de forma otimizada pelo motor; `apply()` (ou `applyInPandas`) permite lógica customizada com Pandas dentro de cada grupo, mas com overhead maior", "correct": true },
+      { "key": "C", "text": "`apply()` é mais performático que `agg()` em grandes volumes" },
+      { "key": "D", "text": "São equivalentes; a escolha é apenas de preferência de sintaxe" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q01", "domain": "D2", "level": "senior",
+    "text": "Em processamento distribuído (ex: Spark, Databricks), como resolver o problema de data skew em operações de join ou aggregation?",
+    "options": [
+      { "key": "A", "text": "Aumentar o número de executores do cluster" },
+      { "key": "B", "text": "Usar salting — adicionar um sufixo aleatório à chave desbalanceada para distribuir os dados entre mais partições", "correct": true },
+      { "key": "C", "text": "Converter o join para LEFT JOIN para evitar o skew" },
+      { "key": "D", "text": "Data skew só ocorre em dados não particionados" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q02", "domain": "D2", "level": "senior",
+    "text": "Qual é a diferença entre broadcast join e sort-merge join em processamento distribuído?",
+    "options": [
+      { "key": "A", "text": "Broadcast join é mais lento, mas consome menos memória" },
+      { "key": "B", "text": "Broadcast join envia a tabela menor para todos os nós, evitando shuffle; sort-merge join é usado quando ambas as tabelas são grandes e precisam ser ordenadas e particionadas pela chave", "correct": true },
+      { "key": "C", "text": "Sort-merge join só funciona com formatos Delta" },
+      { "key": "D", "text": "Não há diferença de performance entre eles em clusters grandes" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q03", "domain": "D2", "level": "senior",
+    "text": "Como implementar o padrão SCD Tipo 2 em SQL para manter histórico de alterações em dimensões?",
+    "options": [
+      { "key": "A", "text": "UPDATE direto no registro alterado na tabela dimensional" },
+      { "key": "B", "text": "DELETE do registro antigo e INSERT do novo com timestamp" },
+      { "key": "C", "text": "MERGE com lógica de fechamento do registro vigente (data_fim, flag ativo) e inserção do novo registro com nova vigência", "correct": true },
+      { "key": "D", "text": "INSERT simples com timestamp, sem controle de vigência" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q04", "domain": "D2", "level": "senior",
+    "text": "Em SQL analítico avançado, quando usar `ROWS BETWEEN` vs `RANGE BETWEEN` em Window Functions?",
+    "options": [
+      { "key": "A", "text": "São equivalentes e intercambiáveis em todos os cenários" },
+      { "key": "B", "text": "`ROWS` opera sobre linhas físicas (posição); `RANGE` opera sobre valores lógicos — inclui todas as linhas com o mesmo valor de ORDER BY, tratando empates como parte da janela", "correct": true },
+      { "key": "C", "text": "`RANGE` é mais performático que `ROWS` em qualquer cenário" },
+      { "key": "D", "text": "`ROWS BETWEEN` só funciona com funções de agregação; `RANGE` funciona com todas" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q05", "domain": "D2", "level": "senior",
+    "text": "Ao processar grandes volumes em processamento distribuído (ex: Spark), qual configuração impacta diretamente o número de partições após operações de shuffle?",
+    "options": [
+      { "key": "A", "text": "`spark.executor.memory`" },
+      { "key": "B", "text": "`spark.sql.files.maxPartitionBytes`" },
+      { "key": "C", "text": "`spark.sql.shuffle.partitions`", "correct": true },
+      { "key": "D", "text": "`spark.driver.maxResultSize`" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q06", "domain": "D2", "level": "senior",
+    "text": "O que é predicate pushdown e como ele melhora a performance em leitura de formatos colunares?",
+    "options": [
+      { "key": "A", "text": "Uma técnica de cache que pré-carrega dados filtrados em memória" },
+      { "key": "B", "text": "A capacidade do engine de empurrar filtros para a camada de leitura do arquivo, lendo apenas os row groups/arquivos relevantes antes de trazer dados para processamento", "correct": true },
+      { "key": "C", "text": "Um índice automático criado pelo motor em colunas de alta cardinalidade" },
+      { "key": "D", "text": "Uma função SQL equivalente ao WHERE com melhor performance" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q07", "domain": "D2", "level": "senior",
+    "text": "Em Python para dados em escala, qual é a vantagem de usar tipos de dados corretos (ex: `int8` vs `int64` em Pandas)?",
+    "options": [
+      { "key": "A", "text": "Tipos menores são mais lentos porque exigem conversão constante" },
+      { "key": "B", "text": "Usar tipos com menor footprint de memória reduz significativamente o consumo de RAM e pode acelerar operações, especialmente em datasets com milhões de linhas", "correct": true },
+      { "key": "C", "text": "O tipo de dado não impacta performance em Python moderno" },
+      { "key": "D", "text": "A escolha de tipo é relevante apenas para colunas de texto" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q08", "domain": "D2", "level": "senior",
+    "text": "O que é column pruning em processamento distribuído e como ele beneficia queries analíticas?",
+    "options": [
+      { "key": "A", "text": "A remoção de colunas com alta taxa de nulos de uma tabela" },
+      { "key": "B", "text": "A capacidade do motor de ler apenas as colunas necessárias para a query, sem carregar as demais — essencial em formatos colunares como Parquet e Delta", "correct": true },
+      { "key": "C", "text": "Uma técnica de compressão aplicada a colunas de texto" },
+      { "key": "D", "text": "O processo de renomear colunas para melhorar legibilidade" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q09", "domain": "D2", "level": "senior",
+    "text": "Como garantir a qualidade de transformações SQL complexas em pipelines de dados?",
+    "options": [
+      { "key": "A", "text": "Testar manualmente em produção após o deploy" },
+      { "key": "B", "text": "Escrever testes automatizados que validam contagem de linhas, valores nulos, unicidade de chaves e ranges esperados, executados em ambiente de staging antes de promover para produção", "correct": true },
+      { "key": "C", "text": "Usar apenas CTEs para garantir que a query é correta" },
+      { "key": "D", "text": "Qualidade de SQL é responsabilidade exclusiva do revisor de código" }
+    ]
+  },
+  {
+    "id": "D2-SN-Q10", "domain": "D2", "level": "senior",
+    "text": "Em Python, qual é a diferença entre processamento síncrono e assíncrono (`asyncio`) no contexto de pipelines de dados?",
+    "options": [
+      { "key": "A", "text": "Processamento assíncrono é mais lento por adicionar overhead de gerenciamento" },
+      { "key": "B", "text": "Processamento síncrono bloqueia a execução enquanto aguarda operações de I/O; assíncrono permite executar outras tarefas enquanto aguarda, melhorando throughput em pipelines com muitas operações de rede/disco", "correct": true },
+      { "key": "C", "text": "`asyncio` só funciona com operações de banco de dados, não com arquivos" },
+      { "key": "D", "text": "São equivalentes em performance para pipelines de dados em batch" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q01", "domain": "D2", "level": "especialista",
+    "text": "Como projetar uma estratégia de processamento incremental resiliente para pipelines que consomem dados de múltiplas fontes com latências diferentes?",
+    "options": [
+      { "key": "A", "text": "Aguardar todas as fontes antes de iniciar qualquer processamento" },
+      { "key": "B", "text": "Usar watermarks independentes por fonte, processamento assíncrono com controle de dependências e reconciliação periódica entre fontes", "correct": true },
+      { "key": "C", "text": "Processar full load diariamente para garantir consistência" },
+      { "key": "D", "text": "Usar apenas uma fonte de dados para simplificar a arquitetura" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q02", "domain": "D2", "level": "especialista",
+    "text": "Qual é o trade-off entre usar SQL puro vs Python/PySpark para transformações em pipelines de dados em escala?",
+    "options": [
+      { "key": "A", "text": "Python sempre supera SQL em performance para dados grandes" },
+      { "key": "B", "text": "SQL é mais declarativo, portável e otimizado pelo engine; Python/PySpark oferece maior flexibilidade para lógica complexa e transformações não expressáveis em SQL — a escolha depende do caso de uso", "correct": true },
+      { "key": "C", "text": "SQL não escala acima de terabytes; Python é sempre a escolha correta" },
+      { "key": "D", "text": "Não há diferença prática; use a linguagem que o time prefere" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q03", "domain": "D2", "level": "especialista",
+    "text": "Como implementar schema evolution segura em pipelines de produção sem interromper consumidores downstream?",
+    "options": [
+      { "key": "A", "text": "Comunicar mudanças por e-mail e reescrever todos os consumidores manualmente" },
+      { "key": "B", "text": "Combinar versionamento de schema (ex: Schema Registry), adição de colunas de forma backward-compatible, validação via Data Contracts e migração gradual com período de compatibilidade", "correct": true },
+      { "key": "C", "text": "Schema evolution deve ser evitado; redesenhe o pipeline do zero" },
+      { "key": "D", "text": "Usar overwrite total na tabela resolve qualquer problema de schema" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q04", "domain": "D2", "level": "especialista",
+    "text": "Em otimização avançada de queries SQL em sistemas analíticos (ex: BigQuery, Synapse, Redshift), qual técnica reduz o custo de leitura em tabelas de fato com bilhões de linhas?",
+    "options": [
+      { "key": "A", "text": "Criar índices em todas as colunas de filtro" },
+      { "key": "B", "text": "Usar SELECT * para garantir todos os campos disponíveis" },
+      { "key": "C", "text": "Combinar particionamento por data, clustering/Z-Ordering pelas colunas de filtro mais usadas e projection pushdown", "correct": true },
+      { "key": "D", "text": "Aumentar o tamanho do cluster de processamento" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q05", "domain": "D2", "level": "especialista",
+    "text": "Como projetar um framework de testes para transformações SQL e PySpark em pipelines de dados?",
+    "options": [
+      { "key": "A", "text": "Testar apenas em produção com dados reais para garantir validade" },
+      { "key": "B", "text": "Combinar testes unitários de lógica de transformação (com dados sintéticos), testes de integração entre camadas, testes de qualidade de dados e testes de regressão automatizados no CI/CD", "correct": true },
+      { "key": "C", "text": "Testes unitários são suficientes; testes de integração são muito caros" },
+      { "key": "D", "text": "O framework de teste deve ser escolhido pelo time de QA, não de dados" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q06", "domain": "D2", "level": "especialista",
+    "text": "O que é o padrão de processamento 'exactly-once' em sistemas de streaming e por que é difícil de alcançar?",
+    "options": [
+      { "key": "A", "text": "Garantia de que cada mensagem é processada exatamente uma vez, eliminando duplicatas e perdas; difícil porque requer coordenação entre produtor, broker e consumidor com transações distribuídas", "correct": true },
+      { "key": "B", "text": "Um modo de processamento onde cada mensagem é processada apenas se for única na fonte" },
+      { "key": "C", "text": "É facilmente alcançado com qualquer ferramenta de streaming moderna" },
+      { "key": "D", "text": "É equivalente ao processamento 'at-least-once' com deduplicação posterior" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q07", "domain": "D2", "level": "especialista",
+    "text": "Como implementar testes de performance e benchmark para queries SQL críticas em ambientes analíticos de larga escala?",
+    "options": [
+      { "key": "A", "text": "Executar a query uma vez e medir o tempo com `time.time()`" },
+      { "key": "B", "text": "Definir SLAs de tempo de execução por query, executar com dados representativos em staging, perfilar o plano de execução, identificar gargalos (shuffles, full scans) e validar after cada mudança de schema ou volume", "correct": true },
+      { "key": "C", "text": "Performance só deve ser medida em produção com usuários reais" },
+      { "key": "D", "text": "Usar EXPLAIN PLAN é suficiente para garantir boa performance" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q08", "domain": "D2", "level": "especialista",
+    "text": "Em Python avançado para engenharia de dados, o que são decorators e como podem ser usados em pipelines?",
+    "options": [
+      { "key": "A", "text": "Funções que formatam a saída de outras funções para exibição" },
+      { "key": "B", "text": "Funções de ordem superior que envolvem outra função para adicionar comportamento (ex: logging, retry, métricas, validação de entrada) sem modificar o código original", "correct": true },
+      { "key": "C", "text": "Um padrão exclusivo de frameworks de machine learning" },
+      { "key": "D", "text": "Aliases de funções para melhorar legibilidade do código" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q09", "domain": "D2", "level": "especialista",
+    "text": "Como garantir reprodutibilidade em pipelines de dados de machine learning que combinam engenharia de dados e treinamento de modelos?",
+    "options": [
+      { "key": "A", "text": "Salvar o modelo treinado e nunca reprocessar os dados" },
+      { "key": "B", "text": "Versionar dados de entrada (ex: Delta time travel), código (Git), parâmetros de treinamento e artefatos de modelo, garantindo que qualquer execução passada possa ser reproduzida exatamente", "correct": true },
+      { "key": "C", "text": "Reprodutibilidade é responsabilidade do time de ciência de dados, não de engenharia" },
+      { "key": "D", "text": "Usar seeds aleatórias fixas é suficiente para garantir reprodutibilidade total" }
+    ]
+  },
+  {
+    "id": "D2-ESP-Q10", "domain": "D2", "level": "especialista",
+    "text": "O que é vectorized execution em motores de query analíticos modernos (ex: DuckDB, Velox) e por que supera a execução linha a linha?",
+    "options": [
+      { "key": "A", "text": "Processamento que usa GPUs para acelerar operações matemáticas" },
+      { "key": "B", "text": "Processamento de múltiplas linhas simultaneamente em batches (vetores), aproveitando instruções SIMD do CPU e cache do processador para reduzir overhead por linha", "correct": true },
+      { "key": "C", "text": "Uma técnica de indexação que vetoriza colunas para buscas mais rápidas" },
+      { "key": "D", "text": "Execução paralela distribuída em múltiplos nós de um cluster" }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "role": "DA",
+  "level": "especialista",
+  "questionIds": [
+    "D1-ESP-Q01", "D1-ESP-Q04", "D1-ESP-Q09",
+    "D2-ESP-Q01", "D2-ESP-Q02", "D2-ESP-Q05", "D2-ESP-Q07", "D2-ESP-Q09",
+    "D3-ESP-Q01", "D3-ESP-Q02", "D3-ESP-Q03", "D3-ESP-Q05", "D3-ESP-Q06", "D3-ESP-Q08", "D3-ESP-Q10",
+    "D4-ESP-Q01", "D4-ESP-Q02", "D4-ESP-Q05", "D4-ESP-Q06",
+    "D5-ESP-Q01", "D5-ESP-Q03", "D5-ESP-Q06", "D5-ESP-Q07",
+    "D6-ESP-Q01", "D6-ESP-Q02", "D6-ESP-Q03", "D6-ESP-Q04", "D6-ESP-Q05", "D6-ESP-Q06", "D6-ESP-Q07",
+    "D7-ESP-Q01", "D7-ESP-Q02", "D7-ESP-Q03", "D7-ESP-Q04", "D7-ESP-Q05"
+  ]
+}

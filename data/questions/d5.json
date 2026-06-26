@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D5-JR-Q01", "domain": "D5", "level": "junior",
+    "text": "Qual é a principal diferença entre armazenamento de objetos (ex: Azure Blob, S3, ADLS) e armazenamento de blocos (ex: SSD, discos de VM)?",
+    "options": [
+      { "key": "A", "text": "Armazenamento de objetos é mais rápido para leitura sequencial" },
+      { "key": "B", "text": "Armazenamento de objetos é otimizado para dados não estruturados em escala (arquivos, imagens, datasets) com acesso via API; armazenamento de blocos é otimizado para I/O de baixa latência como bancos de dados transacionais", "correct": true },
+      { "key": "C", "text": "São equivalentes; a diferença é apenas de nomenclatura entre provedores cloud" },
+      { "key": "D", "text": "Armazenamento de blocos é sempre mais barato que armazenamento de objetos" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q02", "domain": "D5", "level": "junior",
+    "text": "O que é um cluster Spark e como ele distribui o processamento de dados?",
+    "options": [
+      { "key": "A", "text": "Um conjunto de bancos de dados que sincronizam dados automaticamente" },
+      { "key": "B", "text": "Um conjunto de nós computacionais onde um driver coordena e workers executam as tarefas em paralelo, distribuindo o processamento e a memória entre múltiplas máquinas", "correct": true },
+      { "key": "C", "text": "Um tipo de banco de dados distribuído para transações ACID" },
+      { "key": "D", "text": "Um serviço de cloud que executa queries SQL sobre data warehouses" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q03", "domain": "D5", "level": "junior",
+    "text": "O que é IaaS, PaaS e SaaS? Dê um exemplo de cada um no contexto de dados.",
+    "options": [
+      { "key": "A", "text": "São tipos de linguagem de programação para nuvem: Infrastructure as a Service, Platform as a Service, Software as a Service" },
+      { "key": "B", "text": "IaaS: VMs/storage (ex: Azure VM, S3) — você gerencia o sistema; PaaS: plataforma gerenciada (ex: Databricks, Azure SQL) — você usa sem gerenciar infra; SaaS: software completo (ex: Power BI Service, Snowflake) — totalmente gerenciado", "correct": true },
+      { "key": "C", "text": "São certificações de cloud: Infrastructure, Platform e Software" },
+      { "key": "D", "text": "Todos são sinônimos para serviços de cloud pública gerenciados pelo provedor" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q04", "domain": "D5", "level": "junior",
+    "text": "O que é o Microsoft Fabric e qual sua proposta de valor para profissionais de dados?",
+    "options": [
+      { "key": "A", "text": "Uma ferramenta de visualização de dados da Microsoft concorrente ao Power BI" },
+      { "key": "B", "text": "Uma plataforma analítica unificada SaaS que integra engenharia de dados, ciência de dados, BI e governança em uma única plataforma com armazenamento centralizado no OneLake", "correct": true },
+      { "key": "C", "text": "Um serviço de banco de dados relacional gerenciado na nuvem Azure" },
+      { "key": "D", "text": "Um framework open-source para orquestração de pipelines de dados" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q05", "domain": "D5", "level": "junior",
+    "text": "O que é escalabilidade horizontal vs vertical em infraestrutura de dados?",
+    "options": [
+      { "key": "A", "text": "Horizontal escala o armazenamento; vertical escala o processamento" },
+      { "key": "B", "text": "Vertical adiciona mais recursos a um único nó (mais CPU/RAM); horizontal adiciona mais nós ao cluster — horizontal é a abordagem preferida em sistemas distribuídos de dados", "correct": true },
+      { "key": "C", "text": "São estratégias equivalentes com o mesmo impacto em custo e performance" },
+      { "key": "D", "text": "Escalabilidade horizontal é exclusiva de ambientes on-premise" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q06", "domain": "D5", "level": "junior",
+    "text": "O que é Databricks e qual é sua principal diferença em relação ao Apache Spark nativo?",
+    "options": [
+      { "key": "A", "text": "Databricks é um substituto do Spark com performance superior em todos os cenários" },
+      { "key": "B", "text": "Databricks é uma plataforma gerenciada que facilita o uso do Spark com clusters auto-escaláveis, notebooks colaborativos, Delta Lake integrado e um runtime otimizado — eliminando a complexidade de gerenciar Spark manualmente", "correct": true },
+      { "key": "C", "text": "Databricks é a versão open-source do Apache Spark" },
+      { "key": "D", "text": "Databricks usa apenas SQL, enquanto o Spark nativo usa apenas Python" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q07", "domain": "D5", "level": "junior",
+    "text": "O que é uma variável de ambiente (environment variable) e por que é importante para segurança em desenvolvimento?",
+    "options": [
+      { "key": "A", "text": "Uma variável global compartilhada entre todos os usuários de um sistema operacional" },
+      { "key": "B", "text": "Uma variável configurável externamente ao código que armazena configurações e segredos (ex: API keys, connection strings), evitando que informações sensíveis sejam commitadas no código-fonte", "correct": true },
+      { "key": "C", "text": "Um tipo especial de variável disponível apenas em linguagens de programação funcionais" },
+      { "key": "D", "text": "Uma variável automática criada pelo sistema operacional para cada processo" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q08", "domain": "D5", "level": "junior",
+    "text": "O que é um Lakehouse e em que ele difere de um Data Lake + Data Warehouse separados?",
+    "options": [
+      { "key": "A", "text": "Lakehouse é apenas um rebranding de data warehouse moderno" },
+      { "key": "B", "text": "Lakehouse combina na mesma camada de armazenamento a flexibilidade (formatos abertos, dados brutos) do data lake com as capacidades transacionais, de performance e governança do data warehouse — eliminando a necessidade de mover dados entre sistemas", "correct": true },
+      { "key": "C", "text": "Lakehouse é exclusivo para dados de streaming em tempo real" },
+      { "key": "D", "text": "Lakehouse elimina a necessidade de qualquer transformação de dados" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q09", "domain": "D5", "level": "junior",
+    "text": "O que é um serviço gerenciado na nuvem (managed service) e qual sua principal vantagem?",
+    "options": [
+      { "key": "A", "text": "Um serviço mais barato que sempre oferece melhor performance que soluções próprias" },
+      { "key": "B", "text": "Um serviço onde o provedor de nuvem gerencia patches, updates, alta disponibilidade e escalabilidade da infraestrutura, permitindo que o time foque na lógica de negócio em vez de administração de sistemas", "correct": true },
+      { "key": "C", "text": "Um serviço que só pode ser acessado por gerentes e líderes técnicos" },
+      { "key": "D", "text": "Um serviço que gerencia automaticamente o código dos pipelines de dados" }
+    ]
+  },
+  {
+    "id": "D5-JR-Q10", "domain": "D5", "level": "junior",
+    "text": "O que é Apache Airflow e para que é usado em engenharia de dados?",
+    "options": [
+      { "key": "A", "text": "Um banco de dados NoSQL distribuído para armazenamento de dados em tempo real" },
+      { "key": "B", "text": "Uma plataforma open-source de orquestração de pipelines de dados que permite definir, agendar, monitorar e reexecutar fluxos de trabalho como DAGs", "correct": true },
+      { "key": "C", "text": "Uma ferramenta de visualização de dados para criação de dashboards" },
+      { "key": "D", "text": "Um framework de machine learning para dados distribuídos" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q01", "domain": "D5", "level": "pleno",
+    "text": "Como configurar autoscaling em um cluster Spark (ex: Databricks, Fabric) para equilibrar custo e performance?",
+    "options": [
+      { "key": "A", "text": "Usar sempre o maior cluster disponível para garantir performance máxima" },
+      { "key": "B", "text": "Habilitar autoscaling com min/max workers configurados conforme a carga esperada, definindo thresholds de scale-up e scale-down, com monitoramento de utilização para ajustar os limites ao longo do tempo", "correct": true },
+      { "key": "C", "text": "Autoscaling só funciona em clusters on-premise, não em serviços gerenciados" },
+      { "key": "D", "text": "Aumentar manualmente o cluster antes de cada execução programada" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q02", "domain": "D5", "level": "pleno",
+    "text": "Qual é a diferença entre Azure Data Factory (ADF) e Fabric Pipelines para orquestração de dados?",
+    "options": [
+      { "key": "A", "text": "ADF e Fabric Pipelines são exatamente o mesmo produto com nomes diferentes" },
+      { "key": "B", "text": "ADF é um serviço standalone de integração de dados; Fabric Pipelines é a evolução integrada ao ecossistema Fabric, com interface similar mas nativamente conectada ao OneLake, Lakehouse e outros itens Fabric", "correct": true },
+      { "key": "C", "text": "Fabric Pipelines só suporta pipelines em Python; ADF suporta múltiplas linguagens" },
+      { "key": "D", "text": "ADF é mais moderno e substituirá completamente o Fabric Pipelines" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q03", "domain": "D5", "level": "pleno",
+    "text": "O que é Infrastructure as Code (IaC) no contexto de plataformas de dados e qual seu benefício?",
+    "options": [
+      { "key": "A", "text": "Escrever código que processa dados diretamente na infraestrutura de nuvem" },
+      { "key": "B", "text": "Definir e provisionar infraestrutura (storage, clusters, redes) via código versionável (ex: Terraform, Bicep), garantindo ambientes reproduzíveis, auditáveis e que podem ser implantados automaticamente", "correct": true },
+      { "key": "C", "text": "Código gerado automaticamente por plataformas de BI para queries SQL" },
+      { "key": "D", "text": "Scripts de manutenção de servidores executados manualmente por administradores" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q04", "domain": "D5", "level": "pleno",
+    "text": "O que é OneLake no Microsoft Fabric e como ele muda a arquitetura de dados?",
+    "options": [
+      { "key": "A", "text": "Um serviço de backup automático para todos os dados no Microsoft Azure" },
+      { "key": "B", "text": "Um data lake unificado para toda a organização no Fabric onde todos os itens (Lakehouses, Warehouses, Semantic Models) compartilham o mesmo armazenamento, eliminando silos e movimentação de dados", "correct": true },
+      { "key": "C", "text": "Uma versão simplificada do Azure Data Lake Storage Gen2" },
+      { "key": "D", "text": "Um banco de dados NoSQL integrado ao ecossistema Microsoft" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q05", "domain": "D5", "level": "pleno",
+    "text": "Qual é a diferença entre Databricks em Azure, AWS e GCP? Quando é relevante considerar isso?",
+    "options": [
+      { "key": "A", "text": "São plataformas completamente diferentes sem compatibilidade entre si" },
+      { "key": "B", "text": "O core do Databricks (Spark, Delta, notebooks) é o mesmo entre provedores; a diferença está na integração com serviços nativos do cloud (storage, IAM, rede, networking) — relevante em estratégias multi-cloud ou migração entre provedores", "correct": true },
+      { "key": "C", "text": "Databricks só está disponível em Azure" },
+      { "key": "D", "text": "A performance do Databricks varia drasticamente entre provedores de nuvem" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q06", "domain": "D5", "level": "pleno",
+    "text": "O que é AWS Glue e em quais cenários ele é preferível ao Spark self-managed?",
+    "options": [
+      { "key": "A", "text": "Uma ferramenta de visualização de dados da Amazon concorrente ao QuickSight" },
+      { "key": "B", "text": "Um serviço serverless de ETL/ELT gerenciado na AWS que executa jobs Spark sem necessidade de gerenciar clusters — preferível quando se quer simplificar operações e já existe investimento no ecossistema AWS", "correct": true },
+      { "key": "C", "text": "Um banco de dados NoSQL serverless para dados não estruturados" },
+      { "key": "D", "text": "Um serviço de streaming de dados equivalente ao Kafka no ecossistema AWS" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q07", "domain": "D5", "level": "pleno",
+    "text": "Como monitorar o custo de processamento em plataformas cloud de dados (ex: Databricks, Synapse, BigQuery)?",
+    "options": [
+      { "key": "A", "text": "Verificar a fatura do cartão de crédito ao final de cada mês" },
+      { "key": "B", "text": "Configurar alertas de budget por serviço, monitorar DBUs/slots/bytes processados por job, usar tags de custo por projeto e revisar relatórios de utilização para identificar ineficiências", "correct": true },
+      { "key": "C", "text": "O custo de cloud não pode ser monitorado em tempo real" },
+      { "key": "D", "text": "Usar sempre o tier mais caro para garantir performance e evitar surpresas" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q08", "domain": "D5", "level": "pleno",
+    "text": "O que é BigQuery e qual sua principal diferença arquitetural em relação ao Snowflake?",
+    "options": [
+      { "key": "A", "text": "São produtos idênticos de diferentes fornecedores sem diferenças técnicas relevantes" },
+      { "key": "B", "text": "BigQuery (Google) é serverless com armazenamento e compute integrados, cobrado por bytes processados; Snowflake (multi-cloud) separa storage de compute com warehouse virtual escalável, cobrado por créditos de compute", "correct": true },
+      { "key": "C", "text": "BigQuery só funciona com linguagem SQL proprietária; Snowflake usa SQL padrão" },
+      { "key": "D", "text": "Snowflake é mais adequado para grandes volumes; BigQuery para volumes menores" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q09", "domain": "D5", "level": "pleno",
+    "text": "O que é Synapse Analytics e como ele se posiciona no ecossistema Azure?",
+    "options": [
+      { "key": "A", "text": "Um substituto do Azure SQL Database para cargas de trabalho transacionais" },
+      { "key": "B", "text": "Uma plataforma analítica integrada no Azure que combina data warehouse (Dedicated Pool), Spark (serverless e dedicated), pipeline de integração e suporte a Delta Lake dentro do ecossistema Azure", "correct": true },
+      { "key": "C", "text": "O nome anterior do Microsoft Fabric; foi descontinuado" },
+      { "key": "D", "text": "Um serviço exclusivo para machine learning no Azure" }
+    ]
+  },
+  {
+    "id": "D5-PL-Q10", "domain": "D5", "level": "pleno",
+    "text": "Como implementar separação de ambientes (dev/staging/prod) em plataformas de dados cloud?",
+    "options": [
+      { "key": "A", "text": "Usar pastas separadas dentro do mesmo workspace/projeto de produção" },
+      { "key": "B", "text": "Criar workspaces/projetos separados por ambiente, com pipelines de CI/CD para promoção, dados de teste isolados do dado real de produção e configuração via variáveis de ambiente", "correct": true },
+      { "key": "C", "text": "Usar apenas produção e testar diretamente nele com dados reais" },
+      { "key": "D", "text": "Separação de ambientes não é necessária em plataformas cloud gerenciadas" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q01", "domain": "D5", "level": "senior",
+    "text": "Como projetar uma estratégia de multi-cloud para uma plataforma de dados enterprise sem criar lock-in excessivo?",
+    "options": [
+      { "key": "A", "text": "Usar apenas serviços proprietários do provedor principal para maximizar integração" },
+      { "key": "B", "text": "Priorizar formatos abertos (Parquet, Delta, Iceberg), ferramentas portáveis (Terraform, Spark, dbt) e APIs padronizadas; aceitar algum uso de serviços proprietários onde o ROI justifica o trade-off de lock-in", "correct": true },
+      { "key": "C", "text": "Multi-cloud sempre aumenta custo sem benefícios claros; evitar completamente" },
+      { "key": "D", "text": "Replicar todos os dados em todos os clouds para máxima redundância" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q02", "domain": "D5", "level": "senior",
+    "text": "Como otimizar o custo de um ambiente Databricks de produção com alto volume de jobs?",
+    "options": [
+      { "key": "A", "text": "Executar todos os jobs no cluster mais potente disponível" },
+      { "key": "B", "text": "Combinar: job clusters (efêmeros) para workflows automatizados, spot instances para jobs tolerantes a interrupção, autoscaling ajustado, Delta Cache, particionamento eficiente e análise regular de utilização por job", "correct": true },
+      { "key": "C", "text": "Usar apenas clusters shared para reduzir custo de provisionamento" },
+      { "key": "D", "text": "Custo de Databricks é fixo e não pode ser otimizado sem contrato enterprise" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q03", "domain": "D5", "level": "senior",
+    "text": "O que é Unity Catalog (Databricks) e qual problema de governança ele resolve?",
+    "options": [
+      { "key": "A", "text": "Um catálogo de componentes de UI para desenvolvimento de aplicações no Databricks" },
+      { "key": "B", "text": "Uma camada de governança centralizada e multi-cloud para o ecossistema Databricks que unifica controle de acesso, auditoria, linhagem e descoberta de dados (tabelas, arquivos, modelos ML) em um único ponto de governança", "correct": true },
+      { "key": "C", "text": "Um serviço de gerenciamento de clusters Databricks em múltiplos workspaces" },
+      { "key": "D", "text": "A interface de administração do Databricks para controle de custos" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q04", "domain": "D5", "level": "senior",
+    "text": "Em uma plataforma de dados de alta escala, como gerenciar credenciais e segredos (ex: API keys, senhas) de forma segura?",
+    "options": [
+      { "key": "A", "text": "Armazenar segredos em arquivos de configuração dentro do repositório Git" },
+      { "key": "B", "text": "Usar serviços de gerenciamento de segredos (ex: Azure Key Vault, AWS Secrets Manager, Databricks Secrets) com rotação automática, acesso auditado e integração com identidades gerenciadas", "correct": true },
+      { "key": "C", "text": "Compartilhar segredos por e-mail para os membros do time que precisam" },
+      { "key": "D", "text": "Segredos podem ser armazenados em variáveis de ambiente no código-fonte" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q05", "domain": "D5", "level": "senior",
+    "text": "Como projetar a network topology de uma plataforma de dados cloud para isolar dados sensíveis sem comprometer a acessibilidade?",
+    "options": [
+      { "key": "A", "text": "Deixar todos os serviços de dados acessíveis via internet pública com autenticação forte" },
+      { "key": "B", "text": "Usar VNet/VPC com peering entre ambientes, private endpoints para serviços gerenciados, NSGs/security groups restritivos e bastion hosts para acesso administrativo — dados sensíveis apenas em redes privadas", "correct": true },
+      { "key": "C", "text": "Isolar dados em servidores on-premise e conectar via VPN é sempre a melhor opção" },
+      { "key": "D", "text": "Network topology não impacta a segurança de dados em cloud" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q06", "domain": "D5", "level": "senior",
+    "text": "Como implementar um pipeline de CI/CD para Databricks Notebooks e Jobs?",
+    "options": [
+      { "key": "A", "text": "Desenvolver diretamente em produção e usar o histórico de revisões do workspace como controle de versão" },
+      { "key": "B", "text": "Versionar notebooks e job configs no Git, usar Databricks Asset Bundles ou terraform para deployment, executar testes em ambiente de staging, promover para produção via pipeline de CI/CD aprovado", "correct": true },
+      { "key": "C", "text": "CI/CD não se aplica a notebooks; apenas a pipelines de dados estruturadas" },
+      { "key": "D", "text": "Usar apenas o Databricks Repos como estratégia de CI/CD sem pipeline externo" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q07", "domain": "D5", "level": "senior",
+    "text": "O que é serverless computing no contexto de dados (ex: BigQuery, Synapse Serverless, Fabric Eventhouse) e quais são seus trade-offs?",
+    "options": [
+      { "key": "A", "text": "Servidores que se desligam automaticamente quando não há dados sendo processados" },
+      { "key": "B", "text": "Modelo onde o provedor gerencia toda a infraestrutura sem cluster dedicado — custo por uso, sem gerenciamento, mas com possível latência de cold start e custo variável/imprevisível em alto volume", "correct": true },
+      { "key": "C", "text": "Equivalente a SaaS; sem diferença prática para o desenvolvedor" },
+      { "key": "D", "text": "Serverless é sempre mais barato que clusters dedicados em qualquer cenário" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q08", "domain": "D5", "level": "senior",
+    "text": "Como estruturar um Fabric Workspace com separação de responsabilidades entre engenharia e consumo analítico?",
+    "options": [
+      { "key": "A", "text": "Usar um único workspace com todos os itens e controlar acesso por item" },
+      { "key": "B", "text": "Separar em workspaces funcionais (ex: Ingestão, Transformação, Produto de Dados, BI) com controle de acesso por workspace e capacidade Fabric dedicada por domínio ou ambiente", "correct": true },
+      { "key": "C", "text": "Cada usuário deve ter seu próprio workspace independente" },
+      { "key": "D", "text": "Workspaces no Fabric são apenas organizacionais sem impacto em segurança" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q09", "domain": "D5", "level": "senior",
+    "text": "O que é Delta Sharing e como ele facilita o compartilhamento de dados entre organizações?",
+    "options": [
+      { "key": "A", "text": "Uma feature do Delta Lake para compartilhar arquivos entre partições do mesmo cluster" },
+      { "key": "B", "text": "Um protocolo open-source para compartilhar dados Delta Lake entre organizações e plataformas (ex: Databricks, PowerBI, Pandas) sem necessidade de copiar os dados — o receptor lê diretamente via API segura", "correct": true },
+      { "key": "C", "text": "Um serviço de replicação de dados entre regiões de cloud" },
+      { "key": "D", "text": "A capacidade de compartilhar clusters Spark entre múltiplos projetos" }
+    ]
+  },
+  {
+    "id": "D5-SN-Q10", "domain": "D5", "level": "senior",
+    "text": "Como avaliar o fit entre uma solução de plataforma de dados (ex: Fabric vs Databricks vs Snowflake) e as necessidades de uma organização?",
+    "options": [
+      { "key": "A", "text": "Escolher a plataforma mais popular no mercado independente do contexto" },
+      { "key": "B", "text": "Avaliar: ecossistema cloud atual, casos de uso dominantes (BI/AI/Engineering), maturidade do time, necessidade de integração com sistemas existentes, custo total, capacidades de governança e roadmap do produto", "correct": true },
+      { "key": "C", "text": "Fazer um PoC de 1 semana e escolher com base apenas em performance de query" },
+      { "key": "D", "text": "A escolha deve ser feita exclusivamente por preço por terabyte processado" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q01", "domain": "D5", "level": "especialista",
+    "text": "Como projetar uma plataforma de dados enterprise que suporte múltiplos domínios de negócio, cenários analíticos e de IA com custo controlado?",
+    "options": [
+      { "key": "A", "text": "Uma única plataforma centralizada com acesso irrestrito para todos os times" },
+      { "key": "B", "text": "Arquitetura em camadas com storage unificado (Data Lakehouse), compute separável por workload (batch/streaming/serverless), camada semântica compartilhada, governança federada e modelo de custo com chargebacks por domínio", "correct": true },
+      { "key": "C", "text": "Plataformas separadas por domínio sem nenhuma infraestrutura compartilhada" },
+      { "key": "D", "text": "Usar apenas serviços SaaS e não investir em plataforma própria" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q02", "domain": "D5", "level": "especialista",
+    "text": "Como construir um programa de FinOps (Cloud Financial Operations) para uma plataforma de dados com gastos de milhões por ano?",
+    "options": [
+      { "key": "A", "text": "Negociar desconto com o provedor de cloud e monitorar anualmente" },
+      { "key": "B", "text": "Implementar tagging obrigatório por domínio/time, dashboards de custo em tempo real, cultura de ownership de custo por equipe, revisões periódicas de ineficiências, compromissos de uso reservado e automação de desligamento de recursos ociosos", "correct": true },
+      { "key": "C", "text": "FinOps é responsabilidade exclusiva do time de finanças, não de dados" },
+      { "key": "D", "text": "Cortar custos eliminando todos os ambientes de staging" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q03", "domain": "D5", "level": "especialista",
+    "text": "Como projetar a estratégia de disaster recovery para uma plataforma de dados com RPO de 1 hora e RTO de 4 horas?",
+    "options": [
+      { "key": "A", "text": "Fazer backup diário e restaurar manualmente em caso de desastre" },
+      { "key": "B", "text": "Replicação ativa de dados críticos em segunda região, automação do processo de failover, runbooks testados periodicamente, monitoramento de lag de replicação e testes regulares de DR com validação de RPO/RTO dentro dos SLAs definidos", "correct": true },
+      { "key": "C", "text": "RPO de 1 hora requer replicação síncrona que é sempre muito cara para implementar" },
+      { "key": "D", "text": "DR é responsabilidade do provedor de cloud, não da equipe de dados" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q04", "domain": "D5", "level": "especialista",
+    "text": "Como integrar uma plataforma de dados moderna (Lakehouse) com sistemas de Machine Learning e MLOps em produção?",
+    "options": [
+      { "key": "A", "text": "Criar pipelines manuais para exportar dados do lakehouse para a plataforma de ML" },
+      { "key": "B", "text": "Usar Feature Store integrado ao lakehouse para reuso de features, MLflow para rastreamento de experimentos e versionamento de modelos, pipelines de ML versionados no mesmo CI/CD e integração de dados de inferência de volta ao lakehouse", "correct": true },
+      { "key": "C", "text": "ML e engenharia de dados são plataformas completamente separadas" },
+      { "key": "D", "text": "Modelos de ML devem ser treinados diretamente em produção para usar dados em tempo real" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q05", "domain": "D5", "level": "especialista",
+    "text": "Como definir o roadmap de evolução de uma plataforma de dados de monolítica para distribuída (ex: Data Mesh) sem interromper operações?",
+    "options": [
+      { "key": "A", "text": "Migrar tudo de uma vez em um big bang deployment" },
+      { "key": "B", "text": "Adotar abordagem incremental: identificar domínios pioneiros, extrair domínios maduros primeiro, construir plataforma self-serve em paralelo, migrar consumidores gradualmente e manter compatibilidade com legado durante a transição", "correct": true },
+      { "key": "C", "text": "Data Mesh não pode coexistir com arquitetura centralizada durante a migração" },
+      { "key": "D", "text": "Abandonar toda a infraestrutura existente e reconstruir do zero em 6 meses" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q06", "domain": "D5", "level": "especialista",
+    "text": "O que é um Real-Time Analytics Architecture e quais componentes são necessários para suportar queries analíticas em dados com latência de segundos?",
+    "options": [
+      { "key": "A", "text": "Um data warehouse que atualiza a cada 5 minutos automaticamente" },
+      { "key": "B", "text": "Combinar: streaming ingestion (Kafka/Event Hub), storage com hot path (ex: Redis, Eventhouse/KQL), processamento incremental contínuo e serving layer com cache — diferente de Lambda onde o batch serve como sistema de record", "correct": true },
+      { "key": "C", "text": "Real-time analytics requer sempre hardware especializado on-premise" },
+      { "key": "D", "text": "Qualquer data warehouse moderno suporta real-time analytics sem arquitetura especial" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q07", "domain": "D5", "level": "especialista",
+    "text": "Como estruturar uma plataforma de dados que suporte AI/GenAI workloads (ex: RAG, embeddings, fine-tuning) integrada ao data lakehouse?",
+    "options": [
+      { "key": "A", "text": "Criar uma plataforma completamente separada para AI, sem integração com dados analíticos" },
+      { "key": "B", "text": "Integrar vector store/database para embeddings, pipelines de pré-processamento de documentos no lakehouse, Feature Store para features de ML/AI, governança de modelos e dados unificada e camada de serving de AI com observabilidade", "correct": true },
+      { "key": "C", "text": "Usar apenas GPUs para todas as cargas de trabalho de dados e AI" },
+      { "key": "D", "text": "AI workloads não podem usar dados do lakehouse por limitações técnicas" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q08", "domain": "D5", "level": "especialista",
+    "text": "Como liderar uma migração de on-premise para cloud preservando SLAs de produção?",
+    "options": [
+      { "key": "A", "text": "Migrar tudo de uma vez durante um fim de semana de manutenção" },
+      { "key": "B", "text": "Planejar por fases com execução paralela (cloud shadow run), validação de dados entre ambientes, migração incremental por domínio de menor para maior criticidade, rollback plan testado e comunicação clara aos stakeholders", "correct": true },
+      { "key": "C", "text": "SLAs de produção devem ser temporariamente relaxados durante migrações" },
+      { "key": "D", "text": "Migração de on-premise para cloud é sempre inviável sem downtime prolongado" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q09", "domain": "D5", "level": "especialista",
+    "text": "Como estruturar uma plataforma de dados self-service que permita autonomia dos times sem comprometer a governança central?",
+    "options": [
+      { "key": "A", "text": "Remover todas as restrições e deixar cada time decidir sua própria infraestrutura" },
+      { "key": "B", "text": "Oferecer templates de infraestrutura pré-aprovados (ex: Terraform modules, workspace templates), policies-as-code que enforçam guardrails automaticamente, catálogo self-service e suporte de plataforma para casos avançados", "correct": true },
+      { "key": "C", "text": "Self-service é incompatível com governança; escolher apenas um" },
+      { "key": "D", "text": "Self-service funciona apenas para analistas; engenheiros precisam de acesso centralizado" }
+    ]
+  },
+  {
+    "id": "D5-ESP-Q10", "domain": "D5", "level": "especialista",
+    "text": "Qual é o papel do arquiteto de dados em uma organização com múltiplos times de produto e plataformas heterogêneas?",
+    "options": [
+      { "key": "A", "text": "Implementar pessoalmente todos os pipelines críticos de dados da organização" },
+      { "key": "B", "text": "Definir padrões, princípios e guardrails de arquitetura que times seguem com autonomia — habilitando consistência sem centralizar decisões; atuar como referência técnica, revisar designs críticos e conectar padrões entre domínios", "correct": true },
+      { "key": "C", "text": "Controlar todas as mudanças de infraestrutura aprovando cada PR de todos os times" },
+      { "key": "D", "text": "O papel do arquiteto é apenas documentar a arquitetura existente sem propor mudanças" }
+    ]
+  }
+]

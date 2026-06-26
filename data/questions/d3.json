@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D3-JR-Q01", "domain": "D3", "level": "junior",
+    "text": "Em um modelo estrela (star schema), qual é a diferença entre tabela fato e tabela dimensão?",
+    "options": [
+      { "key": "A", "text": "Tabela fato armazena atributos descritivos; dimensão armazena métricas numéricas" },
+      { "key": "B", "text": "Tabela fato armazena métricas e chaves estrangeiras; tabela dimensão armazena atributos descritivos como nome, categoria e região", "correct": true },
+      { "key": "C", "text": "Ambas armazenam o mesmo tipo de dado, diferindo apenas no tamanho" },
+      { "key": "D", "text": "Dimensão é obrigatória apenas em modelos NoSQL" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q02", "domain": "D3", "level": "junior",
+    "text": "O que é normalização de banco de dados e qual o seu principal objetivo?",
+    "options": [
+      { "key": "A", "text": "Aumentar a velocidade de leitura duplicando dados em múltiplas tabelas" },
+      { "key": "B", "text": "Reduzir redundância e dependências entre dados, organizando-os em tabelas relacionadas de forma consistente", "correct": true },
+      { "key": "C", "text": "Converter dados não estruturados em formato tabular" },
+      { "key": "D", "text": "Criar índices automáticos para otimizar queries" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q03", "domain": "D3", "level": "junior",
+    "text": "O que é cardinalidade em um relacionamento entre tabelas?",
+    "options": [
+      { "key": "A", "text": "O número total de linhas em uma tabela" },
+      { "key": "B", "text": "A quantidade de colunas em uma tabela" },
+      { "key": "C", "text": "A natureza da relação entre tabelas quanto à quantidade de registros correspondentes (1:1, 1:N, N:N)", "correct": true },
+      { "key": "D", "text": "O tipo de dado armazenado em uma coluna chave" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q04", "domain": "D3", "level": "junior",
+    "text": "Em ferramentas analíticas (ex: Power BI, Tableau, Looker), o que é um modelo semântico?",
+    "options": [
+      { "key": "A", "text": "Um relatório visual com gráficos e filtros" },
+      { "key": "B", "text": "Uma camada de metadados que define métricas, relacionamentos, hierarquias e lógica de negócio sobre os dados, abstraindo a complexidade técnica para o usuário final", "correct": true },
+      { "key": "C", "text": "Um pipeline de ingestão de dados" },
+      { "key": "D", "text": "Um banco de dados relacional otimizado para leitura" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q05", "domain": "D3", "level": "junior",
+    "text": "Qual é a principal vantagem de usar uma tabela de dimensão de datas (Date Table) em modelos analíticos?",
+    "options": [
+      { "key": "A", "text": "Reduz o tamanho do banco de dados eliminando colunas de data das tabelas fato" },
+      { "key": "B", "text": "Permite análises temporais flexíveis (por ano, trimestre, mês, semana) e suporta cálculos de inteligência de tempo de forma padronizada", "correct": true },
+      { "key": "C", "text": "É obrigatória apenas para modelos com mais de 10 tabelas" },
+      { "key": "D", "text": "Substitui a necessidade de Window Functions em SQL" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q06", "domain": "D3", "level": "junior",
+    "text": "O que é uma chave primária e qual sua função em um banco de dados relacional?",
+    "options": [
+      { "key": "A", "text": "Uma coluna que armazena o nome principal de cada registro" },
+      { "key": "B", "text": "Um identificador único para cada linha de uma tabela, garantindo que não haja duplicatas e servindo como referência para relacionamentos", "correct": true },
+      { "key": "C", "text": "Um índice automático criado para acelerar queries de busca" },
+      { "key": "D", "text": "Uma chave que referencia a tabela pai em um relacionamento" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q07", "domain": "D3", "level": "junior",
+    "text": "O que é integridade referencial em um banco de dados relacional?",
+    "options": [
+      { "key": "A", "text": "A garantia de que todos os campos obrigatórios estão preenchidos" },
+      { "key": "B", "text": "A garantia de que valores em uma chave estrangeira sempre correspondem a uma chave primária existente na tabela referenciada, evitando registros órfãos", "correct": true },
+      { "key": "C", "text": "Um mecanismo de controle de acesso por perfil de usuário" },
+      { "key": "D", "text": "A validação de que todos os valores de uma coluna estão no formato correto" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q08", "domain": "D3", "level": "junior",
+    "text": "Qual é a diferença entre um modelo OLTP e um modelo OLAP?",
+    "options": [
+      { "key": "A", "text": "OLTP é usado para análises históricas; OLAP para transações em tempo real" },
+      { "key": "B", "text": "OLTP é otimizado para muitas transações de escrita/leitura pequenas e rápidas (sistemas operacionais); OLAP é otimizado para queries analíticas complexas em grandes volumes (data warehouses)", "correct": true },
+      { "key": "C", "text": "OLAP usa SQL; OLTP usa apenas linguagens proprietárias" },
+      { "key": "D", "text": "São equivalentes; a diferença é apenas de terminologia" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q09", "domain": "D3", "level": "junior",
+    "text": "O que é uma chave surrogate (surrogate key) e por que é usada em modelos dimensionais?",
+    "options": [
+      { "key": "A", "text": "Uma cópia da chave natural da tabela de origem para garantir rastreabilidade" },
+      { "key": "B", "text": "Uma chave artificial gerada pelo sistema (ex: sequência numérica) para identificar registros na dimensão, independente de chaves naturais da fonte e suportando SCDs", "correct": true },
+      { "key": "C", "text": "Uma chave composta formada por múltiplas colunas de negócio" },
+      { "key": "D", "text": "Uma chave temporária usada apenas durante o processo de carga" }
+    ]
+  },
+  {
+    "id": "D3-JR-Q10", "domain": "D3", "level": "junior",
+    "text": "O que é granularidade em uma tabela fato e por que ela precisa ser bem definida?",
+    "options": [
+      { "key": "A", "text": "O número de colunas métricas armazenadas na tabela fato" },
+      { "key": "B", "text": "O nível de detalhe de cada linha da tabela fato (ex: uma linha por transação, por dia, por produto); definir errado compromete todas as análises possíveis com aquele modelo", "correct": true },
+      { "key": "C", "text": "A frequência de atualização dos dados na tabela fato" },
+      { "key": "D", "text": "A quantidade de dimensões relacionadas à tabela fato" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q01", "domain": "D3", "level": "pleno",
+    "text": "Qual é a diferença entre SCD Tipo 1 e SCD Tipo 2 (Slowly Changing Dimension)?",
+    "options": [
+      { "key": "A", "text": "Tipo 1 mantém histórico completo; Tipo 2 sobrescreve sem histórico" },
+      { "key": "B", "text": "Tipo 1 sobrescreve o valor anterior sem guardar histórico; Tipo 2 mantém histórico criando novos registros com controle de vigência", "correct": true },
+      { "key": "C", "text": "SCD só se aplica a tabelas fato, não a dimensões" },
+      { "key": "D", "text": "Tipo 2 é mais simples de implementar e deve ser o padrão em todos os casos" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q02", "domain": "D3", "level": "pleno",
+    "text": "Em um modelo analítico (ex: Power BI, Looker, Metabase), qual é a diferença entre uma medida calculada e uma coluna calculada?",
+    "options": [
+      { "key": "A", "text": "São equivalentes; a diferença é apenas de nomenclatura" },
+      { "key": "B", "text": "Medida é calculada dinamicamente no contexto do relatório (lazy); coluna calculada é pré-computada e armazenada fisicamente no modelo (eager)", "correct": true },
+      { "key": "C", "text": "Coluna calculada é mais performática em qualquer cenário" },
+      { "key": "D", "text": "Medidas só funcionam em ferramentas Microsoft; colunas calculadas são universais" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q03", "domain": "D3", "level": "pleno",
+    "text": "O que é um relacionamento inativo em modelos semânticos e como ativá-lo em uma métrica específica?",
+    "options": [
+      { "key": "A", "text": "Um relacionamento quebrado por incompatibilidade de tipo de dado" },
+      { "key": "B", "text": "Um relacionamento que existe no modelo mas não filtra automaticamente; ativado explicitamente dentro de uma medida usando funções como USERELATIONSHIP()", "correct": true },
+      { "key": "C", "text": "Um relacionamento com direção de filtro bidirecional desabilitada" },
+      { "key": "D", "text": "Um relacionamento que só funciona em modo DirectQuery" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q04", "domain": "D3", "level": "pleno",
+    "text": "Qual técnica de modelagem resolve o problema de análises que precisam de múltiplas granularidades de data (ex: data de pedido e data de entrega)?",
+    "options": [
+      { "key": "A", "text": "Criar uma única tabela de datas e usar relacionamentos bidirecionais" },
+      { "key": "B", "text": "Usar tabelas de fato separadas para cada data" },
+      { "key": "C", "text": "Criar múltiplas tabelas de datas (role-playing dimensions) e ativá-las por relacionamento inativo conforme o contexto", "correct": true },
+      { "key": "D", "text": "Armazenar todas as datas como texto e converter em runtime" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q05", "domain": "D3", "level": "pleno",
+    "text": "Em modelagem dimensional, qual é a diferença entre um modelo estrela e um modelo floco de neve (snowflake)?",
+    "options": [
+      { "key": "A", "text": "Snowflake suporta mais linhas que o modelo estrela" },
+      { "key": "B", "text": "Estrela tem dimensões desnormalizadas (mais simples e performático para leitura); snowflake normaliza as dimensões em sub-tabelas (mais espaço eficiente, mais joins)", "correct": true },
+      { "key": "C", "text": "Snowflake elimina a necessidade de tabela fato" },
+      { "key": "D", "text": "São equivalentes; a escolha é apenas estética" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q06", "domain": "D3", "level": "pleno",
+    "text": "O que é uma fact table do tipo 'factless' (sem métricas) e quando ela é usada?",
+    "options": [
+      { "key": "A", "text": "Uma tabela fato com apenas chaves estrangeiras, usada para registrar a ocorrência de um evento (ex: aluno matriculado em curso) sem métricas numéricas associadas", "correct": true },
+      { "key": "B", "text": "Uma tabela fato vazia criada como placeholder para desenvolvimento futuro" },
+      { "key": "C", "text": "Uma tabela de dimensão que foi erroneamente chamada de fato" },
+      { "key": "D", "text": "Uma tabela fato onde todas as métricas foram movidas para as dimensões" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q07", "domain": "D3", "level": "pleno",
+    "text": "O que é um modelo de dados conceitual, lógico e físico? Qual a ordem correta de desenvolvimento?",
+    "options": [
+      { "key": "A", "text": "Físico → Lógico → Conceitual, do mais detalhado ao mais abstrato" },
+      { "key": "B", "text": "Conceitual (entidades e relacionamentos de negócio) → Lógico (atributos e tipos, independente de banco) → Físico (implementação específica no banco de dados escolhido)", "correct": true },
+      { "key": "C", "text": "Lógico → Conceitual → Físico, começando pela estrutura técnica" },
+      { "key": "D", "text": "São desenvolvidos em paralelo e não há ordem recomendada" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q08", "domain": "D3", "level": "pleno",
+    "text": "Como tratar uma relação muitos-para-muitos (N:N) em um modelo dimensional?",
+    "options": [
+      { "key": "A", "text": "Criar um relacionamento direto entre as duas dimensões sem tabela intermediária" },
+      { "key": "B", "text": "Criar uma tabela de ponte (bridge table) com as chaves das duas dimensões, conectando-as à tabela fato", "correct": true },
+      { "key": "C", "text": "Duplicar os registros em uma das dimensões para evitar N:N" },
+      { "key": "D", "text": "Relações N:N não são suportadas em modelos dimensionais" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q09", "domain": "D3", "level": "pleno",
+    "text": "O que é um modelo semântico certificado (endorsed) em plataformas analíticas e qual seu propósito?",
+    "options": [
+      { "key": "A", "text": "Um modelo que passou por auditoria de segurança e recebeu aprovação do time de TI" },
+      { "key": "B", "text": "Um modelo validado e endossado por um guardião de dados, indicando que é confiável, documentado e recomendado como fonte oficial para consumo por outros times", "correct": true },
+      { "key": "C", "text": "Um modelo com mais de 100 medidas publicadas no ambiente de produção" },
+      { "key": "D", "text": "Um modelo que só pode ser modificado por usuários com perfil de administrador" }
+    ]
+  },
+  {
+    "id": "D3-PL-Q10", "domain": "D3", "level": "pleno",
+    "text": "O que é desnormalização e quando ela é preferível à normalização em contextos analíticos?",
+    "options": [
+      { "key": "A", "text": "Desnormalização é sempre um erro de modelagem que deve ser evitado" },
+      { "key": "B", "text": "Desnormalização introduz redundância controlada para reduzir a quantidade de joins em queries analíticas; preferível quando performance de leitura é crítica e o volume de escrita é baixo", "correct": true },
+      { "key": "C", "text": "Desnormalização é usada apenas em bancos NoSQL" },
+      { "key": "D", "text": "Desnormalização é equivalente à normalização em 3NF; a diferença é apenas de nomenclatura" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q01", "domain": "D3", "level": "senior",
+    "text": "Como implementar Row-Level Security (RLS) dinâmica em modelos semânticos para garantir que cada usuário veja apenas seus dados?",
+    "options": [
+      { "key": "A", "text": "Criar um relatório separado por usuário" },
+      { "key": "B", "text": "Definir uma role com filtro que compara o usuário autenticado (via função como USERPRINCIPALNAME()) com uma tabela de permissões, restringindo os dados filtrados dinamicamente", "correct": true },
+      { "key": "C", "text": "Usar filtros visuais no relatório como mecanismo de segurança" },
+      { "key": "D", "text": "RLS dinâmica requer banco de dados relacional; não funciona em modelos semânticos" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q02", "domain": "D3", "level": "senior",
+    "text": "Qual é o impacto de relacionamentos bidirecionais em modelos analíticos e quando evitá-los?",
+    "options": [
+      { "key": "A", "text": "Sempre melhoram a performance e devem ser o padrão" },
+      { "key": "B", "text": "Podem causar ambiguidade de filtro, resultados inesperados e degradação de performance; devem ser usados com critério e apenas quando necessário para um caso de uso específico", "correct": true },
+      { "key": "C", "text": "São obrigatórios em modelos com tabelas de ponte (bridge tables)" },
+      { "key": "D", "text": "Não há impacto negativo documentado no uso de relacionamentos bidirecionais" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q03", "domain": "D3", "level": "senior",
+    "text": "Como garantir consistência de definição de métricas entre múltiplos times e relatórios em uma organização?",
+    "options": [
+      { "key": "A", "text": "Documentar as métricas em uma wiki e confiar que os times seguirão" },
+      { "key": "B", "text": "Centralizar as métricas em uma camada semântica certificada e versionada, consumida por todos os relatórios como fonte única de verdade", "correct": true },
+      { "key": "C", "text": "Cada time define suas próprias métricas para garantir autonomia" },
+      { "key": "D", "text": "Padronização de métricas só é possível com um único relatório centralizado" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q04", "domain": "D3", "level": "senior",
+    "text": "Em modelagem para análise de dados em larga escala, qual é a diferença entre particionamento e clustering?",
+    "options": [
+      { "key": "A", "text": "São sinônimos; a diferença é apenas de nomenclatura entre plataformas" },
+      { "key": "B", "text": "Particionamento divide fisicamente os dados em pastas por valor de coluna; clustering organiza dados dentro das partições pela coluna de cluster para otimizar filtros e joins nessa coluna", "correct": true },
+      { "key": "C", "text": "Clustering é mais eficiente que particionamento em qualquer cenário" },
+      { "key": "D", "text": "Bucketing só funciona em bancos NoSQL" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q05", "domain": "D3", "level": "senior",
+    "text": "Como projetar um modelo semântico que suporte tanto análises históricas quanto dados recentes no mesmo ambiente analítico?",
+    "options": [
+      { "key": "A", "text": "Criar dois modelos separados e alternar manualmente entre eles" },
+      { "key": "B", "text": "Usar modo composto (Composite Model) combinando tabelas em Import para histórico e DirectQuery/streaming para dados recentes, equilibrando performance e atualidade", "correct": true },
+      { "key": "C", "text": "Modo real-time e histórico não podem coexistir no mesmo modelo" },
+      { "key": "D", "text": "Usar apenas DirectQuery para simplificar a arquitetura" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q06", "domain": "D3", "level": "senior",
+    "text": "O que é uma dimensão degenerada (degenerate dimension) e quando ela ocorre?",
+    "options": [
+      { "key": "A", "text": "Uma dimensão com muitos atributos nulos ou incompletos" },
+      { "key": "B", "text": "Um atributo descritivo (ex: número do pedido, código da nota fiscal) que tem valor analítico mas não justifica uma tabela de dimensão própria, sendo armazenado diretamente na tabela fato", "correct": true },
+      { "key": "C", "text": "Uma dimensão que foi removida do modelo por ser redundante" },
+      { "key": "D", "text": "Uma dimensão com relação N:N com a tabela fato" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q07", "domain": "D3", "level": "senior",
+    "text": "Em modelagem semântica avançada, o que são Calculation Groups e qual problema arquitetural eles resolvem?",
+    "options": [
+      { "key": "A", "text": "Grupos de tabelas relacionadas no modelo estrela organizados por tema" },
+      { "key": "B", "text": "Conjuntos de itens de cálculo que aplicam modificações de contexto dinamicamente a medidas existentes, resolvendo a proliferação de medidas de inteligência de tempo", "correct": true },
+      { "key": "C", "text": "Uma função de agregação para agrupar cálculos similares" },
+      { "key": "D", "text": "Uma feature exclusiva do modo DirectQuery" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q08", "domain": "D3", "level": "senior",
+    "text": "Como implementar uma dimensão que representa hierarquias variáveis (ex: organograma com profundidade variável) em modelos analíticos?",
+    "options": [
+      { "key": "A", "text": "Criar uma coluna para cada nível possível da hierarquia" },
+      { "key": "B", "text": "Usar uma tabela de dimensão com estrutura de grafo (parent-child), transformada em hierarquia plana (flattened) com colunas por nível no processo de modelagem para facilitar navegação em ferramentas de BI", "correct": true },
+      { "key": "C", "text": "Hierarquias variáveis não são suportadas em modelos dimensionais" },
+      { "key": "D", "text": "Armazenar a hierarquia como JSON dentro de uma única coluna" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q09", "domain": "D3", "level": "senior",
+    "text": "Qual é a diferença entre contexto de filtro e contexto de linha em motores de cálculo analítico (ex: DAX, MDX)?",
+    "options": [
+      { "key": "A", "text": "São equivalentes; apenas a nomenclatura difere entre plataformas" },
+      { "key": "B", "text": "Contexto de linha ocorre em colunas calculadas/iteradores (linha por linha); contexto de filtro é propagado por relacionamentos e filtros do relatório, determinando quais dados as medidas enxergam", "correct": true },
+      { "key": "C", "text": "Contexto de filtro só existe no modo DirectQuery" },
+      { "key": "D", "text": "Contexto de linha é criado apenas por relacionamentos bidirecionais" }
+    ]
+  },
+  {
+    "id": "D3-SN-Q10", "domain": "D3", "level": "senior",
+    "text": "Como avaliar a saúde e performance de um modelo semântico em produção com centenas de medidas e milhões de linhas?",
+    "options": [
+      { "key": "A", "text": "Verificar se o relatório carrega em menos de 30 segundos como único critério" },
+      { "key": "B", "text": "Analisar o plano de execução das medidas (ex: DAX Studio, Query Plan), identificar medidas lentas, checar uso de memória do modelo, avaliar relações com alta cardinalidade e monitorar tempos de refresh", "correct": true },
+      { "key": "C", "text": "Performance do modelo semântico não pode ser medida sem acesso ao servidor" },
+      { "key": "D", "text": "Substituir todas as medidas por colunas calculadas para melhorar performance" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q01", "domain": "D3", "level": "especialista",
+    "text": "Em uma arquitetura analítica enterprise com centenas de relatórios e múltiplos times, como estruturar a camada semântica de forma escalável e governada?",
+    "options": [
+      { "key": "A", "text": "Um modelo semântico único e monolítico para toda a organização" },
+      { "key": "B", "text": "Hub-and-spoke: modelos semânticos certificados por domínio, com métricas core centralizadas e consumidos downstream via conexão live ou composite por relatórios especializados", "correct": true },
+      { "key": "C", "text": "Cada relatório mantém seu próprio modelo independente para autonomia total" },
+      { "key": "D", "text": "Eliminar modelos semânticos e acessar dados diretamente das tabelas" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q02", "domain": "D3", "level": "especialista",
+    "text": "Como implementar uma estratégia de deployment de modelos semânticos com CI/CD, garantindo qualidade antes de produção?",
+    "options": [
+      { "key": "A", "text": "Publicar diretamente em produção e corrigir erros reportados pelos usuários" },
+      { "key": "B", "text": "Versionar o modelo em formato aberto no Git + pipeline de validação automática (testes de medidas, relacionamentos, RLS) + promoção entre ambientes via API ou deployment pipeline", "correct": true },
+      { "key": "C", "text": "CI/CD não se aplica a modelos semânticos; apenas a pipelines de dados" },
+      { "key": "D", "text": "Usar snapshots manuais do modelo como estratégia de versionamento" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q03", "domain": "D3", "level": "especialista",
+    "text": "Qual é o impacto arquitetural de ter lógica de negócio duplicada entre a camada de transformação e o modelo semântico?",
+    "options": [
+      { "key": "A", "text": "Nenhum — redundância garante resiliência e flexibilidade" },
+      { "key": "B", "text": "Gera inconsistência de métricas, dificulta manutenção, aumenta risco de divergência entre relatórios; a lógica deve residir em uma única camada bem definida", "correct": true },
+      { "key": "C", "text": "É uma prática recomendada para garantir performance em ambas as camadas" },
+      { "key": "D", "text": "O impacto é mínimo se as equipes se comunicarem bem" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q04", "domain": "D3", "level": "especialista",
+    "text": "Como conectar modelos semânticos a notebooks de ciência de dados para análise exploratória sem duplicar dados?",
+    "options": [
+      { "key": "A", "text": "Exportar os dados do modelo para CSV e importar no notebook" },
+      { "key": "B", "text": "Usar bibliotecas que acessam o endpoint XMLA ou API do modelo semântico diretamente no notebook, lendo tabelas e executando medidas como DataFrames", "correct": true },
+      { "key": "C", "text": "Recriar todas as métricas do modelo em Python para garantir consistência" },
+      { "key": "D", "text": "Conexão entre modelos semânticos e notebooks não é possível sem ETL intermediário" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q05", "domain": "D3", "level": "especialista",
+    "text": "Em uma organização com múltiplos times de dados e necessidade de self-service analytics, como equilibrar governança e autonomia no modelo semântico?",
+    "options": [
+      { "key": "A", "text": "Bloquear acesso a criação de medidas para usuários de negócio" },
+      { "key": "B", "text": "Criar uma camada semântica core certificada com métricas oficiais, permitindo que usuários de negócio criem medidas pessoais em cima — com processo de promoção para métricas certificadas quando validadas", "correct": true },
+      { "key": "C", "text": "Dar acesso total ao modelo semântico para garantir autonomia máxima" },
+      { "key": "D", "text": "Self-service analytics é incompatível com governança de modelos semânticos" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q06", "domain": "D3", "level": "especialista",
+    "text": "Como projetar um modelo semântico que suporte análises multidimensionais complexas (ex: análise de cohort, funil de conversão, market basket) sem comprometer a manutenibilidade?",
+    "options": [
+      { "key": "A", "text": "Criar uma tabela fato especializada para cada tipo de análise" },
+      { "key": "B", "text": "Identificar os padrões de análise recorrentes e modelar métricas reutilizáveis e dimensões compartilhadas, usando Calculation Groups para variações de cálculo e tabelas de parâmetros para análises dinâmicas", "correct": true },
+      { "key": "C", "text": "Implementar toda a lógica de análise complexa no frontend do relatório" },
+      { "key": "D", "text": "Análises complexas devem ser sempre feitas em SQL, não em modelos semânticos" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q07", "domain": "D3", "level": "especialista",
+    "text": "Como tratar a rastreabilidade (lineage) de métricas de negócio desde a fonte de dados até o número exibido no dashboard executivo?",
+    "options": [
+      { "key": "A", "text": "Documentar manualmente em um spreadsheet atualizado mensalmente" },
+      { "key": "B", "text": "Combinar catálogo de dados com linhagem automática de pipelines + documentação de medidas no modelo semântico + testes de contrato entre camadas que validam consistência end-to-end", "correct": true },
+      { "key": "C", "text": "Rastreabilidade de métricas é responsabilidade exclusiva do time de negócio" },
+      { "key": "D", "text": "Basta ter o código-fonte do modelo semântico no Git" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q08", "domain": "D3", "level": "especialista",
+    "text": "O que é uma camada semântica universal (Universal Semantic Layer) e qual problema ela resolve em organizações com múltiplas ferramentas de BI?",
+    "options": [
+      { "key": "A", "text": "Um banco de dados centralizado que armazena todas as métricas de negócio" },
+      { "key": "B", "text": "Uma camada de definição de métricas e lógica de negócio desacoplada da ferramenta de visualização, permitindo que diferentes ferramentas de BI consumam as mesmas definições consistentes", "correct": true },
+      { "key": "C", "text": "Um modelo semântico único no Power BI consumido por todas as ferramentas" },
+      { "key": "D", "text": "Uma feature disponível apenas em plataformas de dados proprietárias" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q09", "domain": "D3", "level": "especialista",
+    "text": "Como avaliar e decidir quando migrar de um modelo Import para Direct Lake ou DirectQuery em plataformas analíticas?",
+    "options": [
+      { "key": "A", "text": "Migrar sempre para DirectQuery para eliminar necessidade de refresh" },
+      { "key": "B", "text": "Avaliar: volume de dados (Import tem limites), necessidade de atualidade (DirectQuery/Direct Lake têm dados mais frescos), complexidade de DAX suportada, performance aceitável e custo de capacidade — não há resposta universal", "correct": true },
+      { "key": "C", "text": "Direct Lake é sempre superior ao Import; migrar imediatamente" },
+      { "key": "D", "text": "Import mode deve ser sempre preferido por ser mais performático" }
+    ]
+  },
+  {
+    "id": "D3-ESP-Q10", "domain": "D3", "level": "especialista",
+    "text": "Em modelagem semântica de alto nível, como garantir que mudanças no modelo de dados (schema da tabela) não quebrem relatórios em produção?",
+    "options": [
+      { "key": "A", "text": "Comunicar mudanças aos usuários e aguardar que atualizem os relatórios" },
+      { "key": "B", "text": "Implementar testes automatizados de regressão do modelo semântico (validando medidas-chave, relacionamentos e RLS) no pipeline de CI/CD, executados antes de qualquer promoção a produção", "correct": true },
+      { "key": "C", "text": "Mudanças de schema sempre exigem reconstrução completa do modelo semântico" },
+      { "key": "D", "text": "Usar apenas views no banco de dados como abstração resolve o problema" }
+    ]
+  }
+]

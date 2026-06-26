@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D4-JR-Q01", "domain": "D4", "level": "junior",
+    "text": "O que é qualidade de dados e quais são suas principais dimensões?",
+    "options": [
+      { "key": "A", "text": "Qualidade de dados significa que os dados estão armazenados sem erros de sintaxe" },
+      { "key": "B", "text": "É a adequação dos dados para uso pretendido; dimensões principais incluem completude, precisão, consistência, atualidade e unicidade", "correct": true },
+      { "key": "C", "text": "Qualidade de dados é garantida automaticamente por qualquer banco de dados relacional" },
+      { "key": "D", "text": "Qualidade se refere apenas ao formato e encoding dos arquivos de dados" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q02", "domain": "D4", "level": "junior",
+    "text": "O que é dado pessoal segundo a LGPD e por que isso é relevante para engenheiros de dados?",
+    "options": [
+      { "key": "A", "text": "Dado pessoal é qualquer arquivo digital armazenado no computador de uma pessoa" },
+      { "key": "B", "text": "Qualquer informação que identifique ou possa identificar uma pessoa natural; engenheiros de dados devem proteger esses dados, garantir consentimento e implementar anonimização quando necessário", "correct": true },
+      { "key": "C", "text": "Dado pessoal inclui apenas CPF e RG — os demais dados são considerados públicos" },
+      { "key": "D", "text": "A LGPD não se aplica a dados armazenados em cloud fora do Brasil" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q03", "domain": "D4", "level": "junior",
+    "text": "O que é um catálogo de dados e qual seu principal benefício para uma organização?",
+    "options": [
+      { "key": "A", "text": "Um repositório de dashboards e relatórios aprovados pelo time de BI" },
+      { "key": "B", "text": "Um inventário centralizado de ativos de dados com metadados, descrições e informações de uso, facilitando descoberta e entendimento dos dados disponíveis", "correct": true },
+      { "key": "C", "text": "Uma ferramenta exclusiva de backup e recuperação de dados" },
+      { "key": "D", "text": "Um log automático de todas as queries executadas no banco de dados" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q04", "domain": "D4", "level": "junior",
+    "text": "O que é anonimização de dados e quando ela deve ser aplicada?",
+    "options": [
+      { "key": "A", "text": "Substituir nomes de variáveis por códigos para melhorar a segurança do código" },
+      { "key": "B", "text": "Processo de remover ou transformar dados de forma que o titular não possa ser identificado diretamente ou indiretamente, aplicado quando dados pessoais precisam ser usados para análise sem expor o indivíduo", "correct": true },
+      { "key": "C", "text": "Criptografar arquivos de dados com chave privada de acesso restrito" },
+      { "key": "D", "text": "Técnica de compressão de dados para reduzir custo de armazenamento" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q05", "domain": "D4", "level": "junior",
+    "text": "O que é controle de acesso baseado em papel (RBAC) em plataformas de dados?",
+    "options": [
+      { "key": "A", "text": "Um sistema de autenticação multifator para acessar dashboards de BI" },
+      { "key": "B", "text": "Um modelo de controle de acesso onde permissões são atribuídas a perfis (roles) e não diretamente a usuários individuais, simplificando a gestão de privilégios em escala", "correct": true },
+      { "key": "C", "text": "Uma forma de controlar a versão de arquivos de dados em um repositório" },
+      { "key": "D", "text": "Um log automático de quem acessou quais tabelas de dados" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q06", "domain": "D4", "level": "junior",
+    "text": "O que é linhagem de dados (data lineage) e por que ela é importante?",
+    "options": [
+      { "key": "A", "text": "O histórico de versões de um arquivo de dados ao longo do tempo" },
+      { "key": "B", "text": "O rastreamento de onde os dados se originam, como são transformados e onde chegam — essencial para auditoria, debugging e entendimento do impacto de mudanças", "correct": true },
+      { "key": "C", "text": "A genealogia dos desenvolvedores que criaram os pipelines de dados" },
+      { "key": "D", "text": "Um relatório automático sobre a qualidade de cada coluna do banco" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q07", "domain": "D4", "level": "junior",
+    "text": "O que é PII (Personally Identifiable Information) e como deve ser tratada em pipelines de dados?",
+    "options": [
+      { "key": "A", "text": "Dados de performance de infraestrutura que identificam servidores específicos" },
+      { "key": "B", "text": "Informação que pode identificar um indivíduo (ex: nome, e-mail, CPF); deve ser identificada, classificada, minimizada no uso, protegida com controles de acesso e anonimizada quando possível", "correct": true },
+      { "key": "C", "text": "Qualquer dado com mais de 128 bits de tamanho que requer criptografia" },
+      { "key": "D", "text": "Dados armazenados em formatos proprietários que identificam o software usado" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q08", "domain": "D4", "level": "junior",
+    "text": "O que é um alerta de qualidade de dados e qual sua utilidade em um pipeline de dados?",
+    "options": [
+      { "key": "A", "text": "Um e-mail automático enviado quando um pipeline demora mais de 1 hora" },
+      { "key": "B", "text": "Uma notificação disparada quando os dados violam regras de qualidade definidas (ex: taxa de nulos acima do limite, valores fora do range esperado), permitindo ação proativa antes de impactar usuários", "correct": true },
+      { "key": "C", "text": "Um relatório mensal sobre o volume de dados processados" },
+      { "key": "D", "text": "Um backup automático criado quando dados anômalos são detectados" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q09", "domain": "D4", "level": "junior",
+    "text": "O que é um metadado e como ele contribui para a governança de dados?",
+    "options": [
+      { "key": "A", "text": "Um dado duplicado armazenado para garantir alta disponibilidade" },
+      { "key": "B", "text": "Dados sobre dados — como nome, tipo, descrição, dono, data de criação e nível de classificação; permitem catalogar, descobrir e governar os ativos de dados de uma organização", "correct": true },
+      { "key": "C", "text": "Um arquivo de configuração de banco de dados armazenado no servidor" },
+      { "key": "D", "text": "Um índice automático criado para otimizar a busca de dados" }
+    ]
+  },
+  {
+    "id": "D4-JR-Q10", "domain": "D4", "level": "junior",
+    "text": "O que é mascaramento de dados e em quais ambientes ele deve ser aplicado?",
+    "options": [
+      { "key": "A", "text": "Criptografar dados em repouso em ambientes de produção" },
+      { "key": "B", "text": "Substituir valores sensíveis por versões fictícias mas realistas, aplicado principalmente em ambientes de desenvolvimento e teste para proteger dados reais sem comprometer o desenvolvimento", "correct": true },
+      { "key": "C", "text": "Remover permanentemente dados sensíveis dos bancos de dados" },
+      { "key": "D", "text": "Ocultar colunas de dados em relatórios de BI por permissão de usuário" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q01", "domain": "D4", "level": "pleno",
+    "text": "Como implementar validações de qualidade de dados de forma automatizada em um pipeline (ex: dbt tests, Great Expectations)?",
+    "options": [
+      { "key": "A", "text": "Verificar manualmente amostras dos dados após cada execução do pipeline" },
+      { "key": "B", "text": "Definir contratos de qualidade (unicidade, not-null, range, formato) e executá-los automaticamente a cada execução do pipeline, bloqueando a progressão se falharem", "correct": true },
+      { "key": "C", "text": "Adicionar validações apenas na camada Gold, onde os dados já estão limpos" },
+      { "key": "D", "text": "Validações de qualidade são responsabilidade do consumidor dos dados" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q02", "domain": "D4", "level": "pleno",
+    "text": "O que é o princípio do menor privilégio (least privilege) no contexto de segurança de dados e como aplicá-lo?",
+    "options": [
+      { "key": "A", "text": "Conceder acesso de administrador apenas a líderes técnicos sêniores" },
+      { "key": "B", "text": "Cada usuário ou processo deve ter acesso apenas aos recursos estritamente necessários para suas funções — revisar permissões periodicamente e revogar acessos desnecessários", "correct": true },
+      { "key": "C", "text": "Manter uma cópia de segurança dos dados com o menor número de cópias possível" },
+      { "key": "D", "text": "Otimizar o uso de recursos computacionais para reduzir custo" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q03", "domain": "D4", "level": "pleno",
+    "text": "O que é um dado mestre (Master Data) e como a gestão de dados mestres (MDM) resolve o problema de dados inconsistentes?",
+    "options": [
+      { "key": "A", "text": "O banco de dados principal onde todos os relatórios são executados" },
+      { "key": "B", "text": "Entidades de negócio centrais (ex: clientes, produtos, fornecedores) compartilhadas entre sistemas; MDM cria uma visão única e confiável dessas entidades, eliminando duplicatas e inconsistências", "correct": true },
+      { "key": "C", "text": "Dados históricos armazenados no data lake como arquivo mestre de referência" },
+      { "key": "D", "text": "A tabela principal de uma dimensão em um modelo estrela" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q04", "domain": "D4", "level": "pleno",
+    "text": "O que é criptografia em repouso vs em trânsito e por que ambas são necessárias em plataformas de dados?",
+    "options": [
+      { "key": "A", "text": "São sinônimos que descrevem o mesmo processo de criptografia de arquivos" },
+      { "key": "B", "text": "Em repouso protege dados armazenados (disco, banco de dados) de acesso físico não autorizado; em trânsito protege dados em movimento pela rede de interceptação — ambas são camadas complementares de segurança", "correct": true },
+      { "key": "C", "text": "Criptografia em repouso é obsoleta; TLS (em trânsito) é suficiente" },
+      { "key": "D", "text": "Criptografia em trânsito é obrigatória apenas para dados financeiros" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q05", "domain": "D4", "level": "pleno",
+    "text": "Como implementar auditoria de acesso a dados sensíveis em uma plataforma de dados?",
+    "options": [
+      { "key": "A", "text": "Solicitar que usuários registrem manualmente seus acessos em um log centralizado" },
+      { "key": "B", "text": "Habilitar logs de auditoria automáticos na plataforma, capturando quem acessou o quê, quando e de onde, com retenção adequada e alertas para acessos suspeitos", "correct": true },
+      { "key": "C", "text": "Auditoria só é necessária para dados financeiros e médicos" },
+      { "key": "D", "text": "Usar firewalls de rede como único mecanismo de controle de acesso" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q06", "domain": "D4", "level": "pleno",
+    "text": "O que é uma política de retenção de dados e como ela se relaciona com compliance (ex: LGPD, GDPR)?",
+    "options": [
+      { "key": "A", "text": "Uma política que define quantos backups de dados devem ser mantidos por ano" },
+      { "key": "B", "text": "Uma política que define por quanto tempo diferentes categorias de dados devem ser retidos, considerando requisitos legais, regulatórios e de negócio — e quando devem ser deletados ou anonimizados", "correct": true },
+      { "key": "C", "text": "Um SLA de disponibilidade dos dados definido entre times internos" },
+      { "key": "D", "text": "A frequência de atualização de dados em dashboards analíticos" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q07", "domain": "D4", "level": "pleno",
+    "text": "O que é um steward de dados (data steward) e qual seu papel na governança de dados?",
+    "options": [
+      { "key": "A", "text": "Um engenheiro responsável por manter os pipelines de ingestão de dados em funcionamento" },
+      { "key": "B", "text": "Um responsável de negócio por um domínio de dados, que garante que os dados estejam documentados, com qualidade adequada, bem definidos semanticamente e acessíveis com as permissões corretas", "correct": true },
+      { "key": "C", "text": "Um auditor externo que valida a conformidade com LGPD anualmente" },
+      { "key": "D", "text": "Um analista responsável por criar os relatórios oficiais da área" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q08", "domain": "D4", "level": "pleno",
+    "text": "Qual é a diferença entre pseudonimização e anonimização no contexto da LGPD?",
+    "options": [
+      { "key": "A", "text": "São sinônimos; ambas tornam impossível a reidentificação do titular" },
+      { "key": "B", "text": "Pseudonimização substitui identificadores por pseudônimos mantendo a possibilidade de reidentificação com a chave correta; anonimização torna impossível a reidentificação — apenas dados anonimizados saem do escopo da LGPD", "correct": true },
+      { "key": "C", "text": "Anonimização é mais fraca; pseudonimização garante proteção total" },
+      { "key": "D", "text": "Pseudonimização só é aplicável a dados de saúde; anonimização a todos os dados" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q09", "domain": "D4", "level": "pleno",
+    "text": "O que é uma classificação de dados por sensibilidade e como ela orienta controles de segurança?",
+    "options": [
+      { "key": "A", "text": "Uma taxonomia de tipos de arquivo (ex: CSV, JSON, Parquet) por estrutura técnica" },
+      { "key": "B", "text": "A categorização de dados por nível de impacto em caso de exposição (ex: público, interno, confidencial, restrito), determinando quais controles de acesso, criptografia e auditoria aplicar a cada categoria", "correct": true },
+      { "key": "C", "text": "A ordenação de tabelas por volume de dados armazenado" },
+      { "key": "D", "text": "Uma avaliação de qualidade de dados por área de negócio" }
+    ]
+  },
+  {
+    "id": "D4-PL-Q10", "domain": "D4", "level": "pleno",
+    "text": "O que é um processo de Data Quality Rule (DQ Rule) e como documentá-lo para uso da equipe?",
+    "options": [
+      { "key": "A", "text": "Um teste automatizado de sintaxe de código SQL" },
+      { "key": "B", "text": "Uma regra que define o que é um dado válido para um campo específico (ex: campo X deve ser não-nulo, Y deve estar entre 0 e 100); documentada com nome, descrição, criticidade, tabela/coluna alvo e ação em caso de falha", "correct": true },
+      { "key": "C", "text": "Uma query de monitoramento que executa diariamente para checar volumes" },
+      { "key": "D", "text": "Um script de transformação que corrige automaticamente dados inválidos" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q01", "domain": "D4", "level": "senior",
+    "text": "Como projetar uma estratégia de qualidade de dados end-to-end para um lakehouse com múltiplas fontes e consumidores?",
+    "options": [
+      { "key": "A", "text": "Validar dados apenas na camada Gold antes de disponibilizar para consumo" },
+      { "key": "B", "text": "Implementar validações em cascata por camada: schema na ingestão, regras de negócio na Silver, KPIs de qualidade na Gold — com monitoramento contínuo, SLAs por domínio e integração com catálogo de dados", "correct": true },
+      { "key": "C", "text": "Deixar cada time consumidor responsável por validar os dados que usa" },
+      { "key": "D", "text": "Usar apenas contagem de registros como indicador de qualidade" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q02", "domain": "D4", "level": "senior",
+    "text": "O que é um framework de governança de dados e quais são seus componentes essenciais?",
+    "options": [
+      { "key": "A", "text": "Um software para gerenciar permissões de acesso ao banco de dados" },
+      { "key": "B", "text": "Um conjunto de políticas, processos, papéis (Data Owner, Steward, Custodian) e ferramentas que definem como dados são gerenciados, protegidos e usados na organização de forma confiável e consistente", "correct": true },
+      { "key": "C", "text": "Um dashboard de monitoramento de qualidade de dados atualizado diariamente" },
+      { "key": "D", "text": "Um time dedicado de compliance que audita relatórios de BI mensalmente" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q03", "domain": "D4", "level": "senior",
+    "text": "Como implementar Column-Level Security (CLS) e Row-Level Security (RLS) em conjunto para proteção granular de dados?",
+    "options": [
+      { "key": "A", "text": "Criar views filtradas para cada perfil de usuário como único mecanismo de segurança" },
+      { "key": "B", "text": "CLS restringe colunas sensíveis por perfil (ex: mascarar salário para quem não é RH); RLS restringe linhas por atributo do usuário (ex: apenas dados da sua região) — combinados oferecem proteção granular sem duplicar tabelas", "correct": true },
+      { "key": "C", "text": "CLS e RLS são mutuamente exclusivos; usar apenas um por tabela" },
+      { "key": "D", "text": "Segurança granular só é possível com bancos de dados on-premise" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q04", "domain": "D4", "level": "senior",
+    "text": "Como estruturar um programa de DQ (Data Quality) com SLAs e ownership claro entre times de dados e negócio?",
+    "options": [
+      { "key": "A", "text": "O time de engenharia de dados é responsável por 100% da qualidade dos dados" },
+      { "key": "B", "text": "Definir SLAs por domínio de dados com o steward do negócio, medir dimensões de qualidade continuamente, criar dashboards de DQ por domínio e estabelecer processo de triagem e resolução de incidentes com responsabilidade compartilhada", "correct": true },
+      { "key": "C", "text": "SLAs de qualidade de dados são inviáveis por depender de fontes externas" },
+      { "key": "D", "text": "O time de negócio é responsável por corrigir todos os erros de qualidade de dados" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q05", "domain": "D4", "level": "senior",
+    "text": "O que é um Data Product com garantias de qualidade e como difere de uma simples tabela em um data warehouse?",
+    "options": [
+      { "key": "A", "text": "Um data product é uma tabela com mais colunas e melhor documentação" },
+      { "key": "B", "text": "Um data product tem dono definido, SLA de qualidade documentado, testes automatizados, contrato de interface estável, linhagem rastreável e é otimizado para consumo por outros times — não apenas um ativo técnico", "correct": true },
+      { "key": "C", "text": "Um data product só existe em plataformas comerciais como Databricks ou Snowflake" },
+      { "key": "D", "text": "A diferença é apenas semântica; qualquer tabela bem-nomeada é um data product" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q06", "domain": "D4", "level": "senior",
+    "text": "Como implementar uma estratégia de descoberta e classificação automática de dados sensíveis em um data lake de larga escala?",
+    "options": [
+      { "key": "A", "text": "Solicitar que os donos dos dados classifiquem seus próprios datasets manualmente" },
+      { "key": "B", "text": "Usar ferramentas de descoberta automática (ex: Microsoft Purview, AWS Macie) que escaneia conteúdo e metadados para identificar e classificar dados sensíveis (PII, financeiro, saúde) automaticamente", "correct": true },
+      { "key": "C", "text": "Assumir que todos os dados do data lake são públicos até prova contrária" },
+      { "key": "D", "text": "Classificar apenas dados em tabelas relacionais; data lakes não requerem classificação" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q07", "domain": "D4", "level": "senior",
+    "text": "O que é um incidente de qualidade de dados e como deve ser tratado em ambiente de produção?",
+    "options": [
+      { "key": "A", "text": "Um erro de sintaxe em uma query SQL que gera resultado incorreto" },
+      { "key": "B", "text": "Uma situação em que dados de produção violam regras de qualidade de forma significativa; tratado com isolamento, análise de causa raiz, comunicação transparente aos stakeholders, correção e plano de prevenção", "correct": true },
+      { "key": "C", "text": "Um incidente de segurança onde dados foram expostos externamente" },
+      { "key": "D", "text": "Uma falha técnica em um pipeline que impede a carga de dados" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q08", "domain": "D4", "level": "senior",
+    "text": "Como implementar proteção de dados em ambientes de machine learning (ex: treinamento de modelos com dados sensíveis)?",
+    "options": [
+      { "key": "A", "text": "Usar dados de produção diretamente no treinamento sem modificações" },
+      { "key": "B", "text": "Aplicar técnicas como differential privacy, dados sintéticos, tokenização ou anonimização antes do treinamento; controlar acesso ao dataset de treinamento e auditar uso dos modelos", "correct": true },
+      { "key": "C", "text": "Limitar o treinamento de modelos a dados com mais de 5 anos (fora do escopo da LGPD)" },
+      { "key": "D", "text": "Proteção de dados em ML é responsabilidade exclusiva do time de ciência de dados" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q09", "domain": "D4", "level": "senior",
+    "text": "O que é o princípio de Privacy by Design e como aplicá-lo em projetos de engenharia de dados?",
+    "options": [
+      { "key": "A", "text": "Adicionar controles de privacidade ao final do desenvolvimento antes do lançamento" },
+      { "key": "B", "text": "Incorporar considerações de privacidade desde o início do design — minimização de coleta, anonimização de dados desnecessários, controles de acesso desde o primeiro sprint e avaliação de impacto à privacidade (PIA)", "correct": true },
+      { "key": "C", "text": "Um padrão de design de interface para formulários de coleta de dados" },
+      { "key": "D", "text": "Privacy by Design é um conceito de marketing sem impacto técnico" }
+    ]
+  },
+  {
+    "id": "D4-SN-Q10", "domain": "D4", "level": "senior",
+    "text": "Como construir e manter um Business Glossary (glossário de negócios) eficaz em uma grande organização?",
+    "options": [
+      { "key": "A", "text": "Criar um documento Word compartilhado e pedir para cada time atualizar quando mudar algo" },
+      { "key": "B", "text": "Usar uma plataforma de catálogo integrada ao data warehouse, com processo de governança para adicionar/revisar termos, owner por domínio, versionamento e linking com objetos físicos de dados", "correct": true },
+      { "key": "C", "text": "O glossário deve ser mantido exclusivamente pelo time de TI" },
+      { "key": "D", "text": "Um glossário só é necessário para empresas reguladas como bancos e seguradoras" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q01", "domain": "D4", "level": "especialista",
+    "text": "Como estruturar uma estratégia de governança de dados para uma organização que opera em múltiplos países com regulações diferentes (ex: LGPD, GDPR, CCPA)?",
+    "options": [
+      { "key": "A", "text": "Aplicar a regulação mais restritiva para todos os países como política única" },
+      { "key": "B", "text": "Implementar uma camada de políticas core compatível com o mais restritivo e adaptar controles específicos por jurisdição, com mapeamento de fluxos de dados por região e automação de cumprimento por localidade", "correct": true },
+      { "key": "C", "text": "Criar uma entidade legal separada por país para isolar responsabilidades" },
+      { "key": "D", "text": "Ignorar regulações locais enquanto a empresa não tiver filiais físicas nos países" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q02", "domain": "D4", "level": "especialista",
+    "text": "O que é Data Trust e como ele se relaciona com a maturidade de governança de dados de uma organização?",
+    "options": [
+      { "key": "A", "text": "Uma entidade legal criada para armazenar dados compartilhados entre empresas concorrentes" },
+      { "key": "B", "text": "O nível de confiança que stakeholders têm nos dados da organização — resultado de qualidade consistente, linhagem transparente, segurança robusta e processos de governança maduros", "correct": true },
+      { "key": "C", "text": "Um mecanismo técnico de encriptação para dados compartilhados entre parceiros" },
+      { "key": "D", "text": "Uma certificação ISO para plataformas de governança de dados" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q03", "domain": "D4", "level": "especialista",
+    "text": "Como implementar governança federada em uma arquitetura Data Mesh sem perder consistência de políticas globais?",
+    "options": [
+      { "key": "A", "text": "Centralizar toda a governança em um time único para garantir consistência" },
+      { "key": "B", "text": "Definir políticas globais non-negotiable (segurança, compliance, interoperabilidade) com plataforma self-serve que as enforça automaticamente, deixando liberdade para domínios decidirem políticas locais dentro desses guardrails", "correct": true },
+      { "key": "C", "text": "Governança federada elimina a necessidade de políticas globais" },
+      { "key": "D", "text": "Cada domínio define suas próprias políticas completamente independentes" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q04", "domain": "D4", "level": "especialista",
+    "text": "Como medir o ROI (Return on Investment) de um programa de governança e qualidade de dados?",
+    "options": [
+      { "key": "A", "text": "Governança de dados não tem ROI mensurável; é um custo necessário de compliance" },
+      { "key": "B", "text": "Quantificar redução de retrabalho por dados incorretos, tempo economizado em descoberta, incidentes de qualidade evitados, multas de compliance evitadas e aumento de confiança que acelera decisões baseadas em dados", "correct": true },
+      { "key": "C", "text": "Medir apenas o custo de implementação das ferramentas de catálogo e qualidade" },
+      { "key": "D", "text": "ROI de governança só pode ser medido após 5 anos de programa maduro" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q05", "domain": "D4", "level": "especialista",
+    "text": "Como projetar uma arquitetura de segurança de dados Zero Trust para uma plataforma analítica enterprise?",
+    "options": [
+      { "key": "A", "text": "Confiar em todos os usuários dentro da rede corporativa por padrão" },
+      { "key": "B", "text": "Assumir que nenhuma identidade é confiável por padrão — verificação contínua de identidade, acesso com menor privilégio, segmentação de rede de dados, criptografia de ponta a ponta e monitoramento de anomalias de comportamento", "correct": true },
+      { "key": "C", "text": "Implementar VPN para todos os acessos à plataforma de dados" },
+      { "key": "D", "text": "Zero Trust se aplica apenas a redes de TI, não a plataformas de dados" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q06", "domain": "D4", "level": "especialista",
+    "text": "Como conduzir uma Avaliação de Impacto à Proteção de Dados (DPIA/RIPD) para um novo projeto de dados?",
+    "options": [
+      { "key": "A", "text": "Preencher o formulário de compliance após o projeto estar em produção" },
+      { "key": "B", "text": "Identificar dados pessoais coletados e suas finalidades, avaliar riscos de privacidade, verificar necessidade e proporcionalidade do processamento, e definir medidas de mitigação — tudo antes de iniciar o desenvolvimento", "correct": true },
+      { "key": "C", "text": "DPIA é obrigatória apenas para projetos com mais de 1 milhão de registros" },
+      { "key": "D", "text": "A DPIA é responsabilidade exclusiva do DPO (Data Protection Officer)" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q07", "domain": "D4", "level": "especialista",
+    "text": "O que é um programa de Data Democratization e como equilibrá-lo com governança e segurança?",
+    "options": [
+      { "key": "A", "text": "Dar acesso irrestrito a todos os dados para todos os funcionários" },
+      { "key": "B", "text": "Ampliar o acesso a dados com autoatendimento (self-service), mantendo controles de qualidade, classificação automática de sensibilidade, registro de acesso e educação sobre uso responsável dos dados", "correct": true },
+      { "key": "C", "text": "Democratização e governança são objetivos opostos e incompatíveis" },
+      { "key": "D", "text": "Restringir acesso a analistas sêniores para garantir uso responsável" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q08", "domain": "D4", "level": "especialista",
+    "text": "Como criar uma cultura de dados (data culture) em uma organização com baixa maturidade analítica?",
+    "options": [
+      { "key": "A", "text": "Instalar as melhores ferramentas de BI e aguardar a adoção espontânea" },
+      { "key": "B", "text": "Combinar: liderança executiva patrocinando decisões baseadas em dados, programas de letramento de dados para todos os níveis, vitórias rápidas visíveis, comunidades de prática e reconhecimento de uso de dados nas avaliações de desempenho", "correct": true },
+      { "key": "C", "text": "Contratar apenas pessoas com perfil analítico para toda a organização" },
+      { "key": "D", "text": "Cultura de dados se desenvolve naturalmente com o tempo sem intervenção" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q09", "domain": "D4", "level": "especialista",
+    "text": "Como estruturar a função de Chief Data Officer (CDO) para maximizar seu impacto em uma organização grande?",
+    "options": [
+      { "key": "A", "text": "O CDO deve ser subordinado ao CTO para garantir alinhamento técnico" },
+      { "key": "B", "text": "O CDO deve ter mandate executivo com responsabilidade por estratégia de dados, governança, qualidade, democratização e monetização, reportando ao C-suite e com influência transversal sobre todos os domínios de negócio", "correct": true },
+      { "key": "C", "text": "CDO deve ser um papel técnico focado em gerenciar a infraestrutura de dados" },
+      { "key": "D", "text": "CDO é um papel decorativo; a governança real acontece nos times técnicos" }
+    ]
+  },
+  {
+    "id": "D4-ESP-Q10", "domain": "D4", "level": "especialista",
+    "text": "Como avaliar e melhorar a maturidade de governança de dados de uma organização usando um modelo de maturidade?",
+    "options": [
+      { "key": "A", "text": "Verificar apenas se a organização tem um catálogo de dados implementado" },
+      { "key": "B", "text": "Aplicar um framework de maturidade (ex: CMMI, DCAM, DAMA-DMBOK) avaliando dimensões como estratégia, qualidade, metadados, segurança, arquitetura e cultura — definindo metas por dimensão e roadmap de evolução priorizado por impacto", "correct": true },
+      { "key": "C", "text": "Maturidade de governança é binária: ou existe ou não existe" },
+      { "key": "D", "text": "Modelos de maturidade são teóricos e não se aplicam a organizações reais" }
+    ]
+  }
+]

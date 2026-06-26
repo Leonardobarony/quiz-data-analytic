@@ -1,0 +1,552 @@
+[
+  {
+    "id": "D7-Q01", "domain": "D7", "level": "flat",
+    "text": "O que é a cultura data-driven e quais comportamentos ela exige de uma organização?",
+    "options": [
+      { "key": "A", "text": "Uma cultura que usa apenas dashboards de Power BI para reportar resultados" },
+      { "key": "B", "text": "Uma cultura onde decisões são baseadas em evidências e dados — exigindo acesso democratizado, letramento analítico, confiança nos dados e liderança que modela o uso de dados em decisões estratégicas", "correct": true },
+      { "key": "C", "text": "Uma cultura exclusiva de times técnicos de dados" },
+      { "key": "D", "text": "Uma cultura que elimina a intuição e experiência em favor de algoritmos" }
+    ]
+  },
+  {
+    "id": "D7-Q02", "domain": "D7", "level": "flat",
+    "text": "O que é inteligência artificial generativa (GenAI) e qual seu impacto para profissionais de dados?",
+    "options": [
+      { "key": "A", "text": "Uma IA que apenas classifica imagens em categorias predefinidas" },
+      { "key": "B", "text": "Modelos de IA que geram conteúdo (texto, código, imagens) a partir de prompts; impacta profissionais de dados acelerando geração de código SQL, documentação, análise exploratória e criação de pipelines via linguagem natural", "correct": true },
+      { "key": "C", "text": "IA generativa só é relevante para times de marketing e criação de conteúdo" },
+      { "key": "D", "text": "GenAI substituirá completamente os engenheiros de dados nos próximos 2 anos" }
+    ]
+  },
+  {
+    "id": "D7-Q03", "domain": "D7", "level": "flat",
+    "text": "Qual é o papel do analista de dados em uma organização moderna data-driven?",
+    "options": [
+      { "key": "A", "text": "Criar pipelines de ingestão de dados e gerenciar infraestrutura de cloud" },
+      { "key": "B", "text": "Transformar dados em insights acionáveis para o negócio — entendendo perguntas do negócio, analisando dados, comunicando descobertas e trabalhando junto aos times para impulsionar decisões baseadas em evidências", "correct": true },
+      { "key": "C", "text": "Criar relatórios de Power BI conforme solicitado pelos gestores" },
+      { "key": "D", "text": "Treinar modelos de machine learning para automatizar processos" }
+    ]
+  },
+  {
+    "id": "D7-Q04", "domain": "D7", "level": "flat",
+    "text": "O que diferencia um Analista de Dados (DA) de um Engenheiro de Dados (DE) em times modernos?",
+    "options": [
+      { "key": "A", "text": "DA usa apenas Excel; DE usa apenas Python" },
+      { "key": "B", "text": "DA foca em extrair insights e comunicar descobertas ao negócio; DE foca em construir e manter a infraestrutura de dados (pipelines, lakehouses, plataformas) que habilita a análise", "correct": true },
+      { "key": "C", "text": "DE é uma função mais sênior e sempre superior ao DA" },
+      { "key": "D", "text": "São papéis idênticos com nomenclaturas diferentes por empresa" }
+    ]
+  },
+  {
+    "id": "D7-Q05", "domain": "D7", "level": "flat",
+    "text": "O que é o conceito de 'data as a product' e por que ele está ganhando relevância?",
+    "options": [
+      { "key": "A", "text": "A prática de vender dados para terceiros como fonte de receita" },
+      { "key": "B", "text": "A abordagem de tratar datasets como produtos, com dono, SLA, documentação, qualidade garantida e foco no consumidor — aumentando confiança e adoção dos dados internamente", "correct": true },
+      { "key": "C", "text": "Uma estratégia de marketing para comunicar iniciativas de BI ao negócio" },
+      { "key": "D", "text": "Um modelo de precificação de plataformas de dados por volume consumido" }
+    ]
+  },
+  {
+    "id": "D7-Q06", "domain": "D7", "level": "flat",
+    "text": "O que é o Microsoft Fabric Copilot e como ele muda o trabalho de profissionais de dados?",
+    "options": [
+      { "key": "A", "text": "Um assistente de suporte técnico para problemas de infraestrutura" },
+      { "key": "B", "text": "Um assistente de IA integrado ao Fabric que permite criar queries, pipelines e relatórios usando linguagem natural, acelerando o trabalho de analistas e engenheiros com menos necessidade de código manual", "correct": true },
+      { "key": "C", "text": "Um robô que substitui completamente o trabalho de análise de dados" },
+      { "key": "D", "text": "Uma ferramenta de automação de documentação de pipelines" }
+    ]
+  },
+  {
+    "id": "D7-Q07", "domain": "D7", "level": "flat",
+    "text": "O que é maturidade analítica e como ela é usada para avaliar organizações?",
+    "options": [
+      { "key": "A", "text": "O número de dashboards publicados no Power BI de uma organização" },
+      { "key": "B", "text": "Uma escala que descreve a evolução da capacidade analítica — desde relatórios básicos (descritivo) até análises preditivas e prescritivas — usada para identificar lacunas e priorizar investimentos em dados", "correct": true },
+      { "key": "C", "text": "A quantidade de dados armazenados no data lake da organização" },
+      { "key": "D", "text": "O tempo de experiência dos membros do time de dados" }
+    ]
+  },
+  {
+    "id": "D7-Q08", "domain": "D7", "level": "flat",
+    "text": "Quais são as principais certificações reconhecidas pelo mercado para Analistas de Dados no ecossistema Microsoft?",
+    "options": [
+      { "key": "A", "text": "AWS Certified Data Analytics e Google Professional Data Engineer" },
+      { "key": "B", "text": "Microsoft PL-300 (Power BI Data Analyst), DP-600 (Fabric Analytics Engineer) e DP-900 (Azure Data Fundamentals)", "correct": true },
+      { "key": "C", "text": "CompTIA Data+ e Salesforce Certified Data Specialist" },
+      { "key": "D", "text": "Oracle Database Administrator e IBM Data Science Professional" }
+    ]
+  },
+  {
+    "id": "D7-Q09", "domain": "D7", "level": "flat",
+    "text": "O que é storytelling com dados e por que é uma habilidade crítica para analistas de dados?",
+    "options": [
+      { "key": "A", "text": "A habilidade de criar dashboards interativos com animações e efeitos visuais" },
+      { "key": "B", "text": "A capacidade de comunicar insights analíticos de forma clara e persuasiva usando narrativa, contexto e visualizações adequadas para o público — transformando dados em decisões de negócio", "correct": true },
+      { "key": "C", "text": "A habilidade de escrever documentação técnica de pipelines de dados" },
+      { "key": "D", "text": "Um método de apresentação de relatórios usando infográficos coloridos" }
+    ]
+  },
+  {
+    "id": "D7-Q10", "domain": "D7", "level": "flat",
+    "text": "Quais são as certificações mais reconhecidas para Engenheiros de Dados no mercado?",
+    "options": [
+      { "key": "A", "text": "Microsoft PL-300 e AWS Solution Architect Professional" },
+      { "key": "B", "text": "Microsoft DP-203 (Azure Data Engineer), DP-700 (Fabric Data Engineer), Databricks Certified Data Engineer e AWS Certified Data Engineer", "correct": true },
+      { "key": "C", "text": "CompTIA Network+ e Cisco CCNA" },
+      { "key": "D", "text": "Google Analytics e Salesforce Certified Data Architect" }
+    ]
+  },
+  {
+    "id": "D7-Q11", "domain": "D7", "level": "flat",
+    "text": "O que é o conceito de 'analytics engineering' e como o dbt se posiciona nesse contexto?",
+    "options": [
+      { "key": "A", "text": "Uma especialidade de machine learning para otimização de algoritmos de análise" },
+      { "key": "B", "text": "A disciplina que aplica práticas de engenharia de software (versionamento, testes, documentação) às transformações analíticas — o dbt é o framework central que permite isso em SQL, aproximando DA e DE", "correct": true },
+      { "key": "C", "text": "A automação completa do trabalho de análise usando IA" },
+      { "key": "D", "text": "Um cargo de liderança acima de analista e engenheiro de dados" }
+    ]
+  },
+  {
+    "id": "D7-Q12", "domain": "D7", "level": "flat",
+    "text": "O que é o mercado de trabalho esperado para profissionais de dados nos próximos 5 anos?",
+    "options": [
+      { "key": "A", "text": "Estagnado; IA eliminará a maioria das funções de dados" },
+      { "key": "B", "text": "Em crescimento acelerado, com demanda especialmente por profissionais que combinam competências técnicas com entendimento de negócio e capacidade de trabalhar com ferramentas de IA", "correct": true },
+      { "key": "C", "text": "Restrito a grandes empresas de tecnologia; pequenas e médias não contratam dados" },
+      { "key": "D", "text": "Em declínio por conta da commoditização das ferramentas de BI" }
+    ]
+  },
+  {
+    "id": "D7-Q13", "domain": "D7", "level": "flat",
+    "text": "O que é análise preditiva e como ela diferencia organizações mais maduras analiticamente?",
+    "options": [
+      { "key": "A", "text": "Análise que prediz o passado a partir de dados históricos" },
+      { "key": "B", "text": "Uso de modelos estatísticos e machine learning para estimar eventos futuros, permitindo que organizações antecipem problemas e oportunidades — diferenciando-as de quem apenas reporta o que aconteceu", "correct": true },
+      { "key": "C", "text": "Qualquer análise feita antes de uma reunião de negócios" },
+      { "key": "D", "text": "A capacidade de prever o preço de ações no mercado financeiro" }
+    ]
+  },
+  {
+    "id": "D7-Q14", "domain": "D7", "level": "flat",
+    "text": "O que é 'self-service analytics' e quais são seus benefícios e riscos para as organizações?",
+    "options": [
+      { "key": "A", "text": "Um modelo onde apenas o time de TI cria relatórios e os disponibiliza para o negócio" },
+      { "key": "B", "text": "A capacidade de usuários de negócio criarem suas próprias análises sem dependência do time técnico; benefício: agilidade e autonomia; risco: inconsistência de métricas e dados incorretos sem governança adequada", "correct": true },
+      { "key": "C", "text": "Um sistema onde a IA gera automaticamente todos os relatórios necessários" },
+      { "key": "D", "text": "Um modelo sem benefícios reais — sempre é preferível centralizar as análises" }
+    ]
+  },
+  {
+    "id": "D7-Q15", "domain": "D7", "level": "flat",
+    "text": "O que é o ecossistema open-source para dados e cite exemplos relevantes de ferramentas?",
+    "options": [
+      { "key": "A", "text": "Apenas ferramentas gratuitas sem suporte ou manutenção ativa" },
+      { "key": "B", "text": "Um conjunto de ferramentas com código aberto amplamente adotadas pela indústria — ex: Apache Spark, Apache Airflow, dbt, Apache Kafka, Apache Iceberg, Trino, DuckDB — que formam a base das plataformas comerciais modernas", "correct": true },
+      { "key": "C", "text": "Ferramentas exclusivamente para projetos de pesquisa acadêmica" },
+      { "key": "D", "text": "Qualquer software sem custo de licença, independente da comunidade" }
+    ]
+  },
+  {
+    "id": "D7-Q16", "domain": "D7", "level": "flat",
+    "text": "O que é o conceito de 'Modern Data Stack' e quais tecnologias o compõem tipicamente?",
+    "options": [
+      { "key": "A", "text": "Uma pilha tecnológica baseada exclusivamente em produtos Microsoft" },
+      { "key": "B", "text": "Um conjunto de ferramentas cloud-native e SaaS combinadas: ingestão (Fivetran, Airbyte), armazenamento (Snowflake, BigQuery, Redshift), transformação (dbt), orquestração (Airflow, Prefect) e visualização (Looker, Metabase)", "correct": true },
+      { "key": "C", "text": "A versão mais recente do Microsoft SQL Server com funcionalidades de cloud" },
+      { "key": "D", "text": "Um framework de desenvolvimento ágil para times de dados" }
+    ]
+  },
+  {
+    "id": "D7-Q17", "domain": "D7", "level": "flat",
+    "text": "O que é um Data Lakehouse e quais problemas da geração anterior de arquiteturas ele resolve?",
+    "options": [
+      { "key": "A", "text": "Uma combinação física de um data lake e um data warehouse em servidores on-premise" },
+      { "key": "B", "text": "Uma arquitetura que unifica na mesma camada de armazenamento as vantagens do data lake (formatos abertos, dados variados, baixo custo) e do data warehouse (ACID, performance, governança) — eliminando silos e movimentação de dados", "correct": true },
+      { "key": "C", "text": "Uma estratégia de backup de data warehouse em data lake" },
+      { "key": "D", "text": "Uma ferramenta específica criada pela Databricks" }
+    ]
+  },
+  {
+    "id": "D7-Q18", "domain": "D7", "level": "flat",
+    "text": "Quais habilidades não-técnicas (soft skills) são mais valorizadas em profissionais de dados pelo mercado?",
+    "options": [
+      { "key": "A", "text": "Velocidade de digitação e domínio de atalhos de teclado" },
+      { "key": "B", "text": "Comunicação clara com stakeholders não-técnicos, pensamento crítico, curiosidade, capacidade de traduzir dados em linguagem de negócio e habilidade de priorizar impacto", "correct": true },
+      { "key": "C", "text": "Habilidades de negociação e vendas para conseguir projetos" },
+      { "key": "D", "text": "Soft skills não são relevantes; o mercado valoriza exclusivamente competências técnicas" }
+    ]
+  },
+  {
+    "id": "D7-Q19", "domain": "D7", "level": "flat",
+    "text": "O que é o Microsoft DP-600 (Fabric Analytics Engineer) e o que ele avalia?",
+    "options": [
+      { "key": "A", "text": "Uma certificação de Power BI equivalente ao PL-300 com foco em cloud" },
+      { "key": "B", "text": "Uma certificação Microsoft que avalia habilidades de implementar e gerenciar soluções analíticas no Microsoft Fabric, incluindo Lakehouse, pipelines, engenharia de dados e semantic models", "correct": true },
+      { "key": "C", "text": "Uma certificação de segurança de dados para o ecossistema Azure" },
+      { "key": "D", "text": "Uma certificação de administração do Power Platform para administradores de TI" }
+    ]
+  },
+  {
+    "id": "D7-Q20", "domain": "D7", "level": "flat",
+    "text": "O que é o impacto do uso de IA generativa no fluxo de trabalho de um Analista de Dados em 2025?",
+    "options": [
+      { "key": "A", "text": "Nenhum impacto relevante; IA generativa é apenas para criação de imagens" },
+      { "key": "B", "text": "Acelera a geração de código SQL e Python, automatiza documentação, facilita análise exploratória em linguagem natural, permite criar primeiras versões de visualizações e relatórios — deslocando foco do analista para interpretação e validação", "correct": true },
+      { "key": "C", "text": "Substitui completamente a necessidade de analistas de dados" },
+      { "key": "D", "text": "Aumenta a carga de trabalho por gerar mais dados para analisar" }
+    ]
+  },
+  {
+    "id": "D7-Q21", "domain": "D7", "level": "flat",
+    "text": "O que é análise prescritiva e como ela se diferencia de preditiva e descritiva?",
+    "options": [
+      { "key": "A", "text": "Análise que descreve o que está acontecendo com dados em tempo real" },
+      { "key": "B", "text": "Análise descritiva = o que aconteceu; preditiva = o que vai acontecer; prescritiva = o que fazer — a prescritiva recomenda ações específicas baseadas nas previsões, sendo o nível mais avançado", "correct": true },
+      { "key": "C", "text": "Análise que prescreve o uso de ferramentas específicas de BI" },
+      { "key": "D", "text": "Um tipo de análise exclusivo para profissionais de saúde" }
+    ]
+  },
+  {
+    "id": "D7-Q22", "domain": "D7", "level": "flat",
+    "text": "O que é o conceito de 'augmented analytics' e como ele muda o papel do analista?",
+    "options": [
+      { "key": "A", "text": "Análise feita com equipamentos de realidade aumentada" },
+      { "key": "B", "text": "O uso de IA e machine learning para automatizar preparação, insight e comunicação de dados — amplificando as capacidades humanas para que analistas foquem em interpretação, contexto e decisões estratégicas", "correct": true },
+      { "key": "C", "text": "Uma técnica de visualização 3D para dados volumétricos" },
+      { "key": "D", "text": "O uso de múltiplos monitores para aumentar a produtividade do analista" }
+    ]
+  },
+  {
+    "id": "D7-Q23", "domain": "D7", "level": "flat",
+    "text": "Quais são as principais tendências de dados e IA para os próximos 2-3 anos?",
+    "options": [
+      { "key": "A", "text": "Retorno ao on-premise e diminuição do uso de cloud" },
+      { "key": "B", "text": "Proliferação de IA generativa integrada a plataformas de dados, Lakehouse como padrão dominante, adoção de Data Mesh em empresas grandes, democratização analítica e real-time analytics acessível a mais organizações", "correct": true },
+      { "key": "C", "text": "Dominância de uma única ferramenta que substitui todo o Modern Data Stack" },
+      { "key": "D", "text": "Redução do mercado de dados por saturação de profissionais" }
+    ]
+  },
+  {
+    "id": "D7-Q24", "domain": "D7", "level": "flat",
+    "text": "O que é DataOps e como ele melhora a confiabilidade de pipelines de dados?",
+    "options": [
+      { "key": "A", "text": "Um cargo especializado em operações de banco de dados on-premise" },
+      { "key": "B", "text": "Uma prática que aplica princípios de DevOps aos dados: automação de testes, CI/CD de pipelines, monitoramento contínuo, colaboração entre times e entrega rápida e confiável de dados de qualidade", "correct": true },
+      { "key": "C", "text": "Um framework exclusivo para times de operações que monitoram servidores" },
+      { "key": "D", "text": "Um sinônimo para MLOps aplicado a dados de treinamento de modelos" }
+    ]
+  },
+  {
+    "id": "D7-Q25", "domain": "D7", "level": "flat",
+    "text": "O que é o Databricks Certified Data Engineer Professional e o que o diferencia do Associate?",
+    "options": [
+      { "key": "A", "text": "São certificações equivalentes; apenas o nome muda" },
+      { "key": "B", "text": "O Professional avalia habilidades avançadas de otimização de performance, arquitetura de dados, segurança, governança e MLOps no ecossistema Databricks — exige experiência prática significativa além do conhecimento do Associate", "correct": true },
+      { "key": "C", "text": "Professional é a versão gratuita; Associate é paga" },
+      { "key": "D", "text": "O Professional foca em Python; o Associate foca em SQL" }
+    ]
+  },
+  {
+    "id": "D7-Q26", "domain": "D7", "level": "flat",
+    "text": "Como um profissional de dados deve se posicionar para crescimento de carreira no mercado atual?",
+    "options": [
+      { "key": "A", "text": "Especializar-se em apenas uma ferramenta e tornar-se o melhor do mercado nela" },
+      { "key": "B", "text": "Combinar profundidade técnica em sua área (T-shaped skills), entendimento de negócio, certificações reconhecidas, portfolio de projetos práticos e atualização contínua com tendências — contribuindo além de executar", "correct": true },
+      { "key": "C", "text": "Focar apenas em certificações Microsoft para garantir empregabilidade" },
+      { "key": "D", "text": "Evitar especialização; generalistas são sempre mais valorizados" }
+    ]
+  },
+  {
+    "id": "D7-Q27", "domain": "D7", "level": "flat",
+    "text": "O que é a Teoria dos Jogos e como o conceito de 'Nash Equilibrium' pode ser aplicado à análise de decisão em negócios?",
+    "options": [
+      { "key": "A", "text": "Um conceito exclusivo de matemática sem aplicação prática em negócios" },
+      { "key": "B", "text": "Nash Equilibrium é um estado onde nenhum participante melhora sua situação mudando unilateralmente sua estratégia; em negócios, auxilia a prever comportamento de concorrentes e estruturar incentivos em contratos e negociações", "correct": true },
+      { "key": "C", "text": "Uma técnica de análise de clustering para segmentação de clientes" },
+      { "key": "D", "text": "Um modelo estatístico de regressão para previsão de demanda" }
+    ]
+  },
+  {
+    "id": "D7-Q28", "domain": "D7", "level": "flat",
+    "text": "O que é o viés de confirmação (confirmation bias) e como ele pode comprometer análises de dados?",
+    "options": [
+      { "key": "A", "text": "Um erro estatístico causado por amostras muito pequenas de dados" },
+      { "key": "B", "text": "A tendência de buscar, interpretar e apresentar dados de forma que confirme crenças preexistentes — comprometendo análises ao ignorar evidências contrárias e levando a conclusões incorretas", "correct": true },
+      { "key": "C", "text": "Um tipo de overfitting em modelos de machine learning" },
+      { "key": "D", "text": "Uma falha técnica em dashboards que mostra dados desatualizados" }
+    ]
+  },
+  {
+    "id": "D7-Q29", "domain": "D7", "level": "flat",
+    "text": "O que é 'data literacy' e por que é estratégico desenvolvê-la em toda a organização?",
+    "options": [
+      { "key": "A", "text": "A capacidade de programar em Python e SQL para todos os funcionários" },
+      { "key": "B", "text": "A capacidade de ler, interpretar, questionar e comunicar com dados de forma eficaz — estratégico porque multiplica o valor dos investimentos em dados quando toda a organização pode usar dados em suas decisões cotidianas", "correct": true },
+      { "key": "C", "text": "O letramento em inglês técnico necessário para usar ferramentas de dados em inglês" },
+      { "key": "D", "text": "A habilidade de criar relatórios no Power BI sem treinamento formal" }
+    ]
+  },
+  {
+    "id": "D7-Q30", "domain": "D7", "level": "flat",
+    "text": "O que é o Google Professional Data Engineer e qual seu foco?",
+    "options": [
+      { "key": "A", "text": "Uma certificação de machine learning para cientistas de dados da Google" },
+      { "key": "B", "text": "Uma certificação Google Cloud que avalia habilidades de projetar, construir e operacionalizar sistemas de processamento de dados usando serviços GCP como BigQuery, Dataflow, Dataproc e Pub/Sub", "correct": true },
+      { "key": "C", "text": "Uma certificação de análise de dados web usando Google Analytics" },
+      { "key": "D", "text": "Uma certificação equivalente ao AWS Data Analytics sem especificidade de cloud" }
+    ]
+  },
+  {
+    "id": "D7-Q31", "domain": "D7", "level": "flat",
+    "text": "O que são dados não estruturados e qual sua relevância crescente no ecossistema de dados?",
+    "options": [
+      { "key": "A", "text": "Dados com tabelas sem chave primária definida" },
+      { "key": "B", "text": "Dados sem esquema fixo (textos, imagens, áudios, vídeos) que representam ~80% dos dados gerados — crescentes em relevância com IA capaz de extrair valor deles via NLP, visão computacional e modelos multimodais", "correct": true },
+      { "key": "C", "text": "Dados armazenados sem format file (sem extensão definida)" },
+      { "key": "D", "text": "Dados de erro gerados por sistemas com baixa qualidade" }
+    ]
+  },
+  {
+    "id": "D7-Q32", "domain": "D7", "level": "flat",
+    "text": "Qual é a diferença entre análise causai e correlação e por que essa distinção é crítica para decisões de negócio?",
+    "options": [
+      { "key": "A", "text": "Correlação é mais precisa que causalidade para previsões de negócio" },
+      { "key": "B", "text": "Correlação indica que duas variáveis variam juntas sem implicar que uma causa a outra; causalidade indica que uma variável efetivamente produz mudança na outra — decisões de negócio baseadas em correlação sem causalidade podem gerar intervenções ineficazes ou prejudiciais", "correct": true },
+      { "key": "C", "text": "São conceitos equivalentes na prática analítica" },
+      { "key": "D", "text": "Causalidade é mais difícil de medir, portanto correlação é sempre usada como substituto válido" }
+    ]
+  },
+  {
+    "id": "D7-Q33", "domain": "D7", "level": "flat",
+    "text": "O que é RAG (Retrieval Augmented Generation) e como ele conecta engenharia de dados com IA generativa?",
+    "options": [
+      { "key": "A", "text": "Um algoritmo de compressão de dados para reduzir custo de armazenamento em cloud" },
+      { "key": "B", "text": "Uma técnica que enriquece respostas de LLMs com dados recuperados de bases de conhecimento — engenheiros de dados são fundamentais para preparar, indexar e manter os dados que alimentam o RAG de forma confiável e atualizada", "correct": true },
+      { "key": "C", "text": "Uma arquitetura de streaming de dados em tempo real" },
+      { "key": "D", "text": "Um modelo de regressão aumentado para análise preditiva" }
+    ]
+  },
+  {
+    "id": "D7-Q34", "domain": "D7", "level": "flat",
+    "text": "O que é um Data Catalog como Microsoft Purview e qual é seu valor estratégico?",
+    "options": [
+      { "key": "A", "text": "Um serviço de armazenamento de dados unificado para múltiplas nuvens" },
+      { "key": "B", "text": "Uma plataforma de governança unificada que cataloga automaticamente dados de múltiplas fontes, fornecendo descoberta, classificação de sensibilidade, linhagem e controle de acesso — essencial para organizações que querem confiar e reutilizar seus dados", "correct": true },
+      { "key": "C", "text": "Um banco de dados que armazena apenas metadados sobre outros bancos de dados" },
+      { "key": "D", "text": "Uma ferramenta exclusiva para auditoria de compliance sem valor analítico" }
+    ]
+  },
+  {
+    "id": "D7-Q35", "domain": "D7", "level": "flat",
+    "text": "O que significa ser um profissional 'T-shaped' em dados e por que esse perfil é valorizado?",
+    "options": [
+      { "key": "A", "text": "Um profissional com exatamente dois anos de experiência em duas ferramentas diferentes" },
+      { "key": "B", "text": "Um profissional com conhecimento amplo (horizontal) de várias áreas de dados E profundidade técnica real em uma ou duas especialidades — valorizado porque consegue colaborar entre domínios e liderar verticalmente com expertise", "correct": true },
+      { "key": "C", "text": "Um perfil que usa a letra T como sigla para Technical e Transformation" },
+      { "key": "D", "text": "Um generalista que conhece superficialmente todas as ferramentas do mercado" }
+    ]
+  },
+  {
+    "id": "D7-JR-Q01", "domain": "D7", "level": "junior",
+    "text": "Como um profissional Júnior de dados deve estruturar seu plano de desenvolvimento pessoal para evoluir para Pleno?",
+    "options": [
+      { "key": "A", "text": "Aguardar promoção automática após 2 anos na mesma posição" },
+      { "key": "B", "text": "Buscar projetos desafiadores que exponham a novas tecnologias, obter certificações (ex: DP-900, AZ-900), contribuir com documentação e aprendizado do time, e pedir feedback constante sobre gaps técnicos e comportamentais", "correct": true },
+      { "key": "C", "text": "Focar apenas em habilidades técnicas e ignorar soft skills no início da carreira" },
+      { "key": "D", "text": "Mudar de empresa a cada 6 meses para ganhar experiências diversas" }
+    ]
+  },
+  {
+    "id": "D7-JR-Q02", "domain": "D7", "level": "junior",
+    "text": "Por que é importante para um Júnior de dados entender o negócio além das ferramentas técnicas?",
+    "options": [
+      { "key": "A", "text": "Não é importante; o negócio é responsabilidade do gestor e do time de produto" },
+      { "key": "B", "text": "Entender o negócio permite contextualizar análises, priorizar trabalho de alto impacto, comunicar resultados de forma relevante para stakeholders e evitar construir pipelines ou relatórios tecnicamente corretos mas irrelevantes para a organização", "correct": true },
+      { "key": "C", "text": "É importante apenas para analistas de dados, não para engenheiros" },
+      { "key": "D", "text": "O entendimento de negócio só se torna relevante no nível Sênior" }
+    ]
+  },
+  {
+    "id": "D7-JR-Q03", "domain": "D7", "level": "junior",
+    "text": "Quais certificações são mais acessíveis e relevantes para iniciar a carreira em dados no ecossistema Microsoft?",
+    "options": [
+      { "key": "A", "text": "DP-203 (Azure Data Engineer Associate) como primeiro passo" },
+      { "key": "B", "text": "DP-900 (Azure Data Fundamentals) e PL-900 (Power Platform Fundamentals) como base, seguidos de PL-300 (Power BI) para DA ou DP-203 (Azure Data Engineer) para DE", "correct": true },
+      { "key": "C", "text": "Não há certificações relevantes para profissionais em início de carreira" },
+      { "key": "D", "text": "Certificações Databricks são as mais acessíveis para iniciantes" }
+    ]
+  },
+  {
+    "id": "D7-JR-Q04", "domain": "D7", "level": "junior",
+    "text": "O que é uma análise exploratória de dados (EDA) e qual seu papel no início de um projeto de dados?",
+    "options": [
+      { "key": "A", "text": "A fase final de um projeto onde os resultados são apresentados ao negócio" },
+      { "key": "B", "text": "Uma análise inicial que usa estatísticas descritivas e visualizações para compreender a estrutura, distribuição, anomalias e relacionamentos nos dados — essencial para formular hipóteses e guiar o restante do projeto", "correct": true },
+      { "key": "C", "text": "Um tipo de análise preditiva para explorar cenários futuros" },
+      { "key": "D", "text": "A fase de criação do modelo de dados dimensional" }
+    ]
+  },
+  {
+    "id": "D7-JR-Q05", "domain": "D7", "level": "junior",
+    "text": "Qual é a melhor forma de um profissional Júnior demonstrar valor para o negócio nos primeiros 90 dias em uma nova posição?",
+    "options": [
+      { "key": "A", "text": "Propor uma refatoração completa da arquitetura de dados existente" },
+      { "key": "B", "text": "Aprender profundamente o contexto do negócio e os dados disponíveis, entregar pequenas vitórias rápidas que resolvem problemas reais, documentar o conhecimento adquirido e demonstrar proatividade na identificação de oportunidades", "correct": true },
+      { "key": "C", "text": "Implementar todas as ferramentas e frameworks mais modernos do mercado" },
+      { "key": "D", "text": "Aguardar orientação completa do gestor antes de tomar qualquer iniciativa" }
+    ]
+  },
+  {
+    "id": "D7-PL-Q01", "domain": "D7", "level": "pleno",
+    "text": "Como um profissional Pleno de dados deve escolher suas próximas especialidades técnicas para maximizar valor de carreira?",
+    "options": [
+      { "key": "A", "text": "Seguir a ferramenta mais popular no LinkedIn nos últimos 30 dias" },
+      { "key": "B", "text": "Avaliar a demanda do mercado, o alinhamento com o roadmap da organização atual, lacunas complementares às habilidades existentes e investir em especializações que criam diferenciação real — não apenas breadth", "correct": true },
+      { "key": "C", "text": "Focar exclusivamente na ferramenta principal do empregador atual" },
+      { "key": "D", "text": "Especialização não é importante no nível Pleno; generalismo é mais valorizado" }
+    ]
+  },
+  {
+    "id": "D7-PL-Q02", "domain": "D7", "level": "pleno",
+    "text": "Como um Analista/Engenheiro Pleno deve conduzir uma análise de impacto ao propor mudanças em pipelines de produção?",
+    "options": [
+      { "key": "A", "text": "Implementar a mudança diretamente em produção e monitorar por 24 horas" },
+      { "key": "B", "text": "Mapear todos os consumidores downstream da alteração, avaliar riscos de regressão, testar em ambiente de staging, comunicar impactos aos stakeholders e planejar rollback antes de promover para produção", "correct": true },
+      { "key": "C", "text": "Comunicar a mudança apenas após a implementação para não gerar resistência" },
+      { "key": "D", "text": "Análise de impacto é responsabilidade exclusiva de Sêniores" }
+    ]
+  },
+  {
+    "id": "D7-PL-Q03", "domain": "D7", "level": "pleno",
+    "text": "O que é a AWS Certified Data Engineer – Associate e quais habilidades ela certifica?",
+    "options": [
+      { "key": "A", "text": "Uma certificação de ciência de dados para modelos de machine learning na AWS" },
+      { "key": "B", "text": "Uma certificação AWS que avalia habilidades de ingestão, transformação, orquestração e segurança de dados usando serviços como Glue, S3, Redshift, Kinesis, Athena e Lake Formation", "correct": true },
+      { "key": "C", "text": "A certificação máxima da AWS para engenheiros de dados experientes" },
+      { "key": "D", "text": "Uma certificação de administração de banco de dados RDS na AWS" }
+    ]
+  },
+  {
+    "id": "D7-PL-Q04", "domain": "D7", "level": "pleno",
+    "text": "Como um profissional Pleno deve comunicar resultados analíticos complexos a uma audiência executiva?",
+    "options": [
+      { "key": "A", "text": "Apresentar todas as etapas técnicas da análise para demonstrar rigor metodológico" },
+      { "key": "B", "text": "Estruturar a comunicação com o insight mais importante no início, usar visualizações simples e contextualizadas, conectar os dados a decisões e impacto de negócio, e reservar detalhes técnicos para quem perguntar", "correct": true },
+      { "key": "C", "text": "Evitar simplificação; executivos apreciam análises detalhadas" },
+      { "key": "D", "text": "Delegar a apresentação executiva ao gestor e focar apenas na análise" }
+    ]
+  },
+  {
+    "id": "D7-PL-Q05", "domain": "D7", "level": "pleno",
+    "text": "Como um profissional Pleno avalia a qualidade de uma análise de dados antes de compartilhá-la com stakeholders?",
+    "options": [
+      { "key": "A", "text": "Verificar apenas se os totais fecham com os números esperados" },
+      { "key": "B", "text": "Validar a fonte e integridade dos dados, verificar consistência com análises anteriores, testar casos extremos e cenários nulos, questionar as hipóteses subjacentes e buscar uma segunda revisão antes de apresentar conclusões", "correct": true },
+      { "key": "C", "text": "A plataforma de dados garante a qualidade; revisão adicional é desnecessária" },
+      { "key": "D", "text": "Compartilhar rapidamente e corrigir depois se houver problemas" }
+    ]
+  },
+  {
+    "id": "D7-SN-Q01", "domain": "D7", "level": "senior",
+    "text": "Como um Sênior de dados deve influenciar a estratégia de dados da organização sem ter autoridade formal?",
+    "options": [
+      { "key": "A", "text": "Aguardar ser promovido a cargo de gestão antes de influenciar estratégia" },
+      { "key": "B", "text": "Construir credibilidade com entregas de alta qualidade, conectar problemas técnicos a impactos de negócio, criar alianças com stakeholders-chave, documentar padrões e decisões, e liderar iniciativas que demonstram o valor estratégico de dados", "correct": true },
+      { "key": "C", "text": "Influência sem autoridade formal não é possível em grandes organizações" },
+      { "key": "D", "text": "Focar apenas na excelência técnica e deixar a estratégia para gerentes" }
+    ]
+  },
+  {
+    "id": "D7-SN-Q02", "domain": "D7", "level": "senior",
+    "text": "O que é o Databricks Certified Associate Developer for Apache Spark e o que ele avalia?",
+    "options": [
+      { "key": "A", "text": "Uma certificação de machine learning com Spark MLlib para cientistas de dados" },
+      { "key": "B", "text": "Uma certificação Databricks que avalia habilidades de programação com Apache Spark em Python ou Scala, incluindo DataFrames, transformações, ações, SQL e Spark SQL", "correct": true },
+      { "key": "C", "text": "Uma certificação de administração de clusters Spark para DevOps" },
+      { "key": "D", "text": "Uma certificação de streaming de dados com Structured Streaming" }
+    ]
+  },
+  {
+    "id": "D7-SN-Q03", "domain": "D7", "level": "senior",
+    "text": "Como um Sênior deve mentorear profissionais Júniores e Plenos de forma eficaz?",
+    "options": [
+      { "key": "A", "text": "Fazer o trabalho por eles para garantir qualidade e velocidade de entrega" },
+      { "key": "B", "text": "Dar contexto sobre as decisões tomadas, fazer perguntas que desenvolvam o raciocínio em vez de dar respostas diretas, delegar tarefas progressivamente mais complexas, dar feedback específico e criar espaço seguro para errar e aprender", "correct": true },
+      { "key": "C", "text": "Compartilhar toda a experiência técnica em sessões de treinamento teórico mensais" },
+      { "key": "D", "text": "Mentoria não é responsabilidade de profissionais Sêniores sem título de tech lead" }
+    ]
+  },
+  {
+    "id": "D7-SN-Q04", "domain": "D7", "level": "senior",
+    "text": "Como um Sênior de dados deve avaliar a adoção de uma nova tecnologia para a plataforma da organização?",
+    "options": [
+      { "key": "A", "text": "Adotar a tecnologia mais nova disponível para manter o time atualizado" },
+      { "key": "B", "text": "Avaliar: problema real que resolve, maturidade e suporte da comunidade, TCO, curva de aprendizado do time, integração com stack existente, riscos de lock-in e alinhamento com direção estratégica da organização — com PoC antes de qualquer decisão", "correct": true },
+      { "key": "C", "text": "Seguir o que as maiores empresas de tecnologia estão adotando" },
+      { "key": "D", "text": "Escolher baseado apenas em benchmarks de performance publicados pelo fornecedor" }
+    ]
+  },
+  {
+    "id": "D7-SN-Q05", "domain": "D7", "level": "senior",
+    "text": "Como um profissional Sênior deve conduzir uma revisão técnica de design (design review) para um novo sistema de dados?",
+    "options": [
+      { "key": "A", "text": "Aprovar ou rejeitar o design com base no julgamento pessoal do revisor" },
+      { "key": "B", "text": "Verificar sistematicamente: alinhamento com requisitos de negócio, escalabilidade e performance, segurança e compliance, manutenibilidade, custo, riscos técnicos e alternativas consideradas — documentando o racional das decisões", "correct": true },
+      { "key": "C", "text": "Design reviews são necessárias apenas para sistemas com mais de 1TB de dados" },
+      { "key": "D", "text": "O design review deve focar exclusivamente em revisão de código e não de arquitetura" }
+    ]
+  },
+  {
+    "id": "D7-ESP-Q01", "domain": "D7", "level": "especialista",
+    "text": "O que caracteriza um especialista de dados que influencia o mercado além de sua organização?",
+    "options": [
+      { "key": "A", "text": "Ter mais de 10 anos de experiência em uma única empresa" },
+      { "key": "B", "text": "Contribuir com a comunidade (publicações, talks, open source), desenvolver pontos de vista originais sobre problemas não resolvidos, mentorar líderes técnicos e participar de decisões arquiteturais com impacto amplo além da organização imediata", "correct": true },
+      { "key": "C", "text": "Possuir todas as certificações disponíveis no mercado de dados" },
+      { "key": "D", "text": "Ter um cargo de Vice-Presidente ou Director em uma empresa de tecnologia" }
+    ]
+  },
+  {
+    "id": "D7-ESP-Q02", "domain": "D7", "level": "especialista",
+    "text": "Como um Especialista de dados deve conduzir a seleção e construção de uma equipe de dados de alto desempenho?",
+    "options": [
+      { "key": "A", "text": "Contratar apenas profissionais com todas as certificações técnicas disponíveis" },
+      { "key": "B", "text": "Equilibrar expertise técnica, diversidade de perspectivas, alinhamento cultural, perfis complementares (engenharia, análise, ciência), capacidade de crescimento e entendimento de negócio — priorizando potencial sobre checklist de habilidades", "correct": true },
+      { "key": "C", "text": "Contratar apenas Sêniores para garantir entrega de alta qualidade" },
+      { "key": "D", "text": "A composição de equipes é responsabilidade do RH, não de especialistas técnicos" }
+    ]
+  },
+  {
+    "id": "D7-ESP-Q03", "domain": "D7", "level": "especialista",
+    "text": "Como um Especialista avalia o retorno estratégico de um investimento massivo em plataforma de dados para uma organização?",
+    "options": [
+      { "key": "A", "text": "Calculando apenas o custo de infraestrutura versus o custo anterior" },
+      { "key": "B", "text": "Modelando o impacto em receita (novos produtos/mercados habilitados por dados), redução de custos operacionais, aceleração de decisões, redução de risco, melhoria de experiência do cliente e criação de ativos de dados com valor estratégico a longo prazo", "correct": true },
+      { "key": "C", "text": "Retorno de plataformas de dados não pode ser mensurado objetivamente" },
+      { "key": "D", "text": "O ROI deve ser calculado apenas em termos de eficiência de TI" }
+    ]
+  },
+  {
+    "id": "D7-ESP-Q04", "domain": "D7", "level": "especialista",
+    "text": "Como posicionar a função de dados como vantagem competitiva estratégica para o C-suite de uma organização?",
+    "options": [
+      { "key": "A", "text": "Apresentar métricas de volume de dados armazenados e pipelines em produção" },
+      { "key": "B", "text": "Conectar iniciativas de dados a métricas de negócio (receita, retenção, eficiência), demonstrar capacidades que concorrentes não têm, quantificar decisões aceleradas por dados e mostrar produtos/serviços que só existem graças à plataforma de dados", "correct": true },
+      { "key": "C", "text": "Focar na sofisticação técnica da arquitetura para impressionar a liderança" },
+      { "key": "D", "text": "O C-suite não se preocupa com dados; a função estratégica é articulada pelo CTO" }
+    ]
+  },
+  {
+    "id": "D7-ESP-Q05", "domain": "D7", "level": "especialista",
+    "text": "Qual é o impacto esperado da IA generativa na profissão de dados nos próximos 5 anos e como se preparar?",
+    "options": [
+      { "key": "A", "text": "IA generativa eliminará todas as funções de dados; não há como se preparar" },
+      { "key": "B", "text": "IA aumentará produtividade e automatizará tarefas repetitivas — profissionais que dominam curadoria de dados para IA, prompt engineering para dados, avaliação crítica de outputs de IA e integração de sistemas de IA com pipelines de dados serão mais valiosos, não menos", "correct": true },
+      { "key": "C", "text": "IA generativa não terá impacto real nas funções técnicas de engenharia de dados" },
+      { "key": "D", "text": "O único preparo necessário é aprender a usar chatbots de código como Github Copilot" }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "orquestracao",
+    "name": "Orquestração & Pipelines",
+    "tools": ["Fabric Pipelines", "Azure Data Factory", "Apache Airflow", "dbt", "Glue"]
+  },
+  {
+    "id": "processamento",
+    "name": "Processamento",
+    "tools": ["PySpark", "Spark SQL", "Databricks Notebooks", "Fabric Notebooks", "Pandas"]
+  },
+  {
+    "id": "armazenamento",
+    "name": "Armazenamento",
+    "tools": ["Delta Lake", "Parquet", "Iceberg", "Hudi", "OneLake", "ADLS", "S3"]
+  },
+  {
+    "id": "sql_banco",
+    "name": "SQL & Banco de Dados",
+    "tools": ["Azure SQL", "Synapse", "BigQuery", "Snowflake", "Redshift", "DuckDB"]
+  },
+  {
+    "id": "modelagem_bi",
+    "name": "Modelagem & BI",
+    "tools": ["Power BI", "Tableau", "Looker", "Tabular Editor", "DAX Studio"]
+  },
+  {
+    "id": "power_platform",
+    "name": "Power Platform",
+    "tools": ["Power Apps", "Power Automate", "Dataverse"]
+  },
+  {
+    "id": "governanca",
+    "name": "Governança",
+    "tools": ["Microsoft Purview", "Unity Catalog", "Alation", "Collibra"]
+  },
+  {
+    "id": "cicd",
+    "name": "CI/CD & Versionamento",
+    "tools": ["GitHub", "Azure DevOps", "GitLab", "Terraform"]
+  }
+]

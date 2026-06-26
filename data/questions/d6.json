@@ -1,0 +1,402 @@
+[
+  {
+    "id": "D6-JR-Q01", "domain": "D6", "level": "junior",
+    "text": "O que é o Power Platform e quais são seus principais componentes?",
+    "options": [
+      { "key": "A", "text": "Uma plataforma de cloud computing da Microsoft para hospedagem de aplicações web" },
+      { "key": "B", "text": "Um conjunto de ferramentas low-code da Microsoft que inclui Power Apps (aplicações), Power Automate (automações), Power BI (analytics) e Power Pages (portais web)", "correct": true },
+      { "key": "C", "text": "Uma ferramenta exclusiva para criação de dashboards e relatórios analíticos" },
+      { "key": "D", "text": "Um serviço de automação de testes para aplicações corporativas" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q02", "domain": "D6", "level": "junior",
+    "text": "O que é o Dataverse e qual é seu papel no ecossistema Power Platform?",
+    "options": [
+      { "key": "A", "text": "Um serviço de armazenamento de arquivos em nuvem da Microsoft" },
+      { "key": "B", "text": "Um banco de dados relacional gerenciado da Microsoft que serve como repositório de dados central para aplicações criadas no Power Platform, com segurança integrada e modelo de dados extensível", "correct": true },
+      { "key": "C", "text": "Uma ferramenta de orquestração de pipelines de dados no Azure" },
+      { "key": "D", "text": "Um ambiente de desenvolvimento visual para criação de fluxos de trabalho" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q03", "domain": "D6", "level": "junior",
+    "text": "O que é uma Power App Canvas e como ela difere de uma Model-Driven App?",
+    "options": [
+      { "key": "A", "text": "Canvas App usa código; Model-Driven usa interface visual" },
+      { "key": "B", "text": "Canvas App oferece controle total sobre o layout e UX (como uma tela em branco); Model-Driven App é gerada automaticamente a partir do modelo de dados no Dataverse com navegação e formulários padronizados", "correct": true },
+      { "key": "C", "text": "São idênticas; a diferença é apenas visual" },
+      { "key": "D", "text": "Model-Driven é apenas para mobile; Canvas para desktop" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q04", "domain": "D6", "level": "junior",
+    "text": "O que é Power Automate e para que ele serve no contexto de dados?",
+    "options": [
+      { "key": "A", "text": "Uma ferramenta de criação de pipelines de big data no Azure" },
+      { "key": "B", "text": "Uma ferramenta low-code de automação de fluxos de trabalho que conecta sistemas, automatiza tarefas repetitivas e integra aplicações — incluindo fontes de dados — sem necessidade de código complexo", "correct": true },
+      { "key": "C", "text": "Um serviço de automação de testes para aplicações mobile" },
+      { "key": "D", "text": "Uma ferramenta exclusiva para envio automático de relatórios de Power BI" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q05", "domain": "D6", "level": "junior",
+    "text": "O que é um conector no Power Platform e como ele facilita a integração com fontes de dados?",
+    "options": [
+      { "key": "A", "text": "Um código Python que conecta APIs externas ao Power BI" },
+      { "key": "B", "text": "Um componente pré-construído que abstrai a conexão com serviços externos (ex: SharePoint, SQL Server, Salesforce, Teams), permitindo usar dados de diferentes fontes sem escrever código de integração", "correct": true },
+      { "key": "C", "text": "Um cabo físico para conectar servidores on-premise ao cloud" },
+      { "key": "D", "text": "Uma licença especial necessária para acessar dados externos no Power Platform" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q06", "domain": "D6", "level": "junior",
+    "text": "Qual é a principal vantagem das ferramentas low-code para equipes de dados em organizações?",
+    "options": [
+      { "key": "A", "text": "Substituem completamente os times de TI, eliminando a necessidade de programadores" },
+      { "key": "B", "text": "Permitem que usuários de negócio e analistas criem soluções funcionais rapidamente, reduzindo backlog de TI e acelerando entrega de valor, especialmente para processos internos e automações", "correct": true },
+      { "key": "C", "text": "São sempre mais performáticas que soluções desenvolvidas com código tradicional" },
+      { "key": "D", "text": "Eliminam a necessidade de governança e controles de segurança" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q07", "domain": "D6", "level": "junior",
+    "text": "O que é uma Power Automate Cloud Flow e em que difere de um Desktop Flow?",
+    "options": [
+      { "key": "A", "text": "Cloud Flow executa no computador do usuário; Desktop Flow executa na nuvem" },
+      { "key": "B", "text": "Cloud Flow automatiza processos via APIs/conectores na nuvem (ex: SharePoint, email, Dataverse); Desktop Flow automatiza aplicações desktop (RPA) simulando ações de mouse e teclado em softwares locais", "correct": true },
+      { "key": "C", "text": "Desktop Flow não está mais disponível no Power Automate moderno" },
+      { "key": "D", "text": "São equivalentes; a diferença é apenas de nomenclatura regional" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q08", "domain": "D6", "level": "junior",
+    "text": "O que é um Ambiente (Environment) no Power Platform e por que ele é importante para organizações?",
+    "options": [
+      { "key": "A", "text": "O sistema operacional no qual o Power Platform é instalado" },
+      { "key": "B", "text": "Um contêiner que agrupa apps, flows, dados e permissões — permite separar desenvolvimento, teste e produção, além de isolar dados por departamento ou região com políticas de segurança independentes", "correct": true },
+      { "key": "C", "text": "Uma configuração de tema visual para apps do Power Platform" },
+      { "key": "D", "text": "Uma opção de idioma e localização para apps publicadas no Power Platform" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q09", "domain": "D6", "level": "junior",
+    "text": "O que é RPA (Robotic Process Automation) e como o Power Automate Desktop o implementa?",
+    "options": [
+      { "key": "A", "text": "Automação de processos de manufatura usando robôs físicos conectados ao computador" },
+      { "key": "B", "text": "Automação de tarefas repetitivas em computadores simulando ações humanas (cliques, digitação, cópia de dados entre sistemas) — Power Automate Desktop permite criar e executar esses bots sem código", "correct": true },
+      { "key": "C", "text": "Um tipo de inteligência artificial para análise preditiva de processos de negócio" },
+      { "key": "D", "text": "Uma ferramenta exclusivamente para automatizar relatórios de Power BI" }
+    ]
+  },
+  {
+    "id": "D6-JR-Q10", "domain": "D6", "level": "junior",
+    "text": "Como o Power Platform se integra ao Microsoft 365 (Teams, SharePoint, Outlook) para aumentar a produtividade?",
+    "options": [
+      { "key": "A", "text": "Não há integração nativa; requer desenvolvimento customizado" },
+      { "key": "B", "text": "Por meio de conectores nativos, apps podem ser embutidas no Teams, dados do SharePoint usados em Power Apps, flows disparados por e-mails no Outlook e notificações enviadas via Teams — criando automações dentro do fluxo de trabalho existente", "correct": true },
+      { "key": "C", "text": "Integração com Microsoft 365 requer licenças premium adicionais" },
+      { "key": "D", "text": "A integração funciona apenas para leitura de dados, não para escrita" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q01", "domain": "D6", "level": "pleno",
+    "text": "Como implementar segurança de dados no Power Platform usando Row-Level Security no Dataverse?",
+    "options": [
+      { "key": "A", "text": "Criar uma app separada para cada perfil de usuário" },
+      { "key": "B", "text": "Usar Perfis de Segurança de Coluna, Funções de Segurança e Teams do Dataverse para controlar quais registros e campos cada usuário pode ver ou editar, configurado centralmente no Dataverse", "correct": true },
+      { "key": "C", "text": "Filtrar dados manualmente em cada canvas app com formulas Power FX" },
+      { "key": "D", "text": "RLS não é suportado no Dataverse; usar SharePoint como workaround" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q02", "domain": "D6", "level": "pleno",
+    "text": "O que é uma DLP Policy (Data Loss Prevention) no Power Platform e como ela protege os dados?",
+    "options": [
+      { "key": "A", "text": "Um backup automático de dados criados em apps do Power Platform" },
+      { "key": "B", "text": "Uma política que classifica conectores em grupos de dados (ex: Business vs Non-Business) e impede que flows e apps misturem dados sensíveis com serviços não aprovados, controlada por administradores do tenant", "correct": true },
+      { "key": "C", "text": "Um firewall de rede para proteger conexões entre Power Platform e sistemas externos" },
+      { "key": "D", "text": "Uma funcionalidade de criptografia automática para dados no Dataverse" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q03", "domain": "D6", "level": "pleno",
+    "text": "Como integrar um Power Automate Flow com um pipeline de dados no Azure (ex: ADF, Fabric)?",
+    "options": [
+      { "key": "A", "text": "Não é possível integrar Power Automate com serviços Azure de dados" },
+      { "key": "B", "text": "Usar conectores nativos (ex: Azure Data Factory, Fabric) ou acionamento via HTTP trigger/webhook para disparar pipelines, monitorar execuções e retornar resultados de volta ao flow para ações subsequentes", "correct": true },
+      { "key": "C", "text": "A integração requer desenvolvimento de uma Azure Function intermediária obrigatoriamente" },
+      { "key": "D", "text": "Power Automate só se integra com serviços de produtividade do Microsoft 365" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q04", "domain": "D6", "level": "pleno",
+    "text": "Quando é adequado usar o Dataverse como repositório de dados vs. usar um banco de dados relacional externo (ex: Azure SQL)?",
+    "options": [
+      { "key": "A", "text": "Dataverse deve ser sempre preferido por ser nativo ao Power Platform" },
+      { "key": "B", "text": "Dataverse é ideal para apps Power Platform com volume moderado de dados, segurança integrada e sem necessidade de SQL avançado; Azure SQL é preferível para alto volume, queries complexas, integração com outros sistemas e quando o time tem expertise SQL", "correct": true },
+      { "key": "C", "text": "Azure SQL é sempre superior ao Dataverse em todos os cenários" },
+      { "key": "D", "text": "Não há diferença; o Dataverse é apenas um alias para Azure SQL" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q05", "domain": "D6", "level": "pleno",
+    "text": "O que são Custom Connectors no Power Platform e quando devem ser criados?",
+    "options": [
+      { "key": "A", "text": "Versões pagas dos conectores padrão com maior cota de chamadas" },
+      { "key": "B", "text": "Conectores personalizados criados via definição OpenAPI/Swagger para integrar APIs internas ou externas sem conector nativo disponível, permitindo que times usem qualquer API REST no Power Platform", "correct": true },
+      { "key": "C", "text": "Plugins que estendem a interface visual do Power Apps Designer" },
+      { "key": "D", "text": "Conectores disponíveis apenas no ambiente de produção, não em desenvolvimento" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q06", "domain": "D6", "level": "pleno",
+    "text": "Como implementar versionamento e controle de mudanças em soluções do Power Platform?",
+    "options": [
+      { "key": "A", "text": "Manter apenas a versão mais recente publicada no ambiente de produção" },
+      { "key": "B", "text": "Exportar Soluções (managed/unmanaged) e versionar no Git, usar ALM Accelerator ou pipelines de deployment entre ambientes, garantindo rastreabilidade de mudanças e possibilidade de rollback", "correct": true },
+      { "key": "C", "text": "Versionamento de Power Platform não é possível sem ferramentas de terceiros" },
+      { "key": "D", "text": "Usar apenas o histórico de versões interno do Power Platform como controle de mudanças" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q07", "domain": "D6", "level": "pleno",
+    "text": "Como conectar um Fabric Lakehouse como fonte de dados em uma Canvas App do Power Apps?",
+    "options": [
+      { "key": "A", "text": "Não é possível conectar Fabric Lakehouse ao Power Apps" },
+      { "key": "B", "text": "Usar o conector Fabric/OneLake ou expor dados via SQL endpoint do Fabric Warehouse/Lakehouse e conectar via conector SQL Server no Power Apps, ou usar Dataverse Linked Tables para dados do Fabric", "correct": true },
+      { "key": "C", "text": "Exportar dados do Fabric para CSV e importar manualmente no Dataverse" },
+      { "key": "D", "text": "Apenas Power BI pode ler dados do Fabric Lakehouse" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q08", "domain": "D6", "level": "pleno",
+    "text": "O que é Power FX e como ele é usado no desenvolvimento de aplicações no Power Platform?",
+    "options": [
+      { "key": "A", "text": "Uma linguagem de programação completa equivalente ao JavaScript para Power Platform" },
+      { "key": "B", "text": "Uma linguagem de fórmulas baseada em Excel usada em Canvas Apps, Dataverse e Power Automate para expressar lógica de negócio, navegação e manipulação de dados de forma declarativa e low-code", "correct": true },
+      { "key": "C", "text": "A linguagem back-end do Dataverse para triggers e stored procedures" },
+      { "key": "D", "text": "Um framework de templates HTML para Power Pages" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q09", "domain": "D6", "level": "pleno",
+    "text": "Como estruturar um fluxo de aprovação robusto no Power Automate com múltiplos aprovadores e timeout?",
+    "options": [
+      { "key": "A", "text": "Enviar e-mails manuais para cada aprovador e aguardar resposta" },
+      { "key": "B", "text": "Usar ação de aprovação do Power Automate com tipo 'todos devem aprovar' ou 'primeiro a responder', configurar timeout com branch de escalation, notificação de lembrete e registro do resultado no Dataverse para auditoria", "correct": true },
+      { "key": "C", "text": "Fluxos de aprovação no Power Automate suportam apenas um aprovador por vez" },
+      { "key": "D", "text": "Usar SharePoint como sistema de aprovação é sempre superior ao Power Automate" }
+    ]
+  },
+  {
+    "id": "D6-PL-Q10", "domain": "D6", "level": "pleno",
+    "text": "Quais são as principais considerações de performance para Canvas Apps com grandes volumes de dados?",
+    "options": [
+      { "key": "A", "text": "Canvas Apps não têm limitações de volume de dados" },
+      { "key": "B", "text": "Usar delegation-aware functions (operações delegadas ao servidor), evitar carregar todos os registros de uma vez, implementar busca e paginação do lado do servidor, minimizar fórmulas complexas em OnVisible e usar variáveis locais para reduzir chamadas à fonte", "correct": true },
+      { "key": "C", "text": "Aumentar o tamanho do cache do browser resolve problemas de performance" },
+      { "key": "D", "text": "Conectar ao Dataverse sempre resolve problemas de performance independente da implementação" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q01", "domain": "D6", "level": "senior",
+    "text": "Como projetar uma estratégia de governança do Power Platform para uma organização com centenas de makers (criadores)?",
+    "options": [
+      { "key": "A", "text": "Bloquear o Power Platform para todos os usuários exceto o time de TI" },
+      { "key": "B", "text": "Implementar um Center of Excellence (CoE) com DLP policies por ambiente, processo de aprovação para conectores premium, monitoramento de apps/flows órfãos, capacitação de makers e programa de cidadão desenvolvedor com guardrails", "correct": true },
+      { "key": "C", "text": "Deixar cada departamento gerenciar seu próprio ambiente sem política central" },
+      { "key": "D", "text": "Permitir uso irrestrito e auditar apenas após incidentes de segurança" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q02", "domain": "D6", "level": "senior",
+    "text": "Como integrar Power Platform com Azure Synapse Analytics para análises avançadas sobre dados de negócio?",
+    "options": [
+      { "key": "A", "text": "Não é possível integrar Power Platform com serviços analíticos Azure" },
+      { "key": "B", "text": "Usar Synapse Link for Dataverse para sincronizar dados do Dataverse para Azure Data Lake em tempo real, processar com Synapse Analytics e consumir resultados via Power BI, Power Apps ou Power Automate", "correct": true },
+      { "key": "C", "text": "Exportar dados manualmente do Dataverse para o Azure periodicamente" },
+      { "key": "D", "text": "A integração requer desenvolvimento de uma aplicação Azure Functions intermediária" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q03", "domain": "D6", "level": "senior",
+    "text": "Qual é a melhor estratégia de ALM (Application Lifecycle Management) para soluções críticas de Power Platform em produção?",
+    "options": [
+      { "key": "A", "text": "Editar diretamente em produção com backup manual antes das mudanças" },
+      { "key": "B", "text": "Usar múltiplos ambientes (dev/test/prod) com Solutions exportadas, versionadas no Git, promovidas via pipeline automatizado (Azure DevOps, GitHub Actions) com testes automatizados de flows e validação de DLP antes do deploy", "correct": true },
+      { "key": "C", "text": "ALM para Power Platform não é necessário; é uma plataforma low-code com riscos baixos" },
+      { "key": "D", "text": "Usar apenas o controle de versão interno do Power Platform Studio" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q04", "domain": "D6", "level": "senior",
+    "text": "Como usar Power Automate como parte de um pipeline de dados event-driven que reage a mudanças no Dataverse ou SharePoint?",
+    "options": [
+      { "key": "A", "text": "Configurar um agendamento de verificação a cada 5 minutos como polling" },
+      { "key": "B", "text": "Usar triggers nativos event-driven (ex: 'quando um registro é criado/modificado no Dataverse', 'quando um arquivo é criado no SharePoint') que disparam o flow automaticamente sem polling, reduzindo latência e custo", "correct": true },
+      { "key": "C", "text": "Event-driven no Power Automate requer Webhook externo obrigatoriamente" },
+      { "key": "D", "text": "Power Automate só suporta agendamento; não suporta triggers por evento" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q05", "domain": "D6", "level": "senior",
+    "text": "Como implementar observabilidade e monitoramento de flows críticos de Power Automate em produção?",
+    "options": [
+      { "key": "A", "text": "Verificar manualmente o histórico de runs quando usuários reportam problemas" },
+      { "key": "B", "text": "Centralizar logs de execução (usando Azure Log Analytics ou Dataverse), configurar alertas para falhas, monitorar latência e throughput com dashboards de Power BI, e implementar logging customizado via ações de log no início e fim de cada flow crítico", "correct": true },
+      { "key": "C", "text": "O histórico nativo do Power Automate é suficiente para qualquer cenário de monitoramento" },
+      { "key": "D", "text": "Observabilidade só é necessária para flows que processam dados financeiros" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q06", "domain": "D6", "level": "senior",
+    "text": "Como estruturar uma solução Power Platform para integrar dados de múltiplos sistemas legados sem criar silos?",
+    "options": [
+      { "key": "A", "text": "Criar uma app separada para cada sistema legado" },
+      { "key": "B", "text": "Usar o Dataverse como hub de integração com conectores customizados para cada sistema, consolidando dados em entidades padronizadas no Dataverse e expondo via Power Apps/Automate como camada de experiência unificada", "correct": true },
+      { "key": "C", "text": "Migrar todos os dados dos sistemas legados para SharePoint antes de usar Power Platform" },
+      { "key": "D", "text": "Power Platform não consegue integrar com sistemas legados on-premise" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q07", "domain": "D6", "level": "senior",
+    "text": "O que é um Citizen Developer e qual é o papel do time de dados/TI em suportá-lo na Power Platform?",
+    "options": [
+      { "key": "A", "text": "Um desenvolvedor júnior sem experiência formal em programação" },
+      { "key": "B", "text": "Um usuário de negócio capacitado para criar soluções low-code; o time de dados/TI deve criar templates, guardrails, componentes reutilizáveis e um programa de capacitação — atuando como enabler, não gargalo", "correct": true },
+      { "key": "C", "text": "Um desenvolvedor externo contratado para criar apps no Power Platform" },
+      { "key": "D", "text": "Um papel obsoleto; times de TI devem criar todas as aplicações" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q08", "domain": "D6", "level": "senior",
+    "text": "Como avaliar quando uma solução que nasceu no Power Platform deve ser migrada para desenvolvimento tradicional?",
+    "options": [
+      { "key": "A", "text": "Migrar sempre que a solução tiver mais de 100 usuários" },
+      { "key": "B", "text": "Avaliar: se a solução atingiu os limites da plataforma (performance, delegation, volume), precisa de customizações impossíveis no low-code, requer integração complexa não suportada por conectores, ou tem custo de licença superior ao desenvolvimento próprio", "correct": true },
+      { "key": "C", "text": "Nunca migrar; melhorar a solução no Power Platform sempre" },
+      { "key": "D", "text": "Migrar após 6 meses independente de qualquer critério técnico" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q09", "domain": "D6", "level": "senior",
+    "text": "Como usar AI Builder no Power Platform para adicionar inteligência artificial a apps e flows sem expertise em ML?",
+    "options": [
+      { "key": "A", "text": "AI Builder requer sempre que o time treine um modelo customizado" },
+      { "key": "B", "text": "Usar modelos pré-treinados do AI Builder (ex: extração de informações de documentos, reconhecimento de objeto, análise de sentimento, previsão) diretamente em Canvas Apps e Power Automate via componentes e ações pré-configuradas", "correct": true },
+      { "key": "C", "text": "AI Builder é exclusivo para engenheiros de machine learning com Python" },
+      { "key": "D", "text": "AI Builder não está disponível no Power Platform; requer Azure Cognitive Services separado" }
+    ]
+  },
+  {
+    "id": "D6-SN-Q10", "domain": "D6", "level": "senior",
+    "text": "Como dimensionar e otimizar custos de licenciamento do Power Platform para uma organização de 5.000 usuários?",
+    "options": [
+      { "key": "A", "text": "Comprar licenças premium para todos os usuários da organização por segurança" },
+      { "key": "B", "text": "Mapear casos de uso por tipo de usuário (maker vs. usuário final vs. admin), usar licenças incluídas no Microsoft 365 onde suficientes, licenças por app/flow para usuários específicos, e licenças premium apenas para makers que criam soluções complexas", "correct": true },
+      { "key": "C", "text": "Licenciamento do Power Platform é fixo e não pode ser otimizado" },
+      { "key": "D", "text": "Usar apenas o plano gratuito e solicitar aprovação do RH para licenças premium caso a caso" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q01", "domain": "D6", "level": "especialista",
+    "text": "Como projetar uma estratégia de integração entre Power Platform e uma arquitetura de dados moderna (Fabric/Lakehouse) para maximizar valor?",
+    "options": [
+      { "key": "A", "text": "Usar Power Platform apenas para relatórios simples; dados analíticos ficam isolados no Lakehouse" },
+      { "key": "B", "text": "Orquestrar com Power Automate gatilhos de negócio que alimentam pipelines do Fabric, expor dados tratados do Lakehouse via SQL endpoint para Power Apps operacionais, usar Dataverse Synapse Link para análises avançadas e criar loop de feedback com dados de uso das apps de volta ao Lakehouse", "correct": true },
+      { "key": "C", "text": "Power Platform e Lakehouse são estratégias concorrentes; usar apenas uma" },
+      { "key": "D", "text": "A integração só é possível via exportação manual de dados em formato CSV" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q02", "domain": "D6", "level": "especialista",
+    "text": "Como estruturar um Center of Excellence (CoE) do Power Platform que escale com a organização sem tornar-se um gargalo?",
+    "options": [
+      { "key": "A", "text": "O CoE deve aprovar manualmente cada app e flow criado na organização" },
+      { "key": "B", "text": "Automatizar guardrails via DLP e políticas de ambiente, criar comunidade de prática com champions por área, fornecer templates e componentes reutilizáveis, medir adoção e qualidade via CoE Starter Kit e evoluir políticas baseado em dados de uso real", "correct": true },
+      { "key": "C", "text": "Um CoE deve ser composto apenas por membros do time de TI central" },
+      { "key": "D", "text": "CoE é necessário apenas após 10.000 usuários de Power Platform" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q03", "domain": "D6", "level": "especialista",
+    "text": "Qual é o impacto estratégico de uma plataforma low-code madura na transformação digital de uma organização de dados?",
+    "options": [
+      { "key": "A", "text": "Low-code é uma solução temporária que deve ser substituída por desenvolvimento tradicional quando a empresa crescer" },
+      { "key": "B", "text": "Democratiza a criação de soluções digitais, acelera inovação distribuída, reduz dependência de TI para soluções de médio valor, libera o time técnico para trabalho de alto impacto e aproxima o negócio de suas próprias soluções de dados", "correct": true },
+      { "key": "C", "text": "Low-code cria apenas riscos de segurança sem benefícios estratégicos" },
+      { "key": "D", "text": "O impacto é apenas operacional; não há valor estratégico em plataformas low-code" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q04", "domain": "D6", "level": "especialista",
+    "text": "Como projetar uma arquitetura de soluções complexas no Power Platform que suporte escalabilidade, manutenibilidade e governança a longo prazo?",
+    "options": [
+      { "key": "A", "text": "Criar uma única Canvas App com toda a lógica de negócio concentrada" },
+      { "key": "B", "text": "Separar em soluções modulares (componentes de UI reutilizáveis, flows reutilizáveis, Dataverse como modelo de dados compartilhado), aplicar padrões de naming, documentar via wiki, versionar no Git e implementar ALM completo com pipelines", "correct": true },
+      { "key": "C", "text": "Power Platform não suporta soluções arquiteturalmente complexas" },
+      { "key": "D", "text": "Concentrar toda a lógica nos flows para facilitar manutenção centralizada" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q05", "domain": "D6", "level": "especialista",
+    "text": "Como avaliar o TCO (Total Cost of Ownership) de uma solução Power Platform vs. desenvolvimento customizado vs. SaaS de mercado?",
+    "options": [
+      { "key": "A", "text": "Power Platform é sempre mais barato; escolher sem análise adicional" },
+      { "key": "B", "text": "Calcular: licenciamento por usuário/capacidade, custo de desenvolvimento e manutenção, tempo de go-to-market, riscos de vendor lock-in, custo de customização nos limites da plataforma, e valor do negócio entregue — comparando as três alternativas com os mesmos critérios", "correct": true },
+      { "key": "C", "text": "Desenvolvimento customizado é sempre mais flexível e deve ser preferido" },
+      { "key": "D", "text": "TCO só deve ser considerado para soluções com mais de 500 usuários" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q06", "domain": "D6", "level": "especialista",
+    "text": "Como usar o Microsoft Copilot integrado ao Power Platform para acelerar desenvolvimento e enriquecer apps com IA generativa?",
+    "options": [
+      { "key": "A", "text": "Copilot no Power Platform é apenas um assistente de busca de documentação" },
+      { "key": "B", "text": "Usar Copilot para gerar apps e flows a partir de linguagem natural, criar componentes de chatbot com Copilot Studio (ex: assistentes virtuais conectados ao Dataverse), adicionar IA generativa em apps com Copilot controls e automatizar tarefas repetitivas de desenvolvimento", "correct": true },
+      { "key": "C", "text": "Copilot é exclusivo para o Power BI e não está disponível no Power Apps ou Automate" },
+      { "key": "D", "text": "Copilot no Power Platform requer Azure OpenAI configurado separadamente" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q07", "domain": "D6", "level": "especialista",
+    "text": "Como garantir conformidade com LGPD em soluções desenvolvidas no Power Platform com dados pessoais de clientes?",
+    "options": [
+      { "key": "A", "text": "A Microsoft garante conformidade total com LGPD para qualquer uso do Power Platform" },
+      { "key": "B", "text": "Classificar dados no Dataverse com sensitivity labels, implementar retenção e exclusão automatizada via Power Automate, controlar geograficamente onde os dados residem, mapear fluxos de dados pessoais e treinar makers sobre obrigações da LGPD", "correct": true },
+      { "key": "C", "text": "LGPD não se aplica a dados armazenados em plataformas Microsoft" },
+      { "key": "D", "text": "Excluir dados pessoais manualmente quando solicitado pelo titular é suficiente" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q08", "domain": "D6", "level": "especialista",
+    "text": "O que é o Power Platform Admin Center e como um arquiteto de dados o utiliza para governança enterprise?",
+    "options": [
+      { "key": "A", "text": "Uma interface de design de apps alternativa ao Power Apps Studio" },
+      { "key": "B", "text": "O centro de administração centralizado onde se gerencia ambientes, DLP policies, capacidade, inventário de apps/flows/makers, análise de adoção e saúde da plataforma — essencial para governança e planejamento de capacidade em escala", "correct": true },
+      { "key": "C", "text": "Uma ferramenta de monitoramento disponível apenas para times de suporte" },
+      { "key": "D", "text": "O Admin Center é idêntico ao Power BI Admin Portal; são o mesmo produto" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q09", "domain": "D6", "level": "especialista",
+    "text": "Como estruturar o roadmap de adoção do Power Platform em uma organização que não usa nenhuma ferramenta low-code?",
+    "options": [
+      { "key": "A", "text": "Implementar o CoE completo antes de permitir qualquer uso da plataforma" },
+      { "key": "B", "text": "Começar com pilotos em 2-3 departamentos com casos de uso de alto valor e baixo risco, construir competências e credibilidade, implementar governança progressivamente, expandir com programa de champions e escalar baseado em resultados demonstráveis", "correct": true },
+      { "key": "C", "text": "Liberar acesso irrestrito a toda a organização imediatamente para maximizar adoção" },
+      { "key": "D", "text": "Aguardar que todas as políticas de governança estejam prontas antes do primeiro piloto" }
+    ]
+  },
+  {
+    "id": "D6-ESP-Q10", "domain": "D6", "level": "especialista",
+    "text": "Como o Power Platform se posiciona estrategicamente em relação a outras plataformas low-code (ex: OutSystems, Mendix, ServiceNow) para uma organização data-driven?",
+    "options": [
+      { "key": "A", "text": "Power Platform é sempre superior às alternativas por ser mais barato" },
+      { "key": "B", "text": "Power Platform se destaca pelo ecossistema Microsoft integrado (M365, Azure, Fabric, Dynamics), profundidade de conectores, comunidade e licenciamento incluído no M365 — ideal para organizações Microsoft-first; avaliar alternativas quando há maior necessidade de desenvolvimento customizado ou ausência de investimento Microsoft", "correct": true },
+      { "key": "C", "text": "Power Platform é apenas para pequenas empresas; grandes organizações usam OutSystems" },
+      { "key": "D", "text": "Todas as plataformas low-code são equivalentes; a escolha é apenas de preferência pessoal" }
+    ]
+  }
+]

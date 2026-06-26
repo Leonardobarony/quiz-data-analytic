@@ -42,9 +42,28 @@ export default function ProfileForm() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-10">
+      {/* Dataside welcome banner */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Seu Perfil</h1>
-        <p className="text-gray-500 text-sm">Preencha os dados abaixo para começar a avaliação</p>
+        <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-full px-4 py-1.5 mb-5">
+          <span className="text-xs text-blue-600 font-medium">Uma iniciativa Dataside</span>
+        </div>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Avaliação de Maturidade</h1>
+        <p className="text-gray-500 text-sm max-w-md mx-auto leading-relaxed">
+          Acompanhando profissionais em sua jornada de evolução com <strong className="text-gray-700">Data &amp; AI</strong> aplicada aos negócios.
+        </p>
+        <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-400">
+          <span>Microsoft</span>
+          <span>·</span>
+          <span>Databricks</span>
+          <span>·</span>
+          <span>Snowflake</span>
+          <span>·</span>
+          <span>AWS</span>
+        </div>
+        <div className="mt-5 pt-5 border-t border-gray-100">
+          <h2 className="text-base font-semibold text-gray-700">Seu Perfil</h2>
+          <p className="text-gray-400 text-sm">Preencha os dados abaixo para começar a avaliação</p>
+        </div>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-2xl p-6 mb-6 space-y-5">

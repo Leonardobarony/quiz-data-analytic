@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-blue-50: #EBF4FE;
+  --color-blue-100: #D3E9FC;
+  --color-blue-200: #A8D2F9;
+  --color-blue-300: #7ABCF4;
+  --color-blue-400: #6DBCE8;
+  --color-blue-500: #5BAAE5;
+  --color-blue-600: #4A96D8;
+  --color-blue-700: #3A7EC5;
+  --color-blue-800: #2B67AB;
+  --color-blue-900: #1F5090;
+  --color-blue-950: #163875;
+}
+
 body {
   font-family: system-ui, -apple-system, sans-serif;
 }

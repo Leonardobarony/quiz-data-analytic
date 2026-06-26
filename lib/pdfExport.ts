@@ -86,6 +86,21 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
   const { jsPDF } = await import('jspdf')
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' })
 
+  // Load Dataside logo
+  let logoBase64: string | null = null
+  try {
+    const resp = await fetch('/logo-dataside.png')
+    if (resp.ok) {
+      const blob = await resp.blob()
+      logoBase64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader()
+        reader.onloadend = () => resolve(reader.result as string)
+        reader.onerror = reject
+        reader.readAsDataURL(blob)
+      })
+    }
+  } catch { /* continue without logo */ }
+
   const pageW = 210
   const pageH = 297
   const margin = 18
@@ -182,6 +197,13 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
   doc.setFontSize(9)
   doc.setTextColor(147, 197, 253)
   doc.text(new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' }), margin, 32)
+
+  // Logo Dataside no header (lado direito)
+  if (logoBase64) {
+    const logoH = 14
+    const logoW = Math.round(logoH * (4500 / 2082) * 10) / 10  // aspect ratio ≈ 2.16
+    doc.addImage(logoBase64, 'PNG', pageW - margin - logoW, (38 - logoH) / 2, logoW, logoH)
+  }
 
   y = 48
 
@@ -453,6 +475,35 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
     y += 5.5
   }
 
+  addSpacer(4)
+
+  // ── DATASIDE — ECOSSISTEMA ────────────────────────────────────────────────
+
+  addSectionTitle('Dataside — Ecossistema de Parceiros')
+
+  if (logoBase64) {
+    const logoH = 8
+    const logoW = Math.round(logoH * (4500 / 2082) * 10) / 10
+    checkPage(logoH + 4)
+    doc.addImage(logoBase64, 'PNG', margin, y, logoW, logoH)
+    y += logoH + 3
+  }
+
+  addText(
+    'A Dataside acompanha profissionais e organizações em sua jornada de evolução com Data & AI, atuando em parceria com os principais players do mercado.',
+    9, false, '#374151'
+  )
+  addSpacer(2)
+
+  for (const p of ['Microsoft  (Azure · Fabric · Copilot Studio)', 'Databricks  (Delta Lake · MLflow)', 'Snowflake  (Data Cloud)', 'AWS  (Data & Analytics)']) {
+    checkPage(7)
+    doc.setFontSize(8.5)
+    doc.setFont('helvetica', 'normal')
+    setColor('#4A96D8')
+    doc.text(`  •  ${p}`, margin, y)
+    y += 5
+  }
+
   // ── RODAPÉ EM TODAS AS PÁGINAS ───────────────────────────────────────────
 
   const totalPages = (doc as unknown as { internal: { getNumberOfPages: () => number } }).internal.getNumberOfPages()
@@ -462,7 +513,7 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
     doc.setFont('helvetica', 'normal')
     setColor('#9CA3AF')
     doc.text(
-      `Quiz Data Analytics — Avaliação de Maturidade Profissional`,
+      `Dataside  ·  Quiz Data Analytics — Avaliação de Maturidade Profissional`,
       margin,
       pageH - 8
     )

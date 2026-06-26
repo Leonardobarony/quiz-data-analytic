@@ -336,6 +336,31 @@ export default function Results() {
         </ul>
       </div>
 
+      {/* Ecossistema Dataside */}
+      <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-2xl p-5 mb-6">
+        <div className="flex items-center gap-3 mb-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-dataside.png" alt="Dataside" className="h-6 w-auto" />
+          <span className="text-sm font-semibold text-blue-800">Ecossistema de Parceiros</span>
+        </div>
+        <p className="text-xs text-blue-700 leading-relaxed mb-3">
+          A Dataside atua com os principais players do mercado de dados e AI para acelerar sua carreira e os projetos da sua organização.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          {[
+            { name: 'Microsoft', desc: 'Azure · Fabric · Copilot' },
+            { name: 'Databricks', desc: 'Delta Lake · MLflow' },
+            { name: 'Snowflake', desc: 'Data Cloud' },
+            { name: 'AWS', desc: 'Data & Analytics' },
+          ].map(p => (
+            <div key={p.name} className="bg-white/70 rounded-xl p-2.5 text-center">
+              <p className="text-xs font-semibold text-blue-800">{p.name}</p>
+              <p className="text-xs text-blue-500 mt-0.5">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Ações */}
       <div className="flex flex-wrap gap-3 justify-center">
         <button

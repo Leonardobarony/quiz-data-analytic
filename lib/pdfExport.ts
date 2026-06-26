@@ -86,19 +86,26 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
   const { jsPDF } = await import('jspdf')
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' })
 
-  // Load Dataside logo
+  // Load Dataside logo — resize via canvas to avoid PDF gigante (logo original = 4500px)
   let logoBase64: string | null = null
   try {
-    const resp = await fetch('/logo-dataside.png')
-    if (resp.ok) {
-      const blob = await resp.blob()
-      logoBase64 = await new Promise<string>((resolve, reject) => {
-        const reader = new FileReader()
-        reader.onloadend = () => resolve(reader.result as string)
-        reader.onerror = reject
-        reader.readAsDataURL(blob)
-      })
-    }
+    logoBase64 = await new Promise<string>((resolve, reject) => {
+      const img = new window.Image()
+      img.crossOrigin = 'anonymous'
+      img.onload = () => {
+        const maxW = 600
+        const scale = Math.min(1, maxW / img.naturalWidth)
+        const canvas = document.createElement('canvas')
+        canvas.width = Math.round(img.naturalWidth * scale)
+        canvas.height = Math.round(img.naturalHeight * scale)
+        const ctx = canvas.getContext('2d')
+        if (!ctx) { reject(new Error('canvas unavailable')); return }
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
+        resolve(canvas.toDataURL('image/png'))
+      }
+      img.onerror = reject
+      img.src = '/logo-dataside.png'
+    })
   } catch { /* continue without logo */ }
 
   const pageW = 210
@@ -370,14 +377,14 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
       : [59, 130, 246]
     addBar(pct, contentW, 3.5, [229, 231, 235], fillRgb)
 
-    addSpacer(1)
-    // Significado do domínio
+    // Significado do domínio — espaço generoso para não tocar na barra
+    addSpacer(2.5)
     doc.setFontSize(7.5)
     doc.setFont('helvetica', 'normal')
     setColor('#9CA3AF')
-    doc.text(DOMAIN_MEANINGS[d], margin, y)
-    y += 5
-    addSpacer(1)
+    const meaningLines = doc.splitTextToSize(DOMAIN_MEANINGS[d], contentW) as string[]
+    doc.text(meaningLines, margin, y)
+    y += meaningLines.length * 3.8 + 3
   }
 
   // D7
@@ -389,12 +396,13 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
   doc.text(`${result.d7RawScore} / 5`, pageW - margin, y, { align: 'right' })
   y += 4
   addBar((result.d7RawScore / 5) * 100, contentW, 3.5, [229, 231, 235], [99, 102, 241])
-  addSpacer(1)
+  addSpacer(2.5)
   doc.setFontSize(7.5)
   doc.setFont('helvetica', 'normal')
   setColor('#9CA3AF')
-  doc.text(D7_INTERPRETATION(result.d7RawScore), margin, y)
-  y += 5
+  const d7Lines = doc.splitTextToSize(D7_INTERPRETATION(result.d7RawScore), contentW) as string[]
+  doc.text(d7Lines, margin, y)
+  y += d7Lines.length * 3.8 + 3
 
   addSpacer(2)
 

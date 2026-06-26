@@ -334,26 +334,31 @@ export async function exportToPDF({ role, result, userName, userSquad, userTechL
     const isStrength = result.strengths.includes(d)
     const isGap = result.gaps.includes(d)
 
-    // Label + score
+    // Label
     doc.setFontSize(9)
     doc.setFont('helvetica', 'bold')
     setColor('#111827')
     doc.text(DOMAIN_LABELS[d], margin, y)
 
-    const scoreText = `${score.toFixed(1)} / 20`
-    doc.setFont('helvetica', 'bold')
-    doc.text(scoreText, pageW - margin, y, { align: 'right' })
-
-    // Tag forte/gap
+    // Tag forte/gap — à esquerda do score, com folga suficiente
     if (isStrength) {
       doc.setFontSize(7)
+      doc.setFont('helvetica', 'normal')
       setColor('#16A34A')
-      doc.text('✓ Forte', pageW - margin - 22, y)
+      doc.text('✓ Forte', pageW - margin - 38, y)
     } else if (isGap) {
       doc.setFontSize(7)
+      doc.setFont('helvetica', 'normal')
       setColor('#DC2626')
-      doc.text('⚠ Gap', pageW - margin - 22, y)
+      doc.text('⚠ Gap', pageW - margin - 38, y)
     }
+
+    // Score — right-aligned, separado da tag
+    doc.setFontSize(9)
+    doc.setFont('helvetica', 'bold')
+    setColor('#111827')
+    const scoreText = `${score.toFixed(1)} / 20`
+    doc.text(scoreText, pageW - margin, y, { align: 'right' })
 
     y += 4
 

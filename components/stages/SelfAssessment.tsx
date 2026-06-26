@@ -20,7 +20,7 @@ const LEVEL_LABELS: Record<string, string> = {
 
 export default function SelfAssessment() {
   const { state, dispatch } = useQuiz()
-  const { selfAnswers, answers, loadedQuestions, toolSelections } = state
+  const { selfAnswers, answers, loadedQuestions } = state
 
   const totalCompetencies = competenciesData.reduce((acc, g) => acc + g.items.length, 0)
   const answered = Object.keys(selfAnswers).length
@@ -31,7 +31,7 @@ export default function SelfAssessment() {
   }
 
   const handleFinish = () => {
-    const result = calculateQuizResult(answers, selfAnswers, loadedQuestions, toolSelections)
+    const result = calculateQuizResult(answers, selfAnswers, loadedQuestions)
     dispatch({ type: 'SET_RESULT', result })
   }
 

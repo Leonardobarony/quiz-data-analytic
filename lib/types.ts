@@ -1,6 +1,6 @@
 export type Role = 'DA' | 'DE'
 export type Level = 'junior' | 'pleno' | 'senior' | 'especialista'
-export type Domain = 'D1' | 'D2' | 'D3' | 'D4' | 'D5' | 'D6' | 'D7'
+export type Domain = 'D1' | 'D2' | 'D3' | 'D4' | 'D5' | 'D7'
 export type SelfAnswer = 'sim' | 'parcialmente' | 'nao'
 
 export interface Option {
@@ -21,12 +21,6 @@ export interface ToolGroup {
   id: string
   name: string
   tools: string[]
-}
-
-export interface ToolSelection {
-  groupId: string
-  selectedTools: string[]
-  confidence: 'basico' | 'intermediario' | 'avancado' | null
 }
 
 export interface Competency {
@@ -52,7 +46,6 @@ export interface DomainScores {
   D3: number
   D4: number
   D5: number
-  D6: number
 }
 
 export interface QuizResult {
@@ -61,19 +54,20 @@ export interface QuizResult {
   domainScores: DomainScores
   d7RawScore: number
   d7NormalizedScore: number
-  toolFilterScore: number
   strengths: Domain[]
   gaps: Domain[]
   selfAssessmentScore: number
   selfAssessmentLevel: Level
 }
 
-export type QuizStage = 'role' | 'tools' | 'test' | 'assessment' | 'results'
+export type QuizStage = 'profile' | 'level' | 'test' | 'assessment' | 'results'
 
 export interface QuizState {
   stage: QuizStage
   role: Role | null
-  toolSelections: ToolSelection[]
+  userName: string
+  userSquad: string
+  userTechLevel: string
   startingLevel: Level | null
   currentQuestionIndex: number
   answers: Record<string, string>
@@ -83,8 +77,7 @@ export interface QuizState {
 }
 
 export type QuizAction =
-  | { type: 'SET_ROLE'; role: Role }
-  | { type: 'SET_TOOL_SELECTION'; groupId: string; selectedTools: string[]; confidence: ToolSelection['confidence'] }
+  | { type: 'SET_PROFILE'; role: Role; userName: string; userSquad: string; userTechLevel: string }
   | { type: 'SET_STARTING_LEVEL'; level: Level }
   | { type: 'LOAD_QUESTIONS'; questions: Question[] }
   | { type: 'ANSWER_QUESTION'; questionId: string; optionKey: string }

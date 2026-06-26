@@ -15,7 +15,6 @@ import d2 from '@/data/questions/d2.json'
 import d3 from '@/data/questions/d3.json'
 import d4 from '@/data/questions/d4.json'
 import d5 from '@/data/questions/d5.json'
-import d6 from '@/data/questions/d6.json'
 import d7 from '@/data/questions/d7.json'
 
 const TEST_MAP: Record<string, FixedTest> = {
@@ -35,7 +34,6 @@ const ALL_QUESTIONS: Question[] = [
   ...(d3 as Question[]),
   ...(d4 as Question[]),
   ...(d5 as Question[]),
-  ...(d6 as Question[]),
   ...(d7 as Question[]),
 ]
 

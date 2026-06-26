@@ -6,10 +6,9 @@ const DOMAIN_LABELS: Record<Domain, string> = {
   D1: 'Pipelines & Arquitetura de Dados',
   D2: 'SQL, Python & Processamento Distribuído',
   D3: 'Modelagem de Dados & Semântica Analítica',
-  D4: 'Governança, Qualidade & Segurança de Dados',
-  D5: 'Cloud, Infraestrutura & Plataformas',
-  D6: 'Power Platform & Low-Code',
-  D7: 'Visão Estratégica & Mercado',
+  D4: 'Governança, Qualidade & CI/CD',
+  D5: 'Análise de Negócios & Requisitos',
+  D7: 'Gestão de Projetos & Requisitos de Consultoria',
 }
 
 const LEVEL_LABELS: Record<Level, string> = {
@@ -26,7 +25,7 @@ function buildPrompt(result: QuizResult, role: Role): string {
   const strengths = result.strengths.map(d => DOMAIN_LABELS[d]).join(', ') || 'Nenhum ponto forte acima de 70%'
 
   const domainDetails = Object.entries(result.domainScores)
-    .map(([d, score]) => `- ${DOMAIN_LABELS[d as Domain]}: ${score.toFixed(1)}/15 (${Math.round((score / 15) * 100)}%)`)
+    .map(([d, score]) => `- ${DOMAIN_LABELS[d as Domain]}: ${score.toFixed(1)}/20 (${Math.round((score / 20) * 100)}%)`)
     .join('\n')
 
   return `Você é um mentor especialista em carreiras de dados. Analise o resultado abaixo e forneça um feedback personalizado e construtivo em português do Brasil.

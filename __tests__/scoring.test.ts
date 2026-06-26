@@ -10,17 +10,17 @@ import {
 } from '../lib/scoring'
 import type { DomainScores, Question } from '../lib/types'
 
-const makeQuestion = (id: string, domain: 'D1' | 'D2' | 'D3' | 'D4' | 'D5' | 'D6' | 'D7', correctKey = 'B'): Question => ({
+const makeQuestion = (id: string, domain: 'D1' | 'D2' | 'D3' | 'D4' | 'D5' | 'D7', correctKey = 'B'): Question => ({
   id,
   domain,
   level: 'junior',
   text: 'Pergunta de teste',
   options: [
     { key: 'A', text: 'Errada' },
-    { key: 'B', text: 'Correta', correct: true },
+    { key: 'B', text: 'Correta', correct: correctKey === 'B' || undefined },
     { key: 'C', text: 'Errada' },
     { key: 'D', text: 'Errada' },
-  ],
+  ].map(o => ({ ...o, correct: o.key === correctKey ? true : undefined })),
 })
 
 describe('scoreDomain', () => {
@@ -32,9 +32,9 @@ describe('scoreDomain', () => {
     makeQuestion('D1-JR-Q05', 'D1'),
   ]
 
-  it('deve retornar 15 com todos corretos', () => {
+  it('deve retornar 20 com todos corretos', () => {
     const answers = { 'D1-JR-Q01': 'B', 'D1-JR-Q02': 'B', 'D1-JR-Q03': 'B', 'D1-JR-Q04': 'B', 'D1-JR-Q05': 'B' }
-    expect(scoreDomain('D1', answers, questions)).toBe(15)
+    expect(scoreDomain('D1', answers, questions)).toBe(20)
   })
 
   it('deve retornar 0 com todos errados', () => {
@@ -42,12 +42,9 @@ describe('scoreDomain', () => {
     expect(scoreDomain('D1', answers, questions)).toBe(0)
   })
 
-  it('deve retornar 7.5 com metade corretos', () => {
-    const answers = { 'D1-JR-Q01': 'B', 'D1-JR-Q02': 'B', 'D1-JR-Q03': 'A', 'D1-JR-Q04': 'A', 'D1-JR-Q05': 'A' }
-    // 2/5 × 15 = 6 (não 7.5 — 2.5/5 seria metade)
-    // vamos testar 3/5 corretos
-    const answers2 = { 'D1-JR-Q01': 'B', 'D1-JR-Q02': 'B', 'D1-JR-Q03': 'B', 'D1-JR-Q04': 'A', 'D1-JR-Q05': 'A' }
-    expect(scoreDomain('D1', answers2, questions)).toBe(9)
+  it('deve retornar 12 com 3/5 corretos', () => {
+    const answers = { 'D1-JR-Q01': 'B', 'D1-JR-Q02': 'B', 'D1-JR-Q03': 'B', 'D1-JR-Q04': 'A', 'D1-JR-Q05': 'A' }
+    expect(scoreDomain('D1', answers, questions)).toBe(12)
   })
 
   it('deve retornar 0 para domínio sem questões', () => {
@@ -78,19 +75,19 @@ describe('scoreD7Raw', () => {
 })
 
 describe('calculateTotal', () => {
-  it('deve somar domain scores e tool filter', () => {
-    const scores: DomainScores = { D1: 10, D2: 10, D3: 10, D4: 10, D5: 10, D6: 10 }
-    expect(calculateTotal(scores, 10)).toBe(70)
+  it('deve somar domain scores sem tool filter', () => {
+    const scores: DomainScores = { D1: 10, D2: 10, D3: 10, D4: 10, D5: 10 }
+    expect(calculateTotal(scores)).toBe(50)
   })
 
   it('deve ter máximo de 100', () => {
-    const scores: DomainScores = { D1: 15, D2: 15, D3: 15, D4: 15, D5: 15, D6: 15 }
-    expect(calculateTotal(scores, 10)).toBe(100)
+    const scores: DomainScores = { D1: 20, D2: 20, D3: 20, D4: 20, D5: 20 }
+    expect(calculateTotal(scores)).toBe(100)
   })
 
   it('deve retornar 0 com todos zeros', () => {
-    const scores: DomainScores = { D1: 0, D2: 0, D3: 0, D4: 0, D5: 0, D6: 0 }
-    expect(calculateTotal(scores, 0)).toBe(0)
+    const scores: DomainScores = { D1: 0, D2: 0, D3: 0, D4: 0, D5: 0 }
+    expect(calculateTotal(scores)).toBe(0)
   })
 })
 
@@ -117,21 +114,21 @@ describe('determineFinalLevel', () => {
 })
 
 describe('identifyStrengths e identifyGaps', () => {
-  it('deve identificar pontos fortes (≥70% = ≥10.5)', () => {
-    const scores: DomainScores = { D1: 12, D2: 5, D3: 11, D4: 4, D5: 10, D6: 10.5 }
+  it('deve identificar pontos fortes (≥70% = ≥14)', () => {
+    const scores: DomainScores = { D1: 16, D2: 5, D3: 14, D4: 4, D5: 13 }
     const strengths = identifyStrengths(scores)
     expect(strengths).toContain('D1')
     expect(strengths).toContain('D3')
-    expect(strengths).toContain('D6')
     expect(strengths).not.toContain('D2')
+    expect(strengths).not.toContain('D5')
   })
 
-  it('deve identificar lacunas (<50% = <7.5)', () => {
-    const scores: DomainScores = { D1: 12, D2: 5, D3: 11, D4: 4, D5: 10, D6: 7.4 }
+  it('deve identificar lacunas (<50% = <10)', () => {
+    const scores: DomainScores = { D1: 16, D2: 5, D3: 14, D4: 4, D5: 9 }
     const gaps = identifyGaps(scores)
     expect(gaps).toContain('D2')
     expect(gaps).toContain('D4')
-    expect(gaps).toContain('D6')
+    expect(gaps).toContain('D5')
     expect(gaps).not.toContain('D1')
   })
 })

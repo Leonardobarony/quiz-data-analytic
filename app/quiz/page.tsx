@@ -1,21 +1,21 @@
 'use client'
 
 import { QuizProvider, useQuiz } from '@/components/QuizProvider'
-import RoleSelection from '@/components/stages/RoleSelection'
-import ToolFilter from '@/components/stages/ToolFilter'
+import ProfileForm from '@/components/stages/ProfileForm'
+import LevelSelection from '@/components/stages/LevelSelection'
 import TechnicalTest from '@/components/stages/TechnicalTest'
 import SelfAssessment from '@/components/stages/SelfAssessment'
 import Results from '@/components/stages/Results'
 
 const STAGE_LABELS = {
-  role: 'Perfil',
-  tools: 'Ferramentas',
+  profile: 'Perfil',
+  level: 'Nível',
   test: 'Prova Técnica',
   assessment: 'Auto-avaliação',
   results: 'Resultado',
 }
 
-const STAGE_ORDER = ['role', 'tools', 'test', 'assessment', 'results'] as const
+const STAGE_ORDER = ['profile', 'level', 'test', 'assessment', 'results'] as const
 
 function QuizContent() {
   const { state } = useQuiz()
@@ -53,8 +53,8 @@ function QuizContent() {
         </div>
       )}
 
-      {state.stage === 'role' && <RoleSelection />}
-      {state.stage === 'tools' && <ToolFilter />}
+      {state.stage === 'profile' && <ProfileForm />}
+      {state.stage === 'level' && <LevelSelection />}
       {state.stage === 'test' && <TechnicalTest />}
       {state.stage === 'assessment' && <SelfAssessment />}
       {state.stage === 'results' && <Results />}

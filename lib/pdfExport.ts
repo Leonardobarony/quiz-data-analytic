@@ -1,13 +1,11 @@
-import type { Domain, DomainScores, Level, QuizResult, Role } from './types'
+import type { DomainScores, Level, QuizResult, Role } from './types'
 
-const DOMAIN_LABELS: Record<Domain, string> = {
+const DOMAIN_LABELS: Record<keyof DomainScores, string> = {
   D1: 'Pipelines & Arquitetura',
   D2: 'SQL, Python & Processamento',
   D3: 'Modelagem & Semântica Analítica',
-  D4: 'Governança, Qualidade & Segurança',
-  D5: 'Cloud, Infraestrutura & Plataformas',
-  D6: 'Power Platform & Low-Code',
-  D7: 'Visão Estratégica & Mercado',
+  D4: 'Governança, Qualidade & CI/CD',
+  D5: 'Análise de Negócios & Requisitos',
 }
 
 const LEVEL_LABELS: Record<Level, string> = {
@@ -18,19 +16,28 @@ const LEVEL_LABELS: Record<Level, string> = {
 }
 
 const CERTS_BY_LEVEL: Record<Level, string[]> = {
-  junior: ['DP-900 (Azure Data Fundamentals)', 'PL-900 (Power Platform Fundamentals)', 'AZ-900 (Azure Fundamentals)'],
-  pleno: ['PL-300 (Power BI Data Analyst)', 'DP-203 (Azure Data Engineer Associate)', 'DP-600 (Fabric Analytics Engineer)', 'Databricks Associate Developer for Spark'],
-  senior: ['DP-700 (Fabric Data Engineer)', 'AWS Certified Data Engineer – Associate', 'Databricks Data Engineer Professional', 'Google Professional Data Engineer'],
-  especialista: ['DP-600 + DP-700 (Fabric Full Stack)', 'Databricks Certified Data Engineer Professional', 'AWS Certified Data Analytics Specialty', 'dbt Analytics Engineering Certification'],
+  junior: ['AZ-900 (Azure Fundamentals)', 'DP-900 (Azure Data Fundamentals)', 'PL-900 (Power Platform Fundamentals)'],
+  pleno: ['DP-600 (Fabric Analytics Engineer)', 'DP-700 (Fabric Data Engineer)'],
+  senior: ['DP-203 (Azure Data Engineer Associate)', 'Databricks Data Engineer Associate'],
+  especialista: ['DP-700 + DP-600 (Fabric Full Stack)', 'Databricks Data Engineer Professional', 'PL-400 (Power Automate Developer)', 'DP-203 (Azure Data Engineer Associate)'],
+}
+
+const D7_INTERPRETATION = (raw: number) => {
+  if (raw <= 1) return 'Lacunas críticas em gestão de projetos'
+  if (raw <= 3) return 'Conhecimento parcial'
+  if (raw === 4) return 'Bom entendimento'
+  return 'Domínio completo'
 }
 
 interface PDFData {
   role: Role
   result: QuizResult
   userName?: string
+  userSquad?: string
+  userTechLevel?: string
 }
 
-export async function exportToPDF({ role, result, userName }: PDFData): Promise<void> {
+export async function exportToPDF({ role, result, userName, userSquad, userTechLevel }: PDFData): Promise<void> {
   const { jsPDF } = await import('jspdf')
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' })
 
@@ -70,8 +77,10 @@ export async function exportToPDF({ role, result, userName }: PDFData): Promise<
   doc.text('Avaliação de Maturidade Profissional', margin, 23)
   y = 45
 
-  // Nome e data
+  // Dados do profissional
   if (userName) addLine(`Profissional: ${userName}`, 10, true)
+  if (userSquad) addLine(`Squad / Equipe: ${userSquad}`, 10)
+  if (userTechLevel) addLine(`Nível técnico informado: ${userTechLevel}`, 10)
   addLine(`Data: ${new Date().toLocaleDateString('pt-BR')}`, 10)
   addLine(`Perfil: ${role === 'DA' ? 'Analista de Dados (DA)' : 'Engenheiro de Dados (DE)'}`, 10)
   addSpacer()
@@ -82,33 +91,36 @@ export async function exportToPDF({ role, result, userName }: PDFData): Promise<
   addSpacer(2)
   addLine(`Nível: ${LEVEL_LABELS[result.finalLevel]}`, 13, true)
   addLine(`Score Total: ${result.totalScore.toFixed(1)} / 100`, 11)
-  addLine(`Filtro de Ferramentas: ${result.toolFilterScore.toFixed(1)} / 10`, 10)
-  addLine(`D7 – Visão Estratégica: ${result.d7RawScore} / 5 acertos`, 10)
+  addLine(`D7 – Gestão de Projetos: ${result.d7RawScore} / 5 — ${D7_INTERPRETATION(result.d7RawScore)}`, 10)
   addSpacer()
   addDivider()
 
   // Scores por domínio
   addLine('SCORES POR DOMÍNIO', 12, true, '#1E40AF')
   addSpacer(2)
-  const domains: (keyof DomainScores)[] = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6']
+  const domains: (keyof DomainScores)[] = ['D1', 'D2', 'D3', 'D4', 'D5']
   for (const d of domains) {
     const score = result.domainScores[d]
-    const pct = Math.round((score / 15) * 100)
-    addLine(`${DOMAIN_LABELS[d]}: ${score.toFixed(1)} / 15  (${pct}%)`, 10)
+    const pct = Math.round((score / 20) * 100)
+    addLine(`${DOMAIN_LABELS[d]}: ${score.toFixed(1)} / 20  (${pct}%)`, 10)
   }
   addSpacer()
   addDivider()
 
   // Pontos fortes e lacunas
   if (result.strengths.length > 0) {
-    addLine('PONTOS FORTES (≥ 70%)', 11, true, '#166534')
-    for (const d of result.strengths) addLine(`  • ${DOMAIN_LABELS[d]}`, 10)
+    addLine('PONTOS FORTES (≥ 70% do máximo)', 11, true, '#166534')
+    for (const d of result.strengths) {
+      addLine(`  • ${DOMAIN_LABELS[d as keyof DomainScores]}`, 10)
+    }
     addSpacer(2)
   }
 
   if (result.gaps.length > 0) {
-    addLine('LACUNAS PRIORITÁRIAS (< 50%)', 11, true, '#991B1B')
-    for (const d of result.gaps) addLine(`  • ${DOMAIN_LABELS[d]}`, 10)
+    addLine('LACUNAS PRIORITÁRIAS (< 50% do máximo)', 11, true, '#991B1B')
+    for (const d of result.gaps) {
+      addLine(`  • ${DOMAIN_LABELS[d as keyof DomainScores]}`, 10)
+    }
     addSpacer(2)
   }
 

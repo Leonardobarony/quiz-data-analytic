@@ -1,12 +1,14 @@
 'use client'
 
 import { createContext, useContext, useReducer, type ReactNode } from 'react'
-import type { QuizAction, QuizState, ToolSelection } from '@/lib/types'
+import type { QuizAction, QuizState } from '@/lib/types'
 
 const initialState: QuizState = {
-  stage: 'role',
+  stage: 'profile',
   role: null,
-  toolSelections: [],
+  userName: '',
+  userSquad: '',
+  userTechLevel: '',
   startingLevel: null,
   currentQuestionIndex: 0,
   answers: {},
@@ -17,26 +19,14 @@ const initialState: QuizState = {
 
 function quizReducer(state: QuizState, action: QuizAction): QuizState {
   switch (action.type) {
-    case 'SET_ROLE':
-      return { ...state, role: action.role }
-
-    case 'SET_TOOL_SELECTION': {
-      const existing = state.toolSelections.find(s => s.groupId === action.groupId)
-      const updated: ToolSelection = {
-        groupId: action.groupId,
-        selectedTools: action.selectedTools,
-        confidence: action.confidence,
+    case 'SET_PROFILE':
+      return {
+        ...state,
+        role: action.role,
+        userName: action.userName,
+        userSquad: action.userSquad,
+        userTechLevel: action.userTechLevel,
       }
-      if (existing) {
-        return {
-          ...state,
-          toolSelections: state.toolSelections.map(s =>
-            s.groupId === action.groupId ? updated : s
-          ),
-        }
-      }
-      return { ...state, toolSelections: [...state.toolSelections, updated] }
-    }
 
     case 'SET_STARTING_LEVEL':
       return { ...state, startingLevel: action.level }

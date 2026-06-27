@@ -340,7 +340,7 @@ export default function Results() {
       <div className="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-2xl p-5 mb-6">
         <div className="flex items-center gap-3 mb-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-dataside.png" alt="Dataside" className="h-6 w-auto" />
+          <img src="/logo-dataside.png" alt="Dataside" className="h-8 w-auto" />
           <span className="text-sm font-semibold text-blue-800">Ecossistema de Parceiros</span>
         </div>
         <p className="text-xs text-blue-700 leading-relaxed mb-3">
